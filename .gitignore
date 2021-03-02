@@ -1,0 +1,52 @@
+syntax: glob
+# compiled files:
+*.o
+*.so
+*.a
+*.pyc
+# temporary files:
+build
+*.bak
+*.swp
+*~
+.*~
+*.old
+tmp*
+temp*
+.#*
+\#*
+# tex files:
+*.log
+*.dvi
+*.aux
+*.blg
+*.bbl
+*.egg
+*.idx
+*.ilg
+*.ind
+*.loe
+*.nav
+*.out
+*.toc
+*.snm
+*.vrb
+# eclipse files:
+*.cproject
+*.project
+# misc:
+.DS_Store
+.idea
+__pycache__
+_minted-*
+# doconce:
+*.dlog
+.*_html_file_collection
+.*.exerinfo
+.*.copyright
+sphinx-rootdir
+dist
+Trash
+private
+venv*
+lib/DocOnce.egg-info/
