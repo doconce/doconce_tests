@@ -1,0 +1,7 @@
+!bc pycod
+var=11
+!ec
+
+!bc pycod
+print(var+1)
+!ec

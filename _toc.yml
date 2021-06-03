@@ -1,0 +1,120 @@
+- file: 01_testdoc
+  title: 01_testdoc
+  numbered: false
+
+- file: 02_testdoc
+  title: Section 1
+  numbered: false
+  sections:
+    - file: 02_01_testdoc
+      title: Subsection 1
+    - file: 02_02_testdoc
+      title: "Subsection 2: Testing figures"
+    - file: 02_03_testdoc
+      title: The $\theta$ parameter (not $\nabla$?)
+    - file: 02_04_testdoc
+      title: Custom Environments
+    - file: 02_05_testdoc
+      title: Tables
+    - file: 02_06_testdoc
+      title: "A test of verbatim words in heading with subscript $a_i$: `my_file_v1` and `my_file_v2`"
+    - file: 02_07_testdoc
+      title: _Just bold_
+    - file: 02_08_testdoc
+      title: "*Just emphasize*"
+    - file: 02_09_testdoc
+      title: "`Just verbatim`"
+    - file: 02_10_testdoc
+      title: _Bold_ beginning
+    - file: 02_11_testdoc
+      title: "*Emphasize* beginning"
+    - file: 02_12_testdoc
+      title: "`Verbatim` beginning"
+    - file: 02_13_testdoc
+      title: Maybe _bold end_
+    - file: 02_14_testdoc
+      title: "Maybe *emphasize end*"
+    - file: 02_15_testdoc
+      title: "Maybe `verbatim end`"
+    - file: 02_16_testdoc
+      title: The middle has _bold_ word
+    - file: 02_17_testdoc
+      title: "The middle has *emphasize* word"
+    - file: 02_18_testdoc
+      title: "The middle has `verbatim` word"
+    - file: 02_19_testdoc
+      title: Bibliography test
+    - file: 02_20_testdoc
+      title: "Example: Examples can be typeset as exercises"
+    - file: 02_21_testdoc
+      title: User-defined environments
+    - file: 02_22_testdoc
+      title: URLs
+
+- file: 03_testdoc
+  title: LaTeX Mathematics
+  numbered: false
+
+- file: 04_testdoc
+  title: Exercises
+  numbered: false
+  sections:
+    - file: 04_01_testdoc
+      title: "Problem: Flip a Coin"
+    - file: 04_02_testdoc
+      title: Not an exercise
+    - file: 04_03_testdoc
+      title: "Exercise: Test of plain text exercise"
+    - file: 04_04_testdoc
+      title: "Project: Compute a Probability"
+    - file: 04_05_testdoc
+      title: "Project: Explore Distributions of Random Circles"
+    - file: 04_06_testdoc
+      title: "Exercise: Determine some Distance"
+    - file: 04_07_testdoc
+      title: "{Exercise}: Some exercise without the \"Exercise:\" prefix"
+    - file: 04_08_testdoc
+      title: "Exercise: Solution of differential equation"
+    - file: 04_09_testdoc
+      title: "Example: Just an example"
+
+- file: 05_testdoc
+  title: Here goes another section
+  numbered: false
+
+- file: 06_testdoc
+  title: More Exercises
+  numbered: false
+  sections:
+    - file: 06_01_testdoc
+      title: "Exercise: Make references to projects and problems"
+    - file: 06_02_testdoc
+      title: "Project: References to Project ref{demo:ex:2} in a heading works for pandoc"
+
+- file: 07_testdoc
+  title: References
+  numbered: false
+
+- file: 08_testdoc
+  title: "Appendix: Just for testing; part I"
+  numbered: false
+  sections:
+    - file: 08_01_testdoc
+      title: A subsection within an appendix
+
+- file: 09_testdoc
+  title: "Appendix: Just for testing; part II"
+  numbered: false
+  sections:
+    - file: 09_01_testdoc
+      title: "Appendix: Testing identical titles"
+    - file: 09_02_testdoc
+      title: "Appendix: Testing identical titles"
+    - file: 09_03_testdoc
+      title: "Appendix: Testing identical titles"
+    - file: 09_04_testdoc
+      title: "Appendix: Testing identical titles"
+    - file: 09_05_testdoc
+      title: "Appendix: Testing inline comments"
+    - file: 09_06_testdoc
+      title: "Appendix: Testing headings ending with `verbatim inline`"

@@ -1,0 +1,444 @@
+%%
+%% Automatically generated file from DocOnce source
+%% (https://github.com/doconce/doconce/)
+%% doconce format latex locale.do.txt --latex_code_style=vrb --language=Norwegian --encoding=utf-8
+
+% #define PREAMBLE
+
+% #ifdef PREAMBLE
+%-------------------- begin preamble ----------------------
+
+\documentclass[%
+norsk,oneside,                 % oneside: electronic viewing, twoside: printing
+final,                   % draft: marks overfull hboxes, figures with paths
+10pt]{article}
+
+\listfiles               %  print all files needed to compile this document
+
+\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage{babel}
+
+\usepackage[pdftex]{graphicx}
+
+% Videos are handled by the href package
+\newenvironment{doconce:movie}{}{}
+\newcounter{doconce:movie:counter}
+
+\usepackage{fancyvrb}
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+
+% Hyperlinks in PDF:
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    %filecolor=blue,
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
+    }
+%\hyperbaseurl{}   % hyperlinks are relative to this root
+
+\setcounter{tocdepth}{2}  % levels in table of contents
+
+% Tricks for having figures close to where they are defined:
+% 1. define less restrictive rules for where to put figures
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0.75}
+% floatpagefraction must always be less than topfraction!
+% 2. ensure all figures are flushed before next section
+\usepackage[section]{placeins}
+% 3. enable begin{figure}[H] (often leads to ugly pagebreaks)
+%\usepackage{float}\restylefloat{figure}
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+% --- begin definitions of admonition environments ---
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "notice" admon
+\colorlet{mdfbox_notice_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_notice_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_notice_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{notice_mdfboxmdframed}
+
+\newenvironment{notice_mdfboxadmon}[1][]{
+\begin{notice_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{notice_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "summary" admon
+\colorlet{mdfbox_summary_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_summary_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_summary_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{summary_mdfboxmdframed}
+
+\newenvironment{summary_mdfboxadmon}[1][]{
+\begin{summary_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{summary_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "warning" admon
+\colorlet{mdfbox_warning_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_warning_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_warning_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{warning_mdfboxmdframed}
+
+\newenvironment{warning_mdfboxadmon}[1][]{
+\begin{warning_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{warning_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "question" admon
+\colorlet{mdfbox_question_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_question_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_question_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{question_mdfboxmdframed}
+
+\newenvironment{question_mdfboxadmon}[1][]{
+\begin{question_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{question_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "block" admon
+\colorlet{mdfbox_block_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_block_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_block_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{block_mdfboxmdframed}
+
+\newenvironment{block_mdfboxadmon}[1][]{
+\begin{block_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{block_mdfboxmdframed}
+}
+
+% --- end of definitions of admonition environments ---
+
+% prevent orhpans and widows
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+\newenvironment{doconceexercise}{}{}
+\newcounter{doconceexercisecounter}
+% --- begin definition of \listofexercises command ---
+\makeatletter
+\newcommand\listofexercises{\section*{List of Problems and Prosjekts}
+\@starttoc{loe}
+}
+\newcommand*{\l@doconceexercise}{\@dottedtocline{0}{0pt}{6.5em}}
+\makeatother
+% --- end definition of \listofexercises command ---
+
+
+
+% ------ header in subexercises ------
+%\newcommand{\subex}[1]{\paragraph{#1}}
+%\newcommand{\subex}[1]{\par\vspace{1.7mm}\noindent{\bf #1}\ \ }
+\makeatletter
+% 1.5ex is the spacing above the header, 0.5em the spacing after subex title
+\newcommand\subex{\@startsection{paragraph}{4}{\z@}%
+                  {1.5ex\@plus1ex \@minus.2ex}%
+                  {-0.5em}%
+                  {\normalfont\normalsize\bfseries}}
+\makeatother
+
+
+% --- end of standard preamble for documents ---
+
+
+% insert custom LaTeX commands...
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   % for index in the toc
+\usepackage[nottoc]{tocbibind}  % for references/bibliography in the toc
+
+%-------------------- end preamble ----------------------
+
+\begin{document}
+
+% matching end for #ifdef PREAMBLE
+% #endif
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+\input{newcommands_bfmath}
+\input{newcommands_replace}
+
+% ------------------- main content ----------------------
+
+
+
+% ----------------- title -------------------------
+
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE\bf
+\begin{spacing}{1.25}
+DocOnce med norsk
+\end{spacing}
+}
+\end{center}
+
+% ----------------- author(s) -------------------------
+
+\begin{center}
+{\bf Ø. Å. Lægreid${}^{1, 2}$} \\ [0mm]
+\end{center}
+
+\begin{center}
+% List of all institutions:
+\centerline{{\small ${}^1$Noensteds ASA}}
+\centerline{{\small ${}^2$Nord Kommune}}
+\end{center}
+    
+% ----------------- end author(s) -------------------------
+
+% --- begin date ---
+\begin{center}
+lørdag, 29. mai, 2021
+\end{center}
+% --- end date ---
+
+\vspace{1cm}
+
+
+\index{sammendrag}
+
+\begin{abstract}
+Dette dokumentet tester DocOnce med norsk støtte.
+\end{abstract}
+
+\tableofcontents
+
+\vspace{1cm} % after toc
+
+\section{Første overskrift: Vi regner litt}
+
+\index{regning}
+
+
+\begin{quote}
+Dagens oppvarming er $0 + 0$. Det blir ikke mye...
+\end{quote}
+
+
+
+\begin{notice_mdfboxadmon}[Observér.]
+Faktisk er $1 + 1 = 2$. Dette resultatet kan benyttes uten begrunnelse.
+\end{notice_mdfboxadmon} % title: Observér.
+
+
+
+
+\begin{question_mdfboxadmon}[Spørsmål.]
+Hva blir $1 - 1$?
+\end{question_mdfboxadmon} % title: Spørsmål.
+
+
+
+
+\begin{summary_mdfboxadmon}[Sammendrag.]
+Addisjon og subtraksjon er inverse operasjoner.
+\end{summary_mdfboxadmon} % title: Sammendrag.
+
+
+
+\index{admon demo}
+
+
+\begin{notice_mdfboxadmon}[Boks med tittel!]
+Her kommer norsk tekst...
+\end{notice_mdfboxadmon} % title: Boks med tittel!
+
+
+
+% --- begin exercise ---
+\begin{doconceexercise}
+\refstepcounter{doconceexercisecounter}
+
+\exercisesection{Problem \thedoconceexercisecounter: Legg sammen to tall}
+                             
+
+\index{addisjon}
+
+Regn ut $1+2$.
+
+% --- begin answer of exercise ---
+\paragraph{Fasit.}
+3.
+
+% --- end answer of exercise ---
+
+% --- begin solution of exercise ---
+\paragraph{Løsningsforslag.}
+Ganske enkelt tell fingre: en finger, to fingre, tell opp til tre fingre
+tilsammen.
+
+% --- end solution of exercise ---
+\noindent Filnavn: \Verb!legg_sammen!.
+
+\end{doconceexercise}
+% --- end exercise ---
+
+% --- begin exercise ---
+\begin{doconceexercise}
+\refstepcounter{doconceexercisecounter}
+
+\exercisesection{Prosjekt \thedoconceexercisecounter: Multipliser to tall}
+                             
+
+Regn ut $3\cdot 4$.
+
+% --- begin hint in exercise ---
+
+\paragraph{Hint.}
+Oppgaven kan regnes ut ved hjelp av en kalkulator.
+
+% --- end hint in exercise ---
+\noindent Filnavn: \texttt{multipliser}.
+
+% Closing remarks for this Prosjekt
+
+\paragraph{Bemerkning.}
+Faktisk er $3\cdot 4 = 4\cdot 3$.
+
+\end{doconceexercise}
+% --- end exercise ---
+
+\section{Andre overskrift: Vi ser film og bilde}
+
+
+\begin{doconce:movie}
+\refstepcounter{doconce:movie:counter}
+\begin{center}
+\href{{http://www.youtube.com/watch?v=bp3mCgrdMxU}}{\nolinkurl{http://www.youtube.com/watch?v=bp3mCgrdMxU}}
+\end{center}
+
+\begin{center}  % movie caption
+Video \arabic{doconce:movie:counter}: YouTube film.
+\end{center}
+\end{doconce:movie}
+
+
+\begin{figure}[!ht]  % 
+  \centerline{\includegraphics[width=0.8\linewidth]{downloaded_figures/f_plot.png}}
+  \caption{
+  Her er en figur av en funksjon.
+  }
+\end{figure}
+%\clearpage % flush figures 
+
+
+% ------------------- end of main content ---------------
+
+% #ifdef PREAMBLE
+\cleardoublepage\phantomsection  % trick to get correct link to Index
+\printindex
+
+\end{document}
+% #endif
+

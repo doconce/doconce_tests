@@ -1,0 +1,18 @@
+= Commands to be commented out =
+
+---------------------------------------------------------------
+
+Figure: Figure caption
+
+(the URL of the image file ../doc/src/manual/fig/wave1D.png must be inserted here)
+
+<wiki:comment>
+Put the figure file ../doc/src/manual/fig/wave1D.png on the web (e.g., as part of the
+googlecode repository) and substitute the line above with the URL.
+</wiki:comment>
+---------------------------------------------------------------
+
+youtube movie `https://www.youtube.com/embed/P8VcZzgdfSc`: load [movie_player1.html `movie_player1.html`] into a browser
+
+local movie `../doc/src/manual/mov/wave.webm`: load [movie_player2.html `movie_player2.html`] into a browser
+

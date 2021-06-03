@@ -1,0 +1,8 @@
+== '''Commands to be commented out''' ==
+
+[[File:Wave1D.png|frame|200px|alt=Wave1D.png|Figure caption]] <!-- not yet uploaded to common.wikimedia.org -->
+
+youtube movie <code>https://www.youtube.com/embed/P8VcZzgdfSc</code>: load [movie_player1.html <code>movie_player1.html</code>] into a browser
+
+local movie <code>../doc/src/manual/mov/wave.webm</code>: load [movie_player2.html <code>movie_player2.html</code>] into a browser
+

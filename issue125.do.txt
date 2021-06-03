@@ -1,0 +1,13 @@
+Python code, just text
+
+@@@CODE ../private/doconce_demo/code/code1.py envir=py-t
+
+Here is some plain text.
+
+Now we add some python code with output:
+
+@@@CODE ../private/doconce_demo/code/code1.py envir=pycod
+
+And some data
+
+@@@CODE ../private/doconce_demo/data/exp_growth.csv envir=csv

@@ -1,0 +1,154 @@
+===== Exercise: my first exercise =====
+Here goes a general introduction to the exercise.
+
+
+|-----------------------------------------------------|
+| Begin-end directive | Behavior                      |
+|-----l--------------------l--------------------------|
+| |bsubex - |esubex   | Subexercise                   |
+| |bans - |eans       | Answer                        |
+| |bsol - |esol       | Solution                      |
+| |bhint - |ehint     | Hint                          |
+|-----------------------------------------------------|
+
+
+aaaa
+
+
+|-----------------------------------------------------|
+| Commands            | Behavior                      |
+|--l----------------------------l---------------------|
+| === Exercise/Example/..: .. === | Header with Exercise, Problem, Project, or Example title |
+| file=               | Answer file                   |
+| files=              | Answer files, comma separated |
+| solution=           | Solution file                 |
+|-----------------------------------------------------|
+
+
+aaaa
+
+|-------------------------------------------------------------|
+| Command option      | Behavior                              |
+|--l-------------------------------------l--------------------|
+| --without_answers   | Turn off output of answers            |
+| --without_solutions | Turn off output of solutions          |
+| --answers_at_end    | Answers in the end of the document    |
+| --solutions_at_end  | Solutions in the end of the document  |
+|-------------------------------------------------------------|
+
+aaaa
+
+|-------------------------------------------------------------|
+| Command             | Behavior                              |
+|-----------l-------------------------l-----------------------|
+| !anshide            | Hide answers until !solhide           |
+| !solhide            | Hide solutions until !solhide         |
+| !ansoff             | Restore answers' visibility           |
+| !soloff             | Restore solutions visibility          |
+| !ansdocend          | Answers in the end of the document    |
+| !soldocend          | Answers in the end of the document    |
+|-------------------------------------------------------------|
+
+=== Solutions ===
+idx{`--without_answers`}
+idx{`--without_solutions`}
+idx{`--answers_at_end`}
+idx{`--solution_at_end`}
+
+The solution environment that can be created with `!bsol` and `!esol` allows inline
+
+
+
+!bsubex
+Predict what this code will do
+
+!bc pycod-t
+a = 2
+!ec
+
+!bans
+Prints `2`
+!eans
+!esubex
+
+!bsubex
+Modify the program so that it prints 2, 3 and 4.
+
+!bans
+There are many ways to do this. We will show two of them.
+!eans
+
+!bsol
+!bc pycod
+b = 5
+!ec
+An alternative:
+!bc pycod
+b = 4
+!ec
+!esol
+!esubex
+
+
+===== bug =====
+__More on $\theta$.__ Here is more text following headline with math.
+
+Newcommands must also be tested in this \report:
+$\half$, $\halfi$, $\x$, $\Ddt{u}$,
+both inline and in block:
+
+!bt
+\begin{align}
+\Ddt{u} &= 0\nonumber
+\\
+\half &= \halfi\\
+\half\x &= \normalvec
+\end{align}
+!et
+
+===== Exercise: my second exercise =====
+
+Here goes a general introduction to the exercise.
+
+!bsubex
+Implement this difference equation in Python
+and generate a plot for values of $x$ from 1 to 10.
+
+!bt
+\begin{equation}
+x_{n+1} = 1.5 x_n -20
+x_0 = 20
+\end{equation}
+!et
+
+!bsol
+!bc pycod
+from matplotlib import pyplot as plt
+x = [20]
+i = 1
+while i < 10:
+    x.append(1.5 * x[i-1] - 20)
+    i = i + 1
+
+plt.plot(x)
+plt.show()
+!ec
+
+!esol
+!esubex
+
+!bsubex
+Question without code answer:
+Can you think of an example case that has this difference equation as model?
+
+!bans
+Not really.
+!eans
+!esubex
+
+!bsubex
+Another question without code answer.
+!bans
+Nothing to answer...
+!eans
+!esubex

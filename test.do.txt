@@ -1,0 +1,6 @@
+TOC: on
+
+% for heading in ('_Just bold_', '*Just emphasize*', '`Just verbatim`', '_Bold_ beginning', '*Emphasize* beginning', '`Verbatim` beginning', 'Maybe _bold end_', 'Maybe *emphasize end*', 'Maybe `verbatim end`', 'The middle has _bold_ word', 'The middle has *emphasize* word', 'The middle has `verbatim` word'):
+===== ${heading} =====
+Some text.
+% endfor

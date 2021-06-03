@@ -1,0 +1,201 @@
+TITLE: Minimal slide demo
+AUTHOR: Some Author at UiO
+AUTHOR: Some Author2 Email: someemail@site.net at institution1 & institution2
+DATE: today
+
+TOC: on
+
+
+!split
+========= Commands to be commented out =========
+!bslidecell 00 0.4
+ * Scope
+ * Focus
+ * Approach
+!eslidecell
+!bslidecell 01 0.6
+FIGURE: [https://openclipart.org/people/jpneok/junebug.svg, width="200px", frac=0.7] 
+!eslidecell
+
+
+
+!bblock Methods are slow or fast:
+!bpop
+ * Slow:
+   * Pick-and-choose
+ * Fast:
+   * Quickstep
+   * MMST
+!epop
+!eblock
+
+!split
+========= Chapters and Sections =========
+
+======= Section 1 =======
+label{sec1}
+
+===== Subsection 1 =====
+label{subsec1}
+
+__Abstract.__ on two 
+lines
+
+===== subsection =====
+=== subsubsection ===
+Horizontal rule:
+-----
+
+
+
+
+!split
+===== Media =====
+FIGURE: [https://openclipart.org/people/jpneok/junebug.svg, width="200px"] Results for $a=2$. label{myfig}
+
+MOVIE: [https://www.youtube.com/embed/P8VcZzgdfSc, width="420px", height="315px"]
+
+
+
+
+
+!split
+===== Inline Tags =====
+normal text on top
+
+This text has one,
+two,
+three lines
+
+Inline Mathematics: $a^2=\sin(x)$.
+__Paragraph with running..__ text
+__Only Paragraph.__
+Some *Italics* with text
+*Only* *Italics*
+*italics*-with hyphen-*emphasis*
+
+Some _Bold_ with text
+_Only Bold_
+*Bold*-with hyphen-*Bold*
+
+__No newline after this.__
+The text continues on two more 
+lines. 
+
+more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text 
+
+blank line, even more text
+
+
+
+!split
+===== Inline Tags 2 =====
+inline comment here [Alessandro: has a comment]
+=== Subsubsection ===
+text with a line-<linebreak>
+break
+normal text
+
+url with verbatim:
+"`verbatim`": "https://doconce.github.io/doconce/doc/pub/manual/manual.html"
+
+
+non-breaking space using tilde: 7.4~km
+
+Guns & Roses
+
+Texas A & M
+
+emoji: :smile: 
+
+test footnotes [^footnote]
+
+[^footnote]: Typesetting of the footnote depends on the format.
+
+
+
+!split
+===== Commands =====
+a ref: ref{myfig}
+
+Here is a citation using cite: cite{Langtangen_Pedersen_2002} 
+Four citations: cite{Langtangen_1992c,Langtangen_1994a,Mortensen_et_al_2011,Langtangen_Pedersen_2002}
+
+_nested list:TODO_
+
+  * item1
+  * item2
+  * item3 which continues
+    on the next line to test that feature
+  * and a sublist
+    * with indented subitem1
+    * and a subitem2
+  * and perhaps an ordered sublist
+    o first item
+    o second item,
+      continuing on a new line
+
+  - keyword1: TODO explanation of keyword1
+  - keyword2: explanation
+    of keyword2
+
+_tables_
+
+  |--------------------------------|
+  |time  | velocity | acceleration |
+  |--l--------r-----------r--------|
+  | 0.0  | 1.4186   | -5.01        |
+  | 2.0  | 1.376512 | 11.919       |
+  |--------------------------------|
+
+
+
+!split
+===== Code =====
+Verbatim above `pycod -t`
+!bc pycod -t
+total = 0
+!ec
+Verbatim below `pycod -t`
+
+
+
+!split
+======= Blocks =======
+
+__|bquote__
+A quote:
+
+!bquote
+Sayre's law states that
+``in any dispute the intensity of feeling is inversely
+proportional to the value of the issues at stake.'' <linebreak>
+By way of corollary, it adds: <linebreak>
+``That is why academic politics are so bitter.'' <linebreak>
+*Source*: "wikipedia": "https://en.wikipedia.org/wiki/Sayre's_law"
+!equote
+
+
+__|bbox and |bt.__
+!bbox
+A generic equation
+
+!bt
+\[ f(x) = 0 \]
+!et
+must be solved by a numerical method, such as
+
+ * Newton's method
+ * The Bisection method
+ * Fixed-point (Picard) iteration by rewriting $f(x)=x - g(x)$
+ * The Secant method
+!ebox
+
+__|bwarning.__
+!bwarning (large) Watch out for $\nabla\cdot\bm{u}=0$ equations
+Divergence freedom is often problematic from a numerical point
+of view.
+!ewarning
+
+===== References =====
+BIBFILE: papers.pub

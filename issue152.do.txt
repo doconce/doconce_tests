@@ -1,0 +1,35 @@
+#COMMENT
+
+===== Exercise: My first exercise =====
+
+!bsubex
+Question without code answer:
+!bans
+Not really.
+!eans
+!esubex
+
+=== Exercise: some section ===
+
+!bsubex
+Another question without code answer.
+!bans
+Nothing to answer...
+!eans
+!esubex
+
+===== Exercise: My second exercise =====
+
+!bsubex
+Question 2 without code answer:
+!bans
+Not really.
+!eans
+!esubex
+
+!bsubex
+Another question 2 without code answer.
+!bans
+Nothing to answer...
+!eans
+!esubex

@@ -127,3 +127,52 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# compiled files:
+*.o
+*.a
+*.pyc
+# temporary files:
+build
+*.bak
+*.swp
+*.old
+temp*
+.#*
+\#*
+# tex files:
+*.dvi
+*.aux
+*.blg
+*.bbl
+*.idx
+*.ilg
+*.ind
+*.loe
+*.nav
+*.out
+*.toc
+*.snm
+*.vrb
+# eclipse files:
+*.cproject
+*.project
+# misc:
+.DS_Store
+.idea
+_minted-*
+# doconce:
+*~
+.*~
+tmp*
+*.dlog
+.*_html_file_collection
+.*.exerinfo
+.*.copyright
+testv
+sphinx-rootdir
+dist
+Trash
+private
+venv*
+lib/DocOnce.egg-info/

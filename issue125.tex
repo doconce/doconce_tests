@@ -1,0 +1,148 @@
+%%
+%% Automatically generated file from DocOnce source
+%% (https://github.com/doconce/doconce/)
+%% doconce format latex issue125.do.txt --execute
+%%
+
+
+%-------------------- begin preamble ----------------------
+
+\documentclass[%
+oneside,                 % oneside: electronic viewing, twoside: printing
+final,                   % draft: marks overfull hboxes, figures with paths
+10pt]{article}
+
+\listfiles               %  print all files needed to compile this document
+
+\usepackage{relsize,epsfig,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage{graphicx}
+
+\usepackage{anslistings,fancyvrb} % packages needed for verbatim environments
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+
+% Hyperlinks in PDF:
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    %filecolor=blue,
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
+    }
+%\hyperbaseurl{}   % hyperlinks are relative to this root
+
+\setcounter{tocdepth}{2}  % levels in table of contents
+
+% prevent orhpans and widows
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+% --- end of standard preamble for documents ---
+
+
+% insert custom LaTeX commands...
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   % for index in the toc
+\usepackage[nottoc]{tocbibind}  % for references/bibliography in the toc
+
+%-------------------- end preamble ----------------------
+
+\begin{document}
+
+% matching end for #ifdef PREAMBLE
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+\input{newcommands_bfmath}
+\input{newcommands_replace}
+
+% ------------------- main content ----------------------
+
+Python code, just text
+
+
+
+
+
+
+\begin{python:nt}
+total = 0
+for number in range(10):
+   total = total + (number + 1)
+print(total)
+
+\end{python:nt}
+
+
+Here is some plain text.
+
+Now we add some python code with output:
+
+
+
+
+
+
+\begin{python:nt}
+total = 0
+for number in range(10):
+   total = total + (number + 1)
+print(total)
+
+\end{python:nt}
+
+\begin{python:nt}
+55
+\end{python:nt}
+
+And some data
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+time,count
+60,10000
+90,25587
+120,76327
+150,212715
+180,619511
+210,1940838
+240,4240760
+270,13993730
+300,38971086
+330,105614040
+
+\end{Verbatim}
+
+
+% ------------------- end of main content ---------------
+
+\end{document}
+

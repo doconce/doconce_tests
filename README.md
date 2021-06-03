@@ -1,12 +1,25 @@
 ## doconce_tests
-This repository contains tests suite for [DocOnce](https://github.com/doconce/doconce).
+This repository contains tests suite for [DocOnce](https://github.com/doconce/doconce), 
+which includes the current repository as a [git-submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-There are two types of tests:
 
- * tests.py regression suite
+# Table of Contents
+- [Tests for DocOnce](#tests-for-doconce)
+  * [tests.py](#testspy)
+  * [pytests.py](#pytestspy)
+  * [test_mintest.py](#test_mintestpy)
+- [Requirements](#requirements)
+- [Notes](#notes)
+
+
+### Tests for DocOnce
+There are three types of tests:
+
+ * regression suite in tests.py 
+ * unit tests in pytests.py
  * unit tests in test_mintest.py
 
-##### tests.py
+#### tests.py
 The first contains classical regression tests where text is
 generated in many files, these are concatenated, and then
 compared with the big reference file with name test.r.
@@ -22,8 +35,15 @@ A diff test.v test.r show differences of generated text
 a complete installation with all the DocOnce dependencies.
 
 
+#### pytests.py
+The unit tests in pytests.py can be run by:
 
-##### test_mintest.py
+  pytest -v pytests.py
+
+These tests are run in the GitHub Actions workflow on the 
+
+
+#### test_mintest.py
 The plain unit tests are in test_mintest.py (very minimalistic tests,
 mainly to check that the installation of DocOnce itself is okay). Run
 by
@@ -33,8 +53,12 @@ py.test test_mintest.py
 ```
 
 
-### Notes
+### Requirements 
+A complete installation of [DocOnce](https://github.com/doconce/doconce). 
+In addition some tests are run on features not included in the DocOnce standard requirements, for example Jupyter Julia and Bash kernels. 
 
+
+### Notes
 Note that standard unit tests with nose/pytest are less suitable for a
 text transformation program such as DocOnce. The reason is that some
 functionality must be tested in larger files where many constructions

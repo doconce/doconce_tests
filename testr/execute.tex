@@ -1,0 +1,566 @@
+%%
+%% Automatically generated file from DocOnce source
+%% (https://github.com/doconce/doconce/)
+%% doconce format latex execute.do.txt --execute
+%%
+
+
+%-------------------- begin preamble ----------------------
+
+\documentclass[%
+oneside,                 % oneside: electronic viewing, twoside: printing
+final,                   % draft: marks overfull hboxes, figures with paths
+chapterprefix=true,      % "Chapter" word at beginning of each chapter
+open=right,              % start new chapters on odd-numbered pages
+10pt]{book}
+
+\listfiles               %  print all files needed to compile this document
+
+\usepackage{relsize,epsfig,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage{graphicx}
+
+\usepackage{fancyvrb} % packages needed for verbatim environments
+\usepackage{fancyvrb}
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+
+% Hyperlinks in PDF:
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    %filecolor=blue,
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
+    }
+%\hyperbaseurl{}   % hyperlinks are relative to this root
+
+\setcounter{tocdepth}{3}  % levels in table of contents
+
+% prevent orhpans and widows
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+% Redefine double page clear to make it a blank page without headers
+% (from BYUTextbook)
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+% These commands fiddle with the space left for page numbers in the TOC
+% (from BYUTextbook)
+\makeatletter
+%\renewcommand{\@pnumwidth}{2em}
+%\renewcommand{\@tocrmarg}{2.85em}
+\makeatother
+
+% Make sure blank even-numbered pages before new chapters are
+% totally blank with no header
+\newcommand{\clearemptydoublepage}{\clearpage{\pagestyle{empty}\cleardoublepage}}
+%\let\cleardoublepage\clearemptydoublepage % caused error in the toc
+
+% --- end of standard preamble for documents ---
+
+
+% insert custom LaTeX commands...
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   % for index in the toc
+\usepackage[nottoc]{tocbibind}  % for references/bibliography in the toc
+
+%-------------------- end preamble ----------------------
+
+\begin{document}
+
+% matching end for #ifdef PREAMBLE
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+\input{newcommands_bfmath}
+\input{newcommands_replace}
+
+% ------------------- main content ----------------------
+
+\chapter{Automatic execution of code blocks}
+
+Convert this document to \texttt{ipynb}, \texttt{latex} or \texttt{html} with e.g.:
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+doconce format ipynb execute.do.txt --execute
+
+\end{Verbatim}
+
+
+\section{Code blocks in different languages}
+\subsection{Python}
+
+Python code
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+for i in [1,2,3]:
+  print(i)
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+
+
+\end{Verbatim}
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+print(i)
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+\end{Verbatim}
+
+\subsection{Bash}
+Bash code 
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+if [ 1 -eq 1 ] ; then echo 1; fi
+var_bash=10
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+\end{Verbatim}
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+echo $var_bash
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+\end{Verbatim}
+
+\subsection{Julia}
+
+Julia code
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+var_julia = 11
+print(var_julia)
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+11\epy
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+for n = 2:4
+  var_julia = var_julia + n
+end
+print(var_julia)
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+20\epy
+
+\subsection{R }
+
+R code
+
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+x <- 1:3
+print(x)
+#pdf("plot.pdf")
+plot(x)
+#dev.off()
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+[1] 1 2 3
+\end{Verbatim}
+\begin{center}
+   \includegraphics[width=0.8\textwidth]{.doconce_figure_cache/XXX.png}
+\end{center}
+
+
+\subsection{Other languages}
+
+Then Cython (with -h option so it is hidden in html/sphinx):
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+cpdef f(double x):
+    return x + 1
+
+\end{Verbatim}
+
+
+Java code
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+\end{Verbatim}
+
+
+Javascript code
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+for (var x in [0,1,2]) {console.log(x)}
+
+\end{Verbatim}
+
+
+matlab code
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+for i = 1:2:10
+  disp(A(i))
+end
+
+\end{Verbatim}
+
+
+html code
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+<a href='test'></a>
+
+\end{Verbatim}
+
+
+C code
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+#include <stdio.h>
+
+int main() {
+  int i;
+
+  for (i = 1; i < 11; ++i)
+  {
+    printf("%d ", i);
+  }
+  return 0;
+}
+
+\end{Verbatim}
+
+
+\section{Code block environments}
+
+Hidden execution cells (\texttt{pyhid}, \texttt{pycod-e}) can be used to perform operations (e.g.~imports, variable initializations) without showing any cell.  
+The \texttt{pyhid} environment executes and hides the cell in formats other than .ipynb:
+
+This is a normal python block using the \texttt{pycod} environment
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+print('pycod')
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+pycod
+\end{Verbatim}
+
+
+
+
+
+
+
+The \texttt{pycod-e} environment executes but hides the cell also in .ipynb files:
+
+
+
+
+
+
+
+\texttt{pycod} is a normal cell that should execute automatically when using \texttt{--execute}. Note that this cells relies on code executed in a previous hidden cell:
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+print(sys.version)
+b = 2
+c = a + b
+print("The result is {}".format(c))
+c
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+3.8.0 (default, Feb 25 2021, 22:10:10) 
+[GCC 8.4.0]
+The result is 3
+\end{Verbatim}
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+3\epy
+
+% !split
+\section{Special environments}
+
+The \texttt{*-t} environment (e.g. \texttt{pycod-t}) formats a cell to text, and can be used to print an example
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+# This is a for-loop example
+for i in [0,10]:
+  print(i)
+
+\end{Verbatim}
+
+
+The \texttt{*out}  (e.g. \texttt{pycod-out}) environment can be used to write a cell output:
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+# This is a text cell using pycod-t
+1/0
+
+\end{Verbatim}
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+# This is a output cell using the `pycod-out` environment
+1/0: You cannot divide by zero
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+# This is a output cell using the `pycod-out` environment
+1/0: You cannot divide by zero
+\end{Verbatim}
+
+The \texttt{-h} postfix can be used in the \texttt{html} format to show a Show/Hide button that toggles the code visibility. 
+
+The \texttt{pyscpro} environment creates an interactive cell using \href{{https://github.com/sagemath/sagecell/}}{Sage} in the \texttt{html} format
+
+% !split
+\section{Plotting}
+
+This is a cell that should plot and output:
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+from pylab import *
+x = linspace(0, 10, 100)
+plot(x, x*x)
+show()
+
+\end{Verbatim}
+
+\begin{center}
+   \includegraphics[width=0.8\textwidth]{.doconce_figure_cache/XXX.pdf}
+\end{center}
+
+
+To improve quality when exporting to {\LaTeX}, the following code has automatically
+been run to enable PDF export in notebooks.
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+from IPython.display import set_matplotlib_formats
+set_matplotlib_formats('png', 'pdf')
+
+\end{Verbatim}
+
+
+% !split
+\section{Ignore output}
+
+Predefined output can be omitted by passing \Verb!--ignore_output! to DocOnce.
+This will remove all environments ending with \texttt{out}.
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+a = 2
+print(a)
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+\end{Verbatim}
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+
+\end{Verbatim}
+
+% !split
+\section{Code with errors}
+
+If code contains errors, it will still be run and the exception shown as part
+of the output:
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+for a in range(10)
+    print(a)
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+  File "<ipython-input-10-b3f86d48875f>", line XXX
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+\end{Verbatim}
+
+% !split
+\section{Opening files}
+
+The working directory is the same as the .do.txt file.
+You may want to use \texttt{os.chdir} to change the directory.
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+with open("../LICENSE") as f:
+    print(f.read())
+
+\end{Verbatim}
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+Copyright (c) 2007-2XXX, Hans Petter Langtangen <hpl@simula.no> and
+Simula Resarch Laboratory.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.
+
+    * Neither the name of Simula Research Laboratory nor the names of
+      its contributors may be used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Remarks:
+
+The figure and movie files in doc/manual/* were made by the Doconce
+author and is released under the same conditions as Doconce.
+
+
+\end{Verbatim}
+
+% ------------------- end of main content ---------------
+
+\end{document}
+

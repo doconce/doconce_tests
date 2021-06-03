@@ -1,0 +1,12 @@
+.. Master file automatically created by doconce sphinx_dir
+
+
+Testing admons
+==============
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   admon
