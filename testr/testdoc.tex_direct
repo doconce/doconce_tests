@@ -1070,7 +1070,7 @@ output2
 \noindent
 
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 
@@ -1270,7 +1270,7 @@ example where this is needed is in physical units: 7.4~km is traveled
 in~$7.4/5.5\approx 1.345$~s.  Also check that a~\href{{https://google.com}}{link}~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
+computer code, e.g.~as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
 of course remain a tilde in those contexts.)
 \end{notice_mdfboxadmon} % title: Non-breaking space character.
 
@@ -1787,7 +1787,7 @@ random vibrations was investigated in \cite{Langtangen_1994a}.
 The book chapter \cite{Mardal_et_al_2003a} contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is \cite{Langtangen_1988d} about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g.~see
 \cite{Langtangen_Pedersen_2002,Mardal_et_al_2003a}.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -2450,7 +2450,7 @@ Test list in exercise:
 % Closing remarks for this Exercise
 
 \paragraph{Remarks.}
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g.~summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 

@@ -3,7 +3,7 @@ This is a demo of movies in DocOnce
 
 HPL
 
-Date: May 29, 2021
+Date: Jun 22, 2021
 
 Here is a movie in WebM format.
 
@@ -46,7 +46,7 @@ Here is the same movie in AVI format:
 
 Here is the same movie, but with a URL to GitHub:
 
- https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg: load movie_player9.html (movie_player9.html) into a browser
+ https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg: load movie_player9.html (movie_player9.html) into a browser
 
 Here is a YouTube video:
 

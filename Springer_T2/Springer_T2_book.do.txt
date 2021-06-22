@@ -155,7 +155,7 @@ idx{heterogeneous lists}
 The list elements consist of objects of the same type: any element in
 `pairs` is a list of two `float` objects, while any element in `xlist`
 or `ylist` is a `float`. Lists are more flexible than that, because an
-element can be an object of any type, e.g.,
+element can be an object of any type, e.g. 
 
 !bc pycod
 mylist = [2, 6.0, 'tmp.ps', [0,1]]
@@ -268,7 +268,7 @@ a = np.zeros(n)
 !ec
 The array elements are of a type that corresponds to Python's
 `float` type. A second argument to `np.zeros` can be used to
-specify other element types, e.g., `int`.
+specify other element types, e.g. `int`.
 A similar function,
 
 !bc pycod
@@ -312,7 +312,7 @@ a = np.linspace(p, q, n)
 ========= Storing results in data files and adding more words here to get a very long chapter heading =========
 
 We need to test spaces around footnotes for 2-digit footnotes, which
-means we need a lot of URLs, e.g., to files:
+means we need a lot of URLs, e.g. to files:
 "`ball2_cml.py`": "${src_path}/input/ball2_cml.py",
 "`bisection_ex.py`": "${src_path}/input/bisection_ex.py",
 "`bisection_movie.py`": "${src_path}/input/bisection_movie.py",
@@ -546,7 +546,7 @@ There is also something called *standard error*.
 Usually this is the terminal window, just as standard output, but
 programs can distinguish between writing ordinary output to standard
 output and error messages to standard error, and these output media
-can be redirected to, e.g., files such that one can separate
+can be redirected to, e.g. files such that one can separate
 error messages from ordinary output.
 In Python, standard error is the file-like object `sys.stderr`.
 A typical application of `sys.stderr` is to report errors:

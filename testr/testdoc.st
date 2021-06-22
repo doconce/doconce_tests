@@ -255,7 +255,7 @@ And here is a system call::
         output1
         output2
 
-Any valid pygments lexer/language name can appear to, e.g.::
+Any valid pygments lexer/language name can appear to e.g::
 
         !bc restructuredtext
         =======
@@ -371,7 +371,7 @@ example where this is needed is in physical units: 7.4 km is traveled
 in 7.4/5.5\approx 1.345 s.  Also check that a~"https://google.com":link is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in '[~x for x in y]' or in 'y=~x', and should
+computer code, e.g. as in '[~x for x in y]' or in 'y=~x', and should
 of course remain a tilde in those contexts.)
 
 
@@ -394,7 +394,7 @@ FIGURE: [testfigs/wave1D.png, width=500, sidecap=True] A long caption spanning s
 
 Test URL as figure name:
 
-FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png, width=500, frac=0.8]
+FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=500, frac=0.8]
 
 *Remark.*
 Movies are tested in separate file 'movies.do.txt'.
@@ -736,7 +736,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -1198,7 +1198,7 @@ Test list in exercise:
 
 Remarks
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 

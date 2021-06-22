@@ -44,7 +44,7 @@ system doconce spellcheck -d .dict4spell.txt _testdoc.do.txt
 # jupyterbook
 system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
-system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README --examples_as_exercises --allow_refs_to_external_docs 
+system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
 
 system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
@@ -369,7 +369,7 @@ cp admon.html admon_yellow.html
 system doconce format html admon --html_admon=apricot --html_style=solarized --cite_doconce --html_raw_github_url=raw.github
 cp admon.html admon_apricot.html
 
-system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_template=template_vagrant.html --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_template=../bundled/html_styles/style_vagrant/template_vagrant.html --cite_doconce --html_raw_github_url=raw.github
 cp admon.html admon_vagrant.html
 
 system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce "--html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html" --html_raw_github_url=raw.github

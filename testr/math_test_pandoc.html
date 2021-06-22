@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Hans Petter Langtangen at Simula Research Laboratory and University of Oslo" />
-  <meta name="date" content="2100-01-32" />
   <title>How various formats can deal with LaTeX math</title>
   <style type="text/css">code{white-space: pre;}</style>
   
@@ -25,7 +24,7 @@ MathJax.Hub.Config({
 <h2 class="author"><strong>Hans Petter Langtangen</strong> at Simula Research Laboratory and University of Oslo</h2>
 <h3 class="date">Jan 32, 2100</h3>
 </div>
-<p><em>Summary.</em> The purpose of this document is to test LaTeX math in DocOnce with various output formats. Most LaTeX math constructions are renedered correctly by MathJax in plain HTML, but some combinations of constructions may fail. Unfortunately, only a subset of what works in html MathJax also works in sphinx MathJax. The same is true for markdown MathJax expresions (e.g., Jupyter notebooks). Tests and examples are provided to illustrate what may go wrong.</p>
+<p><em>Summary.</em> The purpose of this document is to test LaTeX math in DocOnce with various output formats. Most LaTeX math constructions are renedered correctly by MathJax in plain HTML, but some combinations of constructions may fail. Unfortunately, only a subset of what works in html MathJax also works in sphinx MathJax. The same is true for markdown MathJax expresions (e.g. Jupyter notebooks). Tests and examples are provided to illustrate what may go wrong.</p>
 <p>The recommendation for writing math that translates to MathJax in html, sphinx, and markdown is to stick to the environments <code>\[ ... \]</code>, <code>equation</code>, <code>equation*</code>, <code>align</code>, <code>align*</code>, <code>alignat</code>, and <code>alignat*</code> only. Test the math with sphinx output; if it works in that format, it should work elsewhere too.</p>
 <p>The current version of the document is translated from DocOnce source to the format <strong>pandoc</strong>.</p>
 <h2 id="test-of-equation-environments">Test of equation environments</h2>
@@ -112,7 +111,7 @@ v(t) - 1 &amp;= \frac{du}{dt}
 \end{align}
 \]</span></p>
 <h3 id="test-6-multiple-aligned-equations-with-multiple-alignments">Test 6: Multiple, aligned equations with multiple alignments</h3>
-<p>The <code>align</code> environment can be used with two <code>&amp;</code> alignment characters, e.g.,</p>
+<p>The <code>align</code> environment can be used with two <code>&amp;</code> alignment characters, e.g.</p>
 <pre><code>!bt
 \begin{align}
 \frac{\partial u}{\partial t} &amp;= \nabla^2 u, &amp; x\in (0,L),

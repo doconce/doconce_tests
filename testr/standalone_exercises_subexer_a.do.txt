@@ -82,6 +82,6 @@ Test list in exercise:
 
 === Remarks ===
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.

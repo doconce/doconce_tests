@@ -24,7 +24,7 @@ system_output = []
 def add(filename, logfilename):
     print('...adding file', filename)
     if not os.path.isfile(logfilename):
-        raise IOError('Could not open ' + logfilename)
+        raise IOError('Could not find ' + logfilename)
     log = open(logfilename, 'a')
     log.write("\n************** File: %s *****************\n" % filename)
     if not os.path.isfile(filename):
@@ -39,7 +39,7 @@ def add(filename, logfilename):
 def cp2logfolder(logfilename, logfolder, applyregex=True):
     print('...copying file', logfilename)
     if not os.path.isfile(logfilename):
-        print('Could not open ' + logfilename)
+        print('Could not find ' + logfilename)
         return
     if not os.path.isdir(logfolder):
         raise IOError('Could not find ' + logfolder)

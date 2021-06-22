@@ -1,15 +1,42 @@
 ## doconce_tests
-This repository contains tests suite for [DocOnce](https://github.com/doconce/doconce), 
-which includes the current repository as a [git-submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+This repository contains a test suite and is a [git-submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of the [DocOnce](https://github.com/doconce/doconce) project. 
 
 
 # Table of Contents
+- [Synching tests in doconce](#synching-tests-in-doconce)
+- [Requirements](#requirements)
 - [Tests for DocOnce](#tests-for-doconce)
   * [tests.py](#testspy)
   * [pytests.py](#pytestspy)
   * [test_mintest.py](#test_mintestpy)
 - [Requirements](#requirements)
 - [Notes](#notes)
+
+
+### Synching tests in doconce
+After cloning the main [doconce](https://github.com/doconce/doconce) repository, the content of this repository (and all other [git-submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)) can be downloaded by running this command:
+
+```
+git submodule update --init
+```
+
+### Requirements
+In addition to the requirements listed for the main [doconce](https://github.com/doconce/doconce) repository, the tests also require the following dependencies:
+
+* `pip install bash-kernel`
+..................
+
+
+
+
+Optional dependencies: 
+Some tests are run using [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels), but only if their installation is detected. 
+
+- Install the [bash kernel](https://github.com/takluyver/bash_kernel) for bash;
+- Install the [IR kernel](https://irkernel.github.io/installation/) for R;
+- Install the [IJulia Jupyter kernel](https://github.com/JuliaLang/IJulia.jl) for in Julia with `using Pkg; Pkg.add("IJulia");Pkg.build("IJulia")`.
+
+You can list the currently installed kernels with this command: `jupyter kernelspec list`. 
 
 
 ### Tests for DocOnce

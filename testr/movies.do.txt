@@ -52,7 +52,7 @@ MOVIE: [../doc/src/manual/mov/wave.avi, width=700, height=400] 1D wave in AVI.
 
 Here is the same movie, but with a URL to GitHub:
 
-MOVIE: [https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg]
+MOVIE: [https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg]
 
 Here is a YouTube video:
 

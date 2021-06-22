@@ -345,7 +345,7 @@ output1
 output2
 ~~~
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 ~~~
@@ -480,7 +480,7 @@ example where this is needed is in physical units: 7.4\ km is traveled
 in\ $7.4/5.5\approx 1.345$\ s.  Also check that a~[link](https://google.com)\ is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in `[~x for x in y]` or in `y=~x`, and should
+computer code, e.g. as in `[~x for x in y]` or in `y=~x`, and should
 of course remain a tilde in those contexts.)
 
 
@@ -511,8 +511,8 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-<!-- <img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500"> -->
-![](https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png)
+<!-- <img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500"> -->
+![](https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png)
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
@@ -793,7 +793,7 @@ random vibrations was investigated in [@Langtangen_1994a].
 The book chapter [@Mardal_et_al_2003a] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [@Langtangen_1988d] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [@Langtangen_Pedersen_2002;@Mardal_et_al_2003a].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -1336,7 +1336,7 @@ Test list in exercise:
 
 #### Remarks
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 

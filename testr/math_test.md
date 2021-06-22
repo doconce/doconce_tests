@@ -6,7 +6,7 @@ various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 
 The recommendation for writing math that translates to MathJax in
@@ -161,7 +161,7 @@ $$
 
 ### Test 6: Multiple, aligned equations with multiple alignments
 
-The `align` environment can be used with two `&` alignment characters, e.g.,
+The `align` environment can be used with two `&` alignment characters, e.g. 
 
 
 ~~~

@@ -360,7 +360,7 @@ end
 %  output1
 %  output2
 % 
-% Any valid pygments lexer/language name can appear to, e.g.,
+% Any valid pygments lexer/language name can appear to e.g.
 % 
 %  !bc restructuredtext
 %  =======
@@ -481,7 +481,7 @@ end
 % in $7.4/5.5\approx 1.345$ s.  Also check that a link <https://google.com> is
 % not broken across lines (drag the browser window to test this).
 % (On the other hand, the tilde is used in
-% computer code, e.g., as in |[~x for x in y]| or in |y=~x|, and should
+% computer code, e.g. as in |[~x for x in y]| or in |y=~x|, and should
 % of course remain a tilde in those contexts.)
 % !enotice
 % 
@@ -507,7 +507,7 @@ end
 % 
 % Test URL as figure name:
 % 
-% <<https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png>>
+% <<https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png>>
 % 
 % % Test wikimedia type of files that otherwise reside in subdirs
 % 
@@ -774,7 +774,7 @@ end
 % The book chapter [4] contains information on
 % C++ software tools for programming multigrid methods. A real retro
 % reference is [5] about a big FORTRAN package.
-% Multiple references are also possible, e.g., see
+% Multiple references are also possible, e.g. see
 % [1] [4].
 % 
 % We need to cite more than 10 papers to reproduce an old formatting
@@ -1218,7 +1218,7 @@ end
 % % Closing remarks for this Exercise
 % 
 %% Remarks
-% Some final closing remarks, e.g., summarizing the main findings
+% Some final closing remarks, e.g. summarizing the main findings
 % and their implications in other problems can be made. These
 % remarks will appear at the end of the typeset exercise.
 % 

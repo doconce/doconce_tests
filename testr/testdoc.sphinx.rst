@@ -362,7 +362,7 @@ And here is a system call:
     output1
     output2
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 .. code-block:: doconce
 
@@ -501,7 +501,7 @@ used above.
    in |nbsp| :math:`7.4/5.5\approx 1.345` |nbsp| s.  Also check that a |nbsp| `link <https://google.com>`__ |nbsp| is
    not broken across lines (drag the browser window to test this).
    (On the other hand, the tilde is used in
-   computer code, e.g., as in ``[~x for x in y]`` or in ``y=~x``, and should
+   computer code, e.g. as in ``[~x for x in y]`` or in ``y=~x``, and should
    of course remain a tilde in those contexts.)
 
 
@@ -547,7 +547,7 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-.. figure:: https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png
+.. figure:: https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png
    :width: 500
 
 Test SVG figure:
@@ -914,7 +914,7 @@ random vibrations was investigated in [Ref03]_.
 The book chapter [Ref04]_ contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [Ref05]_ about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [Ref01]_ [Ref04]_.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -1546,7 +1546,7 @@ Test list in exercise:
 Remarks          (3)
 ~~~~~~~~~~~~~~~~~~~~
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 

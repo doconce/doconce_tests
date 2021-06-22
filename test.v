@@ -26,8 +26,8 @@ doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarize
 <meta name="description" content="A Document for Testing DocOnce">
 <meta name="keywords" content="figures,movies,index with subindex,_boldface word_ in index,index with _boldface word_,index with _boldface word_ in subentry,double _boldface word_  _boldface word_ in subentry too,index, with comma, and one more">
 <title>A Document for Testing DocOnce</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style type="text/css">
 body, td {font-size: 140%;}
@@ -80,10 +80,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -1293,7 +1293,7 @@ output2
 \esys
 
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 
@@ -1490,7 +1490,7 @@ example where this is needed is in physical units: 7.4~km is traveled
 in~$7.4/5.5\approx 1.345$~s.  Also check that a~\href{{https://google.com}}{link}~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
+computer code, e.g.~as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
 of course remain a tilde in those contexts.)
 \end{notice_mdfboxadmon} % title: Non-breaking space character.
 
@@ -2004,7 +2004,7 @@ random vibrations was investigated in \cite{Langtangen_1994a}.
 The book chapter \cite{Mardal_et_al_2003a} contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is \cite{Langtangen_1988d} about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g.~see
 \cite{Langtangen_Pedersen_2002,Mardal_et_al_2003a}.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -2662,7 +2662,7 @@ Test list in exercise:
 % Closing remarks for this Exercise
 
 \paragraph{Remarks.}
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g.~summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -4053,7 +4053,7 @@ output2
 \end{Verbatim}
 
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 
@@ -4250,7 +4250,7 @@ example where this is needed is in physical units: 7.4~km is traveled
 in~$7.4/5.5\approx 1.345$~s.  Also check that a~\href{{https://google.com}}{link}\footnote{\texttt{https://google.com}}~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
+computer code, e.g.~as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
 of course remain a tilde in those contexts.)
 \end{notice_mdfboxadmon} % title: Non--breaking space character.
 
@@ -4764,7 +4764,7 @@ random vibrations was investigated in \cite{Langtangen_1994a}.
 The book chapter \cite{Mardal_et_al_2003a} contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is \cite{Langtangen_1988d} about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g.~see
 \cite{Langtangen_Pedersen_2002,Mardal_et_al_2003a}.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -5428,7 +5428,7 @@ Test list in exercise:
 % Closing remarks for this Exercise
 
 \paragraph{Remarks.}
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g.~summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -6859,7 +6859,7 @@ output2
 \end{Verbatim}
 
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 
@@ -7056,7 +7056,7 @@ example where this is needed is in physical units: 7.4~km is traveled
 in~$7.4/5.5\approx 1.345$~s.  Also check that a~\href{{https://google.com}}{link}\footnote{\texttt{https://google.com}}~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
+computer code, e.g.~as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
 of course remain a tilde in those contexts.)
 \end{notice_mdfboxadmon} % title: Non--breaking space character.
 
@@ -7570,7 +7570,7 @@ random vibrations was investigated in \cite{Langtangen_1994a}.
 The book chapter \cite{Mardal_et_al_2003a} contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is \cite{Langtangen_1988d} about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g.~see
 \cite{Langtangen_Pedersen_2002,Mardal_et_al_2003a}.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -8234,7 +8234,7 @@ Test list in exercise:
 % Closing remarks for this Exercise
 
 \paragraph{Remarks.}
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g.~summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -9744,7 +9744,7 @@ output2
 \noindent
 
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 
@@ -9944,7 +9944,7 @@ example where this is needed is in physical units: 7.4~km is traveled
 in~$7.4/5.5\approx 1.345$~s.  Also check that a~\href{{https://google.com}}{link}~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
+computer code, e.g.~as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
 of course remain a tilde in those contexts.)
 \end{notice_mdfboxadmon} % title: Non-breaking space character.
 
@@ -10461,7 +10461,7 @@ random vibrations was investigated in \cite{Langtangen_1994a}.
 The book chapter \cite{Mardal_et_al_2003a} contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is \cite{Langtangen_1988d} about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g.~see
 \cite{Langtangen_Pedersen_2002,Mardal_et_al_2003a}.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -11124,7 +11124,7 @@ Test list in exercise:
 % Closing remarks for this Exercise
 
 \paragraph{Remarks.}
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g.~summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -11889,7 +11889,7 @@ And here is a system call::
         output1
         output2
 
-Any valid pygments lexer/language name can appear to, e.g.::
+Any valid pygments lexer/language name can appear to e.g::
 
         !bc restructuredtext
         =======
@@ -12020,7 +12020,7 @@ used above.
    in |nbsp| \\( 7.4/5.5\approx 1.345 \\) |nbsp| s.  Also check that a |nbsp| `link <https://google.com>`__ |nbsp| is
    not broken across lines (drag the browser window to test this).
    (On the other hand, the tilde is used in
-   computer code, e.g., as in ``[~x for x in y]`` or in ``y=~x``, and should
+   computer code, e.g. as in ``[~x for x in y]`` or in ``y=~x``, and should
    of course remain a tilde in those contexts.)
 
 
@@ -12062,7 +12062,7 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-.. figure:: https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png
+.. figure:: https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png
    :width: 500
 
 .. Test wikimedia type of files that otherwise reside in subdirs
@@ -12484,7 +12484,7 @@ random vibrations was investigated in [Ref03]_.
 The book chapter [Ref04]_ contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [Ref05]_ about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [Ref01]_ [Ref04]_.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -13070,7 +13070,7 @@ Test list in exercise:
 Remarks          (3)
 ~~~~~~~~~~~~~~~~~~~~
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -13948,7 +13948,7 @@ And here is a system call:
     output1
     output2
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 .. code-block:: doconce
 
@@ -14087,7 +14087,7 @@ used above.
    in |nbsp| :math:`7.4/5.5\approx 1.345` |nbsp| s.  Also check that a |nbsp| `link <https://google.com>`__ |nbsp| is
    not broken across lines (drag the browser window to test this).
    (On the other hand, the tilde is used in
-   computer code, e.g., as in ``[~x for x in y]`` or in ``y=~x``, and should
+   computer code, e.g. as in ``[~x for x in y]`` or in ``y=~x``, and should
    of course remain a tilde in those contexts.)
 
 
@@ -14133,7 +14133,7 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-.. figure:: https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png
+.. figure:: https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png
    :width: 500
 
 Test SVG figure:
@@ -14500,7 +14500,7 @@ random vibrations was investigated in [Ref03]_.
 The book chapter [Ref04]_ contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [Ref05]_ about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [Ref01]_ [Ref04]_.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -15132,7 +15132,7 @@ Test list in exercise:
 Remarks          (3)
 ~~~~~~~~~~~~~~~~~~~~
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -15988,7 +15988,7 @@ output1
 output2
 }}}
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 {{{
 !bc restructuredtext
@@ -16126,7 +16126,7 @@ example where this is needed is in physical units: 7.4 km is traveled
 in `7.4/5.5\approx 1.345` s.  Also check that a~[https://google.com link]~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in `[~x for x in y]` or in `y=~x`, and should
+computer code, e.g. as in `[~x for x in y]` or in `y=~x`, and should
 of course remain a tilde in those contexts.)
 
 
@@ -16187,10 +16187,10 @@ Test URL as figure name:
 
 Figure: 
 
-(the URL of the image file https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png must be inserted here)
+(the URL of the image file https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png must be inserted here)
 
 <wiki:comment>
-Put the figure file https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png on the web (e.g., as part of the
+Put the figure file https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png on the web (e.g., as part of the
 googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
@@ -16559,7 +16559,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -17077,7 +17077,7 @@ Test list in exercise:
 
 ==== Remarks ====
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -17760,7 +17760,7 @@ output1
 output2
 </syntaxhighlight>
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 <syntaxhighlight lang="text">
 !bc restructuredtext
@@ -17896,7 +17896,7 @@ example where this is needed is in physical units: 7.4&nbsp;km is traveled
 in&nbsp;<math>7.4/5.5\approx 1.345</math>&nbsp;s.  Also check that a~[https://google.com link]~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
+computer code, e.g. as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
 of course remain a tilde in those contexts.)
 }}
 
@@ -17924,7 +17924,7 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-[[File:f_plot.png|frame|500px|link=https://raw.github.com/doconce/doconce/master/doc/src/blog|alt=f_plot.png|<span title=""></span>]]
+[[File:f_plot.png|frame|500px|link=https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog|alt=f_plot.png|<span title=""></span>]]
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
@@ -18325,7 +18325,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -18846,7 +18846,7 @@ Test list in exercise:
 
 ==== Remarks ====
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -19526,7 +19526,7 @@ output1
 output2
 }}}
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 {{{
 !bc restructuredtext
@@ -19661,7 +19661,7 @@ example where this is needed is in physical units: 7.4 km is traveled
 in {{{7.4/5.5\approx 1.345}}} s.  Also check that a~[[https://google.com|link]]~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in {{{[~x for x in y]}}} or in {{{y=~x}}}, and should
+computer code, e.g. as in {{{[~x for x in y]}}} or in {{{y=~x}}}, and should
 of course remain a tilde in those contexts.)
 
 
@@ -19688,7 +19688,7 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-{{https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png|}}
+{{https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png|}}
 
 <wiki:comment> Test wikimedia type of files that otherwise reside in subdirs </wiki:comment>
 
@@ -20055,7 +20055,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -20573,7 +20573,7 @@ Test list in exercise:
 
 === Remarks ===
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -21182,7 +21182,7 @@ And here is a system call::
         output1
         output2
 
-Any valid pygments lexer/language name can appear to, e.g.::
+Any valid pygments lexer/language name can appear to e.g::
 
         !bc restructuredtext
         =======
@@ -21298,7 +21298,7 @@ example where this is needed is in physical units: 7.4 km is traveled
 in 7.4/5.5\approx 1.345 s.  Also check that a~"https://google.com":link is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in '[~x for x in y]' or in 'y=~x', and should
+computer code, e.g. as in '[~x for x in y]' or in 'y=~x', and should
 of course remain a tilde in those contexts.)
 
 
@@ -21321,7 +21321,7 @@ FIGURE: [testfigs/wave1D.png, width=500, sidecap=True] A long caption spanning s
 
 Test URL as figure name:
 
-FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png, width=500, frac=0.8]
+FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=500, frac=0.8]
 
 *Remark.*
 Movies are tested in separate file 'movies.do.txt'.
@@ -21663,7 +21663,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -22125,7 +22125,7 @@ Test list in exercise:
 
 Remarks
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -22675,7 +22675,7 @@ And here is a system call::
         output1
         output2
 
-Any valid pygments lexer/language name can appear to, e.g.::
+Any valid pygments lexer/language name can appear to e.g::
 
         !bc restructuredtext
         =======
@@ -22757,7 +22757,7 @@ example where this is needed is in physical units: 7.4 km is traveled
 in M{7.4/5.5\approx 1.345} s.  Also check that a U{link<https://google.com>} is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in C{[~x for x in y]} or in C{y=~x}, and should
+computer code, e.g. as in C{[~x for x in y]} or in C{y=~x}, and should
 of course remain a tilde in those contexts.)
 
 
@@ -22781,7 +22781,7 @@ FIGURE: [testfigs/wave1D.png, width=500, sidecap=True] A long caption spanning s
 
 Test URL as figure name:
 
-FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png, width=500, frac=0.8]
+FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=500, frac=0.8]
 
 I{Remark.}
 Movies are tested in separate file C{movies.do.txt}.
@@ -23082,7 +23082,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -23558,7 +23558,7 @@ Test list in exercise:
 Remarks
 ~~~~~~~
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -24227,7 +24227,7 @@ And here is a system call::
         output1
         output2
 
-Any valid pygments lexer/language name can appear to, e.g.::
+Any valid pygments lexer/language name can appear to e.g::
 
         !bc restructuredtext
         =======
@@ -24350,7 +24350,7 @@ Non-breaking space character ---------------------------------------------------
 | in 7.4/5.5\approx 1.345 s.  Also check that a link (https://google.com) is                                                 |
 | not broken across lines (drag the browser window to test this).                                                            |
 | (On the other hand, the tilde is used in                                                                                   |
-| computer code, e.g., as in [~x for x in y] or in y=~x, and should                                                          |
+| computer code, e.g. as in [~x for x in y] or in y=~x, and should                                                           |
 | of course remain a tilde in those contexts.)                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------|
 
@@ -24374,7 +24374,7 @@ FIGURE: [testfigs/wave1D.png, width=500, sidecap=True] A long caption spanning s
 
 Test URL as figure name:
 
-FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png, width=500, frac=0.8]
+FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=500, frac=0.8]
 
 *Remark.*
 Movies are tested in separate file movies.do.txt.
@@ -24726,7 +24726,7 @@ random vibrations was investigated in [3].
 The book chapter [4] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [5] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [1] [4].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -25211,7 +25211,7 @@ Test list in exercise:
 Remarks
 ~~~~~~~
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -25900,7 +25900,7 @@ output1
 output2
 ~~~
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 ~~~
@@ -26035,7 +26035,7 @@ example where this is needed is in physical units: 7.4\ km is traveled
 in\ $7.4/5.5\approx 1.345$\ s.  Also check that a~[link](https://google.com)\ is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in `[~x for x in y]` or in `y=~x`, and should
+computer code, e.g. as in `[~x for x in y]` or in `y=~x`, and should
 of course remain a tilde in those contexts.)
 
 
@@ -26066,8 +26066,8 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-<!-- <img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500"> -->
-![](https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png)
+<!-- <img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500"> -->
+![](https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png)
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
@@ -26348,7 +26348,7 @@ random vibrations was investigated in [@Langtangen_1994a].
 The book chapter [@Mardal_et_al_2003a] contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [@Langtangen_1988d] about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [@Langtangen_Pedersen_2002;@Mardal_et_al_2003a].
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -26891,7 +26891,7 @@ Test list in exercise:
 
 #### Remarks
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -27899,7 +27899,7 @@ is at the end with only one newline.
     "editable": true
    },
    "source": [
-    "Any valid pygments lexer/language name can appear to, e.g.,"
+    "Any valid pygments lexer/language name can appear to e.g."
    ]
   },
   {
@@ -28106,7 +28106,7 @@ is at the end with only one newline.
     "in $7.4/5.5\\approx 1.345$ s.  Also check that a~[link](https://google.com) is\n",
     "not broken across lines (drag the browser window to test this).\n",
     "(On the other hand, the tilde is used in\n",
-    "computer code, e.g., as in `[~x for x in y]` or in `y=~x`, and should\n",
+    "computer code, e.g. as in `[~x for x in y]` or in `y=~x`, and should\n",
     "of course remain a tilde in those contexts.)"
    ]
   },
@@ -28153,10 +28153,10 @@ is at the end with only one newline.
     "\n",
     "Test URL as figure name:\n",
     "\n",
-    "<!-- dom:FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png, width=500, frac=0.8] -->\n",
+    "<!-- dom:FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=500, frac=0.8] -->\n",
     "<!-- begin figure -->\n",
     "\n",
-    "<img src=\"https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png\" width=\"500\"><p style=\"font-size: 0.9em\"><i>Figure 3: </i></p>\n",
+    "<img src=\"https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png\" width=\"500\"><p style=\"font-size: 0.9em\"><i>Figure 3: </i></p>\n",
     "<!-- end figure -->\n",
     "\n",
     "<!-- Test wikimedia type of files that otherwise reside in subdirs -->\n",
@@ -28693,7 +28693,7 @@ is at the end with only one newline.
     "The book chapter [[Mardal_et_al_2003a]](#Mardal_et_al_2003a) contains information on\n",
     "C++ software tools for programming multigrid methods. A real retro\n",
     "reference is [[Langtangen_1988d]](#Langtangen_1988d) about a big FORTRAN package.\n",
-    "Multiple references are also possible, e.g., see\n",
+    "Multiple references are also possible, e.g. see\n",
     "[[Langtangen_Pedersen_2002;@Mardal_et_al_2003a]](#Langtangen_Pedersen_2002;@Mardal_et_al_2003a).\n",
     "\n",
     "We need to cite more than 10 papers to reproduce an old formatting\n",
@@ -29560,7 +29560,7 @@ is at the end with only one newline.
    "source": [
     "### Remarks\n",
     "\n",
-    "Some final closing remarks, e.g., summarizing the main findings\n",
+    "Some final closing remarks, e.g. summarizing the main findings\n",
     "and their implications in other problems can be made. These\n",
     "remarks will appear at the end of the typeset exercise."
    ]
@@ -30441,7 +30441,7 @@ end
 %  output1
 %  output2
 % 
-% Any valid pygments lexer/language name can appear to, e.g.,
+% Any valid pygments lexer/language name can appear to e.g.
 % 
 %  !bc restructuredtext
 %  =======
@@ -30562,7 +30562,7 @@ end
 % in $7.4/5.5\approx 1.345$ s.  Also check that a link <https://google.com> is
 % not broken across lines (drag the browser window to test this).
 % (On the other hand, the tilde is used in
-% computer code, e.g., as in |[~x for x in y]| or in |y=~x|, and should
+% computer code, e.g. as in |[~x for x in y]| or in |y=~x|, and should
 % of course remain a tilde in those contexts.)
 % !enotice
 % 
@@ -30588,7 +30588,7 @@ end
 % 
 % Test URL as figure name:
 % 
-% <<https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png>>
+% <<https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png>>
 % 
 % % Test wikimedia type of files that otherwise reside in subdirs
 % 
@@ -30855,7 +30855,7 @@ end
 % The book chapter [4] contains information on
 % C++ software tools for programming multigrid methods. A real retro
 % reference is [5] about a big FORTRAN package.
-% Multiple references are also possible, e.g., see
+% Multiple references are also possible, e.g. see
 % [1] [4].
 % 
 % We need to cite more than 10 papers to reproduce an old formatting
@@ -31299,7 +31299,7 @@ end
 % % Closing remarks for this Exercise
 % 
 %% Remarks
-% Some final closing remarks, e.g., summarizing the main findings
+% Some final closing remarks, e.g. summarizing the main findings
 % and their implications in other problems can be made. These
 % remarks will appear at the end of the typeset exercise.
 % 
@@ -33294,7 +33294,17 @@ author and is released under the same conditions as Doconce.
     "collapsed": false,
     "editable": true
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
    "source": [
     "for i in [1,2,3]:\n",
     "  print(i)"
@@ -34206,7 +34216,7 @@ author and is released under the same conditions as Doconce.
   'chapter_no': None,
   'chapter_title': None,
   'chapter_type': None,
-  'closing_remarks': 'Some final closing remarks, e.g., summarizing the main '
+  'closing_remarks': 'Some final closing remarks, e.g. summarizing the main '
                      'findings\n'
                      'and their implications in other problems can be made. '
                      'These\n'
@@ -36953,8 +36963,8 @@ doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarize
 <meta name="description" content="A Document for Testing DocOnce">
 <meta name="keywords" content="figures,movies,index with subindex,_boldface word_ in index,index with _boldface word_,index with _boldface word_ in subentry,double _boldface word_  _boldface word_ in subentry too,index, with comma, and one more">
 <title>A Document for Testing DocOnce</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style type="text/css">
 body, td {font-size: 140%;}
@@ -37007,10 +37017,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -37345,8 +37355,8 @@ doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarize
 <meta name="description" content="A Document for Testing DocOnce">
 <meta name="keywords" content="figures,movies,index with subindex,_boldface word_ in index,index with _boldface word_,index with _boldface word_ in subentry,double _boldface word_  _boldface word_ in subentry too,index, with comma, and one more">
 <title>A Document for Testing DocOnce</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style type="text/css">
 body, td {font-size: 140%;}
@@ -37399,10 +37409,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -38383,7 +38393,7 @@ output2
   </div>
 </div>
 
-<p>Any valid pygments lexer/language name can appear to, e.g.,</p>
+<p>Any valid pygments lexer/language name can appear to e.g.</p>
 
 
 <!-- code=doconce (!bc do) typeset with pygments style "perldoc" -->
@@ -38650,7 +38660,7 @@ example where this is needed is in physical units: 7.4&nbsp;km is traveled
 in&nbsp;\( 7.4/5.5\approx 1.345 \)&nbsp;s.  Also check that a&nbsp;<a href="https://google.com" target="_self">link</a>&nbsp;is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
+computer code, e.g. as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
 of course remain a tilde in those contexts.)
 </p>
 </div>
@@ -38699,7 +38709,7 @@ containing inline verbatim text:
 
 <br/><br/>
 <center>
-<p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500" align="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
 <br/><br/>
 
@@ -39229,7 +39239,7 @@ random vibrations was investigated in <a href="._testdoc002.html#Langtangen_1994
 The book chapter <a href="._testdoc002.html#Mardal_et_al_2003a">[4]</a> contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is <a href="._testdoc002.html#Langtangen_1988d">[5]</a> about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 <a href="._testdoc002.html#Langtangen_Pedersen_2002">[1]</a> <a href="._testdoc002.html#Mardal_et_al_2003a">[4]</a>.
 </p>
 
@@ -39449,8 +39459,8 @@ doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarize
 <meta name="description" content="A Document for Testing DocOnce">
 <meta name="keywords" content="figures,movies,index with subindex,_boldface word_ in index,index with _boldface word_,index with _boldface word_ in subentry,double _boldface word_  _boldface word_ in subentry too,index, with comma, and one more">
 <title>A Document for Testing DocOnce</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style type="text/css">
 body, td {font-size: 140%;}
@@ -39503,10 +39513,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -40150,7 +40160,7 @@ closing remarks to have text after subexercises.
 <!-- Closing remarks for this Exercise -->
 <h3 id="remarks">Remarks </h3>
 
-<p>Some final closing remarks, e.g., summarizing the main findings
+<p>Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 </p>
@@ -40390,8 +40400,8 @@ doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarize
 <meta name="description" content="A Document for Testing DocOnce">
 <meta name="keywords" content="figures,movies,index with subindex,_boldface word_ in index,index with _boldface word_,index with _boldface word_ in subentry,double _boldface word_  _boldface word_ in subentry too,index, with comma, and one more">
 <title>A Document for Testing DocOnce</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style type="text/css">
 body, td {font-size: 140%;}
@@ -40444,10 +40454,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -40982,10 +40992,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -41710,7 +41720,7 @@ function show_hide_code(){
   </div>
 </div>
 
-<p>Any valid pygments lexer/language name can appear to, e.g.,</p>
+<p>Any valid pygments lexer/language name can appear to e.g.</p>
 
 
 
@@ -41889,7 +41899,7 @@ is the output format. But here some more running text is added which is not part
 <div class="alert alert-block alert-notice alert-text-normal">
 <b>Non-breaking space character</b>
 <p>
-<p>This paragraph aims to test <a href="https://en.wikipedia.org/wiki/Non-breaking_space" target="_blank">non-breaking space character</a>, and a typical example where this is needed is in physical units: 7.4&nbsp;km is traveled in&nbsp;$latex 7.4/5.5\approx 1.345$&nbsp;s.  Also check that a&nbsp;<a href="https://google.com" target="_blank">link</a>&nbsp;is not broken across lines (drag the browser window to test this). (On the other hand, the tilde is used in computer code, e.g., as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should of course remain a tilde in those contexts.)
+<p>This paragraph aims to test <a href="https://en.wikipedia.org/wiki/Non-breaking_space" target="_blank">non-breaking space character</a>, and a typical example where this is needed is in physical units: 7.4&nbsp;km is traveled in&nbsp;$latex 7.4/5.5\approx 1.345$&nbsp;s.  Also check that a&nbsp;<a href="https://google.com" target="_blank">link</a>&nbsp;is not broken across lines (drag the browser window to test this). (On the other hand, the tilde is used in computer code, e.g. as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should of course remain a tilde in those contexts.)
 </p>
 </div>
 
@@ -41931,7 +41941,7 @@ is the output format. But here some more running text is added which is not part
 
 <br/><br/>
 <center>
-<p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500" align="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
 <br/><br/>
 
@@ -42425,7 +42435,7 @@ $latex  B
 </p>
 <h2 id="bibliography-test">Bibliography test </h2>
 
-<p>Here is an example: <a href="#Langtangen_Pedersen_2002">[1]</a> discussed propagation of large destructive water waves, <a href="#Langtangen_et_al_2002">[2]</a> gave an overview of numerical methods for solving the Navier&ndash;Stokes equations, while the use of Backward Kolmogorov equations for analyzing random vibrations was investigated in <a href="#Langtangen_1994a">[3]</a>. The book chapter <a href="#Mardal_et_al_2003a">[4]</a> contains information on C++ software tools for programming multigrid methods. A real retro reference is <a href="#Langtangen_1988d">[5]</a> about a big FORTRAN package. Multiple references are also possible, e.g., see <a href="#Langtangen_Pedersen_2002">[1]</a> <a href="#Mardal_et_al_2003a">[4]</a>.
+<p>Here is an example: <a href="#Langtangen_Pedersen_2002">[1]</a> discussed propagation of large destructive water waves, <a href="#Langtangen_et_al_2002">[2]</a> gave an overview of numerical methods for solving the Navier&ndash;Stokes equations, while the use of Backward Kolmogorov equations for analyzing random vibrations was investigated in <a href="#Langtangen_1994a">[3]</a>. The book chapter <a href="#Mardal_et_al_2003a">[4]</a> contains information on C++ software tools for programming multigrid methods. A real retro reference is <a href="#Langtangen_1988d">[5]</a> about a big FORTRAN package. Multiple references are also possible, e.g. see <a href="#Langtangen_Pedersen_2002">[1]</a> <a href="#Mardal_et_al_2003a">[4]</a>.
 </p>
 
 <p>We need to cite more than 10 papers to reproduce an old formatting problem with blanks in the keys in reST format:
@@ -42904,7 +42914,7 @@ $latex  \cos^2 x + \sin^2 x = 1 \thinspace . $
 </ol>
 <h3 id="remarks">Remarks </h3>
 
-<p>Some final closing remarks, e.g., summarizing the main findings and their implications in other problems can be made. These remarks will appear at the end of the typeset exercise.
+<p>Some final closing remarks, e.g. summarizing the main findings and their implications in other problems can be made. These remarks will appear at the end of the typeset exercise.
 </p>
 <h2 id="some-exercise-without-the-exercise-prefix">Some exercise without the "Exercise:" prefix </h2>
 
@@ -43314,10 +43324,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -44315,7 +44325,7 @@ output2
   </div>
 </div>
 
-<p>Any valid pygments lexer/language name can appear to, e.g.,</p>
+<p>Any valid pygments lexer/language name can appear to e.g.</p>
 
 
 <!-- code=doconce (!bc do) typeset with pygments style "default" -->
@@ -44528,7 +44538,7 @@ example where this is needed is in physical units: 7.4&nbsp;km is traveled
 in&nbsp;\( 7.4/5.5\approx 1.345 \)&nbsp;s.  Also check that a&nbsp;<a href="https://google.com" target="_self">link</a>&nbsp;is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
+computer code, e.g. as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
 of course remain a tilde in those contexts.)
 </p>
 </div>
@@ -44577,7 +44587,7 @@ containing inline verbatim text:
 
 <br/><br/>
 <center>
-<p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500" align="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
 <br/><br/>
 
@@ -45096,7 +45106,7 @@ random vibrations was investigated in <a href="#Langtangen_1994a">[3]</a>.
 The book chapter <a href="#Mardal_et_al_2003a">[4]</a> contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is <a href="#Langtangen_1988d">[5]</a> about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 <a href="#Langtangen_Pedersen_2002">[1]</a> <a href="#Mardal_et_al_2003a">[4]</a>.
 </p>
 
@@ -45691,7 +45701,7 @@ closing remarks to have text after subexercises.
 <!-- Closing remarks for this Exercise -->
 <h3 id="remarks">Remarks </h3>
 
-<p>Some final closing remarks, e.g., summarizing the main findings
+<p>Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 </p>
@@ -47249,7 +47259,7 @@ output2
 \esys
 
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 
 
@@ -47446,7 +47456,7 @@ example where this is needed is in physical units: 7.4~km is traveled
 in~$7.4/5.5\approx 1.345$~s.  Also check that a~\href{{https://google.com}}{link}~is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
+computer code, e.g.~as in \texttt{[~x for x in y]} or in \texttt{y=~x}, and should
 of course remain a tilde in those contexts.)
 \end{notice_mdfboxadmon} % title: Non-breaking space character.
 
@@ -47945,7 +47955,7 @@ random vibrations was investigated in \cite{Langtangen_1994a}.
 The book chapter \cite{Mardal_et_al_2003a} contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is \cite{Langtangen_1988d} about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g.~see
 \cite{Langtangen_Pedersen_2002,Mardal_et_al_2003a}.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -48542,7 +48552,7 @@ Test list in exercise:
 % Closing remarks for this Exercise
 
 \paragraph{Remarks.}
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g.~summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
@@ -49884,7 +49894,7 @@ system doconce spellcheck -d .dict4spell.txt _testdoc.do.txt
 # jupyterbook
 system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
-system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README --examples_as_exercises --allow_refs_to_external_docs 
+system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
 
 system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
@@ -50209,7 +50219,7 @@ cp admon.html admon_yellow.html
 system doconce format html admon --html_admon=apricot --html_style=solarized --cite_doconce --html_raw_github_url=raw.github
 cp admon.html admon_apricot.html
 
-system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_template=template_vagrant.html --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_template=../bundled/html_styles/style_vagrant/template_vagrant.html --cite_doconce --html_raw_github_url=raw.github
 cp admon.html admon_vagrant.html
 
 system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce "--html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html" --html_raw_github_url=raw.github
@@ -50412,7 +50422,7 @@ various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 
 The recommendation for writing math that translates to MathJax in
@@ -50604,7 +50614,7 @@ v(t) - 1 &= \frac{du}{dt}
 
 ===== Test 6: Multiple, aligned equations with multiple alignments =====
 
-The `align` environment can be used with two `&` alignment characters, e.g.,
+The `align` environment can be used with two `&` alignment characters, e.g. 
 
 !bc latexcod
 |bt
@@ -51125,7 +51135,7 @@ various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 
 The recommendation for writing math that translates to MathJax in
@@ -51280,7 +51290,7 @@ $$
 
 ### Test 6: Multiple, aligned equations with multiple alignments
 
-The `align` environment can be used with two `&` alignment characters, e.g.,
+The `align` environment can be used with two `&` alignment characters, e.g. 
 
 
 ~~~
@@ -51864,10 +51874,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -51989,7 +51999,7 @@ various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 </p>
 
@@ -52254,7 +52264,7 @@ v(t) - 1 &= \frac{du}{dt}
 $$
 <h2 id="test-6-multiple-aligned-equations-with-multiple-alignments">Test 6: Multiple, aligned equations with multiple alignments </h2>
 
-<p>The <code>align</code> environment can be used with two <code>&</code> alignment characters, e.g.,</p>
+<p>The <code>align</code> environment can be used with two <code>&</code> alignment characters, e.g. </p>
 
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
@@ -52960,7 +52970,6 @@ $$
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Hans Petter Langtangen at Simula Research Laboratory and University of Oslo" />
-  <meta name="date" content="2100-01-32" />
   <title>How various formats can deal with LaTeX math</title>
   <style type="text/css">code{white-space: pre;}</style>
   
@@ -52980,7 +52989,7 @@ MathJax.Hub.Config({
 <h2 class="author"><strong>Hans Petter Langtangen</strong> at Simula Research Laboratory and University of Oslo</h2>
 <h3 class="date">Jan 32, 2100</h3>
 </div>
-<p><em>Summary.</em> The purpose of this document is to test LaTeX math in DocOnce with various output formats. Most LaTeX math constructions are renedered correctly by MathJax in plain HTML, but some combinations of constructions may fail. Unfortunately, only a subset of what works in html MathJax also works in sphinx MathJax. The same is true for markdown MathJax expresions (e.g., Jupyter notebooks). Tests and examples are provided to illustrate what may go wrong.</p>
+<p><em>Summary.</em> The purpose of this document is to test LaTeX math in DocOnce with various output formats. Most LaTeX math constructions are renedered correctly by MathJax in plain HTML, but some combinations of constructions may fail. Unfortunately, only a subset of what works in html MathJax also works in sphinx MathJax. The same is true for markdown MathJax expresions (e.g. Jupyter notebooks). Tests and examples are provided to illustrate what may go wrong.</p>
 <p>The recommendation for writing math that translates to MathJax in html, sphinx, and markdown is to stick to the environments <code>\[ ... \]</code>, <code>equation</code>, <code>equation*</code>, <code>align</code>, <code>align*</code>, <code>alignat</code>, and <code>alignat*</code> only. Test the math with sphinx output; if it works in that format, it should work elsewhere too.</p>
 <p>The current version of the document is translated from DocOnce source to the format <strong>pandoc</strong>.</p>
 <h2 id="test-of-equation-environments">Test of equation environments</h2>
@@ -53067,7 +53076,7 @@ v(t) - 1 &amp;= \frac{du}{dt}
 \end{align}
 \]</span></p>
 <h3 id="test-6-multiple-aligned-equations-with-multiple-alignments">Test 6: Multiple, aligned equations with multiple alignments</h3>
-<p>The <code>align</code> environment can be used with two <code>&amp;</code> alignment characters, e.g.,</p>
+<p>The <code>align</code> environment can be used with two <code>&amp;</code> alignment characters, e.g.</p>
 <pre><code>!bt
 \begin{align}
 \frac{\partial u}{\partial t} &amp;= \nabla^2 u, &amp; x\in (0,L),
@@ -53548,7 +53557,7 @@ various output formats.  Most {\LaTeX} math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g.~Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 
 The recommendation for writing math that translates to MathJax in
@@ -53735,7 +53744,7 @@ v(t) - 1 &= \frac{du}{dt}
 
 \subsection{Test 6: Multiple, aligned equations with multiple alignments}
 
-The \texttt{align} environment can be used with two \Verb!&! alignment characters, e.g.,
+The \texttt{align} environment can be used with two \Verb!&! alignment characters, e.g. 
 
 
 
@@ -54333,7 +54342,7 @@ various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 
 The recommendation for writing math that translates to MathJax in
@@ -54550,7 +54559,7 @@ box above.
 Test 6: Multiple, aligned equations with multiple alignments
 ------------------------------------------------------------
 
-The ``align`` environment can be used with two ``&`` alignment characters, e.g.,
+The ``align`` environment can be used with two ``&`` alignment characters, e.g. 
 
 .. code-block:: latex
 
@@ -56936,7 +56945,7 @@ output2
   </div>
 </div>
 
-<p>Any valid pygments lexer/language name can appear to, e.g.,</p>
+<p>Any valid pygments lexer/language name can appear to e.g.</p>
 
 
 <!-- code=doconce (!bc do) typeset with pygments style "default" -->
@@ -57147,7 +57156,7 @@ example where this is needed is in physical units: 7.4&nbsp;km is traveled
 in&nbsp;\( 7.4/5.5\approx 1.345 \)&nbsp;s.  Also check that a&nbsp;<a href="https://google.com" target="_self">link</a>&nbsp;is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
+computer code, e.g. as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
 of course remain a tilde in those contexts.)
 </p>
 </div>
@@ -57196,7 +57205,7 @@ containing inline verbatim text:
 
 <br/><br/>
 <center>
-<p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500" align="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
 <br/><br/>
 
@@ -57743,7 +57752,7 @@ random vibrations was investigated in <a href="._testdoc_vagrant002.html#Langtan
 The book chapter <a href="._testdoc_vagrant002.html#Mardal_et_al_2003a">[4]</a> contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is <a href="._testdoc_vagrant002.html#Langtangen_1988d">[5]</a> about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 <a href="._testdoc_vagrant002.html#Langtangen_Pedersen_2002">[1]</a> <a href="._testdoc_vagrant002.html#Mardal_et_al_2003a">[4]</a>.
 </p>
 
@@ -58993,7 +59002,7 @@ closing remarks to have text after subexercises.
 <!-- Closing remarks for this Exercise -->
 <h3 id="remarks" class="anchor">Remarks </h3>
 
-<p>Some final closing remarks, e.g., summarizing the main findings
+<p>Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 </p>
@@ -59060,7 +59069,7 @@ $$ \frac{dy}{dx} = -y(x),\quad y(0)=1 $$
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_A">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -59075,7 +59084,7 @@ Correct!
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_B">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 <p>Almost, but the sign is wrong (note the minus!).</p>
 </div></p>
 </div>
@@ -59112,7 +59121,7 @@ Correct!
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_C">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 <p>Ooops, forgot a minus: <code>exp(-x)</code>, otherwise this Python code
 must be considered as a good answer. It is more natural,
 though, to write the solution to the problem
@@ -59133,7 +59142,7 @@ $$ y(x) = e^{-y}.$$
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_D">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 <p>Equations with derivatives can be solved;
 they are termed <em>differential
 equations</em>.
@@ -59153,7 +59162,7 @@ for \( x \) or \( y \), not a function \( y(x) \).
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_E">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 <p>Equations where the unknown is a function, as \( y(x) \)
 here, are called <em>differential equations</em>, and are solved by
 special techniques.
@@ -59661,7 +59670,7 @@ And here is a system call:
     output1
     output2
 
-Any valid pygments lexer/language name can appear to, e.g.,
+Any valid pygments lexer/language name can appear to e.g.
 
 .. code-block:: doconce
 
@@ -59800,7 +59809,7 @@ used above.
    in |nbsp| :math:`7.4/5.5\approx 1.345` |nbsp| s.  Also check that a |nbsp| `link <https://google.com>`__ |nbsp| is
    not broken across lines (drag the browser window to test this).
    (On the other hand, the tilde is used in
-   computer code, e.g., as in ``[~x for x in y]`` or in ``y=~x``, and should
+   computer code, e.g. as in ``[~x for x in y]`` or in ``y=~x``, and should
    of course remain a tilde in those contexts.)
 
 
@@ -59846,7 +59855,7 @@ containing inline verbatim text:
 
 Test URL as figure name:
 
-.. figure:: https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png
+.. figure:: https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png
    :width: 500
 
 Test SVG figure:
@@ -60218,7 +60227,7 @@ random vibrations was investigated in [Ref03]_.
 The book chapter [Ref04]_ contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is [Ref05]_ about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 [Ref01]_ [Ref04]_.
 
 We need to cite more than 10 papers to reproduce an old formatting
@@ -67600,13 +67609,13 @@ border: 1px solid; margin: 10px 0px; padding:15px 10px 15px 50px;
 background-repeat: no-repeat; background-position: 10px center;
 }
 .notice   { color: #00529B; background-color: #BDE5F8;
-background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/Knob_Info.png); }
+background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/Knob_Info.png); }
 .summary  { color: #4F8A10; background-color: #DFF2BF;
-background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/Knob_Valid_Green.png); }
+background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/Knob_Valid_Green.png); }
 .warning  { color: #9F6000; background-color: #FEEFB3;
-background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/Knob_Attention.png); }
+background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/Knob_Attention.png); }
 .question { color: #4F8A10; background-color: #DFF2BF;
-background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/Knob_Forward.png); }
+background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/Knob_Forward.png); }
 .block    { color: #00529B; background-color: #BDE5F8; }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
@@ -68300,10 +68309,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -69019,10 +69028,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -70346,7 +70355,7 @@ $$
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
 <th align="left" valign="middle"><b>Warning</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70377,7 +70386,7 @@ And more and more text.
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
 <th align="left" valign="middle"><b>Title ending with math \( \sqrt{2}\approx 1.4 \)</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70443,7 +70452,7 @@ And more and more text.
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
 <th align="left" valign="middle"><b>Watch out for \( \nabla\cdot\boldsymbol{u}=0 \) equations</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70491,7 +70500,7 @@ and is useful when you want some admons with icon and some without.
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_notice.png" hspace="5" alt="notice"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_notice.png" hspace="5" alt="notice"></td>
 <th align="left" valign="middle"><b>Note, eventually!</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70515,7 +70524,7 @@ $$</div>
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_notice.png" hspace="5" alt="notice"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_notice.png" hspace="5" alt="notice"></td>
 <th align="left" valign="middle"><b>Point1</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70528,7 +70537,7 @@ $$</div>
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_question.png" hspace="5" alt="question"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_question.png" hspace="5" alt="question"></td>
 <th align="left" valign="middle"><b>Question</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70541,7 +70550,7 @@ $$</div>
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_question.png" hspace="5" alt="question"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_question.png" hspace="5" alt="question"></td>
 <th align="left" valign="middle"><b>Question</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70556,7 +70565,7 @@ $$</div>
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
 <th align="left" valign="middle"><b>Tip</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70603,7 +70612,7 @@ $$</div>
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_warning.png" hspace="5" alt="warning"></td>
 <th align="left" valign="middle"><b></b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70621,7 +70630,7 @@ text, math and code.
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_notice.png" hspace="5" alt="notice"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_notice.png" hspace="5" alt="notice"></td>
 <th align="left" valign="middle"><b>Going deeper.</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -70760,7 +70769,7 @@ just because we can.
 <table width="95%" border="0">
 <tr>
 <td width="25" align="center" valign="top">
-<img src="https://raw.github.com/doconce/doconce/master/bundled/html_images/lyx_summary.png" hspace="5" alt="summary"></td>
+<img src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/lyx_summary.png" hspace="5" alt="summary"></td>
 <th align="left" valign="middle"><b>Concluding remarks, for the novice</b></th>
 </tr>
 <tr><td>&nbsp;</td> <td align="left" valign="top"><p>
@@ -71510,8 +71519,8 @@ doconce format html admon.do.txt --html_admon=apricot --html_style=solarized --c
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Testing admons">
 <title>Testing admons</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style type="text/css">
 /* solarized style */
@@ -71560,10 +71569,10 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -75597,7 +75606,7 @@ This one pops up after the rest of the slide.
 
 !bpop
 !bwarning (small)
-Can use, e.g., a warning admon to have my own notes, preferably
+Can use, e.g. a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -76080,7 +76089,7 @@ This one pops up after the rest of the slide.
 <div class="fragment alert alert-block alert-warning alert-text-small">
 <b>Warning</b>
 <p>
-<p>Can use, e.g., a warning admon to have my own notes, preferably
+<p>Can use, e.g. a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -76730,10 +76739,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -77091,7 +77100,7 @@ This one pops up after the rest of the slide.
 <div class="alert alert-block alert-warning alert-text-small">
 <b>Warning</b>
 <p>
-<p>Can use, e.g., a warning admon to have my own notes, preferably
+<p>Can use, e.g. a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -77530,7 +77539,7 @@ This one pops up after the rest of the slide.
 <div class="slide alert alert-block alert-warning alert-text-small">
 <b style="font-weight: bold">Warning</b>
 <p>
-<p>Can use, e.g., a warning admon to have my own notes, preferably
+<p>Can use, e.g. a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -77776,7 +77785,7 @@ Just some block with text and a conclusion that something is important.
 This one pops up after the rest of the slide.
 
 
-Can use, e.g., a warning admon to have my own notes, preferably
+Can use, e.g. a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -78225,7 +78234,7 @@ This one pops up after the rest of the slide.
 \begin{block}{Warning}
 \footnotesize
 
-Can use, e.g., a warning admon to have my own notes, preferably
+Can use, e.g.~a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -78572,7 +78581,7 @@ This one pops up after the rest of the slide.
 \begin{block}{Warning}
 \footnotesize
 
-Can use, e.g., a warning admon to have my own notes, preferably
+Can use, e.g.~a warning admon to have my own notes, preferably
 inside preprocess/mako if statements to turn notes on and off.
 This one is typeset in a small font and with the default
 title (Warning) since no title is specified.
@@ -82897,7 +82906,7 @@ pressing "Ctrl-P".
 % elif SLIDE_TYPE == 'html5slides':
 pressing "p".
 % elif SLIDE_TYPE == 'csss':
-using the "onstage.html": "https://raw.github.com/doconce/doconce/master/bundled/dzslides/shells/onstage.html" embedding page.
+using the "onstage.html": "https://github.com/doconce/doconce/blob/main/bundled/dzslides/shells/onstage.html" embedding page.
 % endif
 !enotice
 # #endif
@@ -83586,8 +83595,8 @@ doconce format html slides3.do.txt --html_style=solarized3 SLIDE_TYPE=doconce SL
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="On Schemes for Exponential Decay">
 <title>On Schemes for Exponential Decay</title>
-<link href="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
-<script src="https://raw.github.com/doconce/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<link href="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://raw.github.com/doconce/doconce/blob/main/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <link href="https://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet">
 <style type="text/css">
@@ -83625,10 +83634,10 @@ pre {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -84656,7 +84665,7 @@ MOVIE: [../doc/src/manual/mov/wave.avi, width=700, height=400] 1D wave in AVI.
 
 Here is the same movie, but with a URL to GitHub:
 
-MOVIE: [https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg]
+MOVIE: [https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg]
 
 Here is a YouTube video:
 
@@ -85416,9 +85425,9 @@ function faster_https___hplgit_github_io_animate_doc_pub_mov_animate_frames_fram
 
 <div>
 <video loop controls width='640' height='365' preload='none'>
-    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
-    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.webm' type='video/webm; codecs="vp8, vorbis"'>
-    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg'  type='video/ogg;  codecs="theora, vorbis"'>
+    <source src='https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+    <source src='https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.webm' type='video/webm; codecs="vp8, vorbis"'>
+    <source src='https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg'  type='video/ogg;  codecs="theora, vorbis"'>
 </video>
 </div>
 <p><em></em></p>
@@ -86191,9 +86200,9 @@ function faster_https___hplgit_github_io_animate_doc_pub_mov_animate_frames_fram
 
 <div>
 <video loop controls width='640' height='365' preload='none'>
-    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
-    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.webm' type='video/webm; codecs="vp8, vorbis"'>
-    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg'  type='video/ogg;  codecs="theora, vorbis"'>
+    <source src='https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+    <source src='https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.webm' type='video/webm; codecs="vp8, vorbis"'>
+    <source src='https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg'  type='video/ogg;  codecs="theora, vorbis"'>
 </video>
 </div>
 <p><em></em></p>
@@ -86598,7 +86607,7 @@ Here is the same movie, but with a URL to GitHub:
 \refstepcounter{doconce:movie:counter}
 \begin{quote}
 % link to web movie
-Movie \arabic{doconce:movie:counter}:  \href{https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg}{\nolinkurl{https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg}}
+Movie \arabic{doconce:movie:counter}:  \href{https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg}{\nolinkurl{https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg}}
 \end{quote}
 \end{doconce:movie}
 
@@ -86989,7 +86998,7 @@ Here is the same movie, but with a URL to GitHub:
 \refstepcounter{doconce:movie:counter}
 \begin{quote}
 % link to web movie
-Movie \arabic{doconce:movie:counter}:  \href{https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg}{\nolinkurl{https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg}}
+Movie \arabic{doconce:movie:counter}:  \href{https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg}{\nolinkurl{https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg}}
 \end{quote}
 \end{doconce:movie}
 
@@ -87443,7 +87452,7 @@ Here is the same movie, but with a URL to GitHub:
 \refstepcounter{doconce:movie:counter}
 \begin{quote}
 % link to web movie
-Movie \arabic{doconce:movie:counter}:  \href{https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg}{\nolinkurl{https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg}}
+Movie \arabic{doconce:movie:counter}:  \href{https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg}{\nolinkurl{https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg}}
 \end{quote}
 \end{doconce:movie}
 
@@ -87541,7 +87550,7 @@ Here is the same movie in AVI format:
 
 Here is the same movie, but with a URL to GitHub:
 
- https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg: load movie_player9.html (movie_player9.html) into a browser
+ https://github.com/doconce/doconce_doc/blob/main/src/manual/mov/wave.ogg: load movie_player9.html (movie_player9.html) into a browser
 
 Here is a YouTube video:
 
@@ -89914,7 +89923,7 @@ idx{heterogeneous lists}
 The list elements consist of objects of the same type: any element in
 `pairs` is a list of two `float` objects, while any element in `xlist`
 or `ylist` is a `float`. Lists are more flexible than that, because an
-element can be an object of any type, e.g.,
+element can be an object of any type, e.g. 
 
 !bc pycod
 mylist = [2, 6.0, 'tmp.ps', [0,1]]
@@ -90027,7 +90036,7 @@ a = np.zeros(n)
 !ec
 The array elements are of a type that corresponds to Python's
 `float` type. A second argument to `np.zeros` can be used to
-specify other element types, e.g., `int`.
+specify other element types, e.g. `int`.
 A similar function,
 
 !bc pycod
@@ -90071,7 +90080,7 @@ a = np.linspace(p, q, n)
 ========= Storing results in data files and adding more words here to get a very long chapter heading =========
 
 We need to test spaces around footnotes for 2-digit footnotes, which
-means we need a lot of URLs, e.g., to files:
+means we need a lot of URLs, e.g. to files:
 "`ball2_cml.py`": "${src_path}/input/ball2_cml.py",
 "`bisection_ex.py`": "${src_path}/input/bisection_ex.py",
 "`bisection_movie.py`": "${src_path}/input/bisection_movie.py",
@@ -90305,7 +90314,7 @@ There is also something called *standard error*.
 Usually this is the terminal window, just as standard output, but
 programs can distinguish between writing ordinary output to standard
 output and error messages to standard error, and these output media
-can be redirected to, e.g., files such that one can separate
+can be redirected to, e.g. files such that one can separate
 error messages from ordinary output.
 In Python, standard error is the file-like object `sys.stderr`.
 A typical application of `sys.stderr` is to report errors:
@@ -91000,7 +91009,7 @@ appending new list elements in each pass of the loops).
 The list elements consist of objects of the same type: any element in
 \texttt{pairs} is a list of two \texttt{float} objects, while any element in \texttt{xlist}
 or \texttt{ylist} is a \texttt{float}. Lists are more flexible than that, because an
-element can be an object of any type, e.g.,
+element can be an object of any type, e.g. 
 
 
 
@@ -91153,7 +91162,7 @@ a = np.zeros(n)
 
 The array elements are of a type that corresponds to Python's
 \texttt{float} type. A second argument to \texttt{np.zeros} can be used to
-specify other element types, e.g., \texttt{int}.
+specify other element types, e.g. \texttt{int}.
 A similar function,
 
 
@@ -91219,7 +91228,7 @@ a = np.linspace(p, q, n)
 \chapter{Storing results in data files and adding more words here to get a very long chapter heading}
 
 We need to test spaces around footnotes for 2-digit footnotes, which
-means we need a lot of URLs, e.g., to files:
+means we need a lot of URLs, e.g.~to files:
 \href{{https://some.where.net/doconce/test/software/input/ball2_cml.py}}{\nolinkurl{ball2_cml.py}\footnote{\texttt{https://some.where.net/doconce/test/software/input/ball2\_cml.py}}},
 \href{{https://some.where.net/doconce/test/software/input/bisection_ex.py}}{\nolinkurl{bisection_ex.py}\footnote{\texttt{https://some.where.net/doconce/test/software/input/bisection\_ex.py}}},
 \href{{https://some.where.net/doconce/test/software/input/bisection_movie.py}}{\nolinkurl{bisection_movie.py}\footnote{\texttt{https://some.where.net/doconce/test/software/input/bisection\_movie.py}}},
@@ -91545,7 +91554,7 @@ There is also something called \emph{standard error}.
 Usually this is the terminal window, just as standard output, but
 programs can distinguish between writing ordinary output to standard
 output and error messages to standard error, and these output media
-can be redirected to, e.g., files such that one can separate
+can be redirected to, e.g.~files such that one can separate
 error messages from ordinary output.
 In Python, standard error is the file-like object \texttt{sys.stderr}.
 A typical application of \texttt{sys.stderr} is to report errors:
@@ -94295,10 +94304,10 @@ div.output_text {
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
+.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
 .tab {
   padding-left: 1.5em;
@@ -95259,7 +95268,7 @@ output2
   </div>
 </div>
 
-<p>Any valid pygments lexer/language name can appear to, e.g.,</p>
+<p>Any valid pygments lexer/language name can appear to e.g.</p>
 
 
 <!-- code=doconce (!bc do) typeset with pygments style "default" -->
@@ -95472,7 +95481,7 @@ example where this is needed is in physical units: 7.4&nbsp;km is traveled
 in&nbsp;\( 7.4/5.5\approx 1.345 \)&nbsp;s.  Also check that a&nbsp;<a href="https://google.com" target="_self">link</a>&nbsp;is
 not broken across lines (drag the browser window to test this).
 (On the other hand, the tilde is used in
-computer code, e.g., as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
+computer code, e.g. as in <code>[~x for x in y]</code> or in <code>y=~x</code>, and should
 of course remain a tilde in those contexts.)
 </p>
 </div>
@@ -95521,7 +95530,7 @@ containing inline verbatim text:
 
 <br/><br/>
 <center>
-<p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" width="500" align="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
 <br/><br/>
 
@@ -96040,7 +96049,7 @@ random vibrations was investigated in <a href="#Langtangen_1994a">[3]</a>.
 The book chapter <a href="#Mardal_et_al_2003a">[4]</a> contains information on
 C++ software tools for programming multigrid methods. A real retro
 reference is <a href="#Langtangen_1988d">[5]</a> about a big FORTRAN package.
-Multiple references are also possible, e.g., see
+Multiple references are also possible, e.g. see
 <a href="#Langtangen_Pedersen_2002">[1]</a> <a href="#Mardal_et_al_2003a">[4]</a>.
 </p>
 
@@ -96735,7 +96744,7 @@ closing remarks to have text after subexercises.
 <!-- Closing remarks for this Exercise -->
 <h3 id="remarks">Remarks </h3>
 
-<p>Some final closing remarks, e.g., summarizing the main findings
+<p>Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 </p>
@@ -97287,7 +97296,7 @@ Test list in exercise:
 
 === Remarks ===
 
-Some final closing remarks, e.g., summarizing the main findings
+Some final closing remarks, e.g. summarizing the main findings
 and their implications in other problems can be made. These
 remarks will appear at the end of the typeset exercise.
 
