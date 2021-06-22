@@ -21,16 +21,8 @@ git submodule update --init
 ```
 
 ### Requirements
-In addition to the requirements listed for the main [doconce](https://github.com/doconce/doconce) repository, the tests also require the following dependencies:
-
-* `pip install bash-kernel`
-..................
-
-
-
-
-Optional dependencies: 
-Some tests are run using [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels), but only if their installation is detected. 
+The basic requirements are listed for the main [doconce](https://github.com/doconce/doconce) repository. 
+In addition, some tests are run using [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels), but only if their installation is detected. 
 
 - Install the [bash kernel](https://github.com/takluyver/bash_kernel) for bash;
 - Install the [IR kernel](https://irkernel.github.io/installation/) for R;
