@@ -41,22 +41,36 @@ EOF
 
 system doconce spellcheck -d .dict4spell.txt _testdoc.do.txt
 
-# jupyterbook
+
+
+## Test jupyterbook
 system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
 system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
 
 system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
-# --execute
+
+
+## Test --execute
 system doconce format html execute.do.txt --execute
-
-system doconce format ipynb execute.do.txt --execute
-
+#system doconce format ipynb execute.do.txt --execute
 system doconce format latex execute.do.txt --execute
 doconce ptex2tex execute.p.tex
 
-# html
+
+
+## Test ipynb
+system doconce format ipynb execute.do.txt --examples_as_exercises
+system doconce format ipynb execute.do.txt --examples_as_exercises --execute 
+system doconce format latex execute.do.txt --examples_as_exercises
+system doconce format latex execute.do.txt --examples_as_exercises --execute 
+system doconce format html execute.do.txt  --examples_as_exercises
+system doconce format html execute.do.txt  --examples_as_exercises --execute 
+
+
+
+## Test html
 system doconce format html testdoc --wordpress  --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix="https://raw.github.com/hplgit/doconce/master/test/" --movie_prefix="https://raw.github.com/hplgit/doconce/master/test/" --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
 
 system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --html_exercise_icon=default --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github
@@ -85,6 +99,9 @@ system doconce split_html testdoc.html --nav_button=gray2,bottom --font_size=sli
 
 system doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --output=demo_testdoc --html_raw_github_url=raw.github
 
+
+
+## Test latex
 system doconce format latex testdoc.do.txt --examples_as_exercises SOMEVAR=True --skip_inline_comments --latex_packages=varioref
 
 # pdflatex: testdoc.tex_direct
@@ -132,6 +149,8 @@ cat testdoc.tex >> testdoc.tex_doconce_ptex2tex
 rm -f *.aux
 system pdflatex -shell-escape -halt-on-error testdoc.tex
 
+
+
 # Test stand-alone exercises
 system doconce format plain testdoc --exercises_in_zip --examples_as_exercises
 rm -rf standalone_exercises
@@ -156,6 +175,8 @@ cp sphinx-testdoc/conf.py testdoc_sphinx_conf.py
 cp sphinx-testdoc/index.rst testdoc_sphinx_index.rst
 
 
+
+## Test misc formats
 system doconce format rst testdoc.do.txt --examples_as_exercises --rst_mathjax
 
 system doconce format epytext testdoc.do.txt --examples_as_exercises
@@ -164,14 +185,14 @@ system doconce format mwiki testdoc.do.txt --examples_as_exercises
 system doconce format cwiki testdoc.do.txt --examples_as_exercises
 system doconce format ipynb testdoc.do.txt --examples_as_exercises
 system doconce format matlabnb testdoc.do.txt --examples_as_exercises
-
 # Test mako variables too
 system doconce format gwiki testdoc.do.txt --skip_inline_comments MYVAR1=3 MYVAR2='a string' --examples_as_exercises
 
-# Test pandoc: from latex to markdown, from markdown to html
+
+
+## Test pandoc: from latex to markdown, from markdown to html
 system doconce format latex testdoc.do.txt --examples_as_exercises --latex_title_layout=std --latex_packages=varioref
 system doconce ptex2tex testdoc
-
 #doconce subst -s 'And here is a system of equations with labels.+?\\section' '\\section' testdoc.tex
 # pandoc cannot work well with \Verb, needs \verb
 system doconce replace '\Verb!' '\verb!' testdoc.tex
@@ -187,7 +208,9 @@ system doconce format pandoc testdoc.do.txt --examples_as_exercises
 #system pandoc -t html -o testdoc_pnd_d2h.html --mathjax -s testdoc.md
 #pandoc -v >> testdoc_pnd_d2h.html
 
-# Test slides
+
+
+## Test slides
 # slides1: rough small test
 # slides2: much of scientific_writing.do.txt
 # slides3: equal to slides/demo.do.txt
@@ -246,18 +269,24 @@ system doconce slides_beamer slides3.tex --beamer_slide_theme=red_plain
 system doconce format html slides1 --pygments_html_style=emacs --html_raw_github_url=raw.github
 system doconce slides_html slides1 all
 
-# Test grab
+
+
+## Test grab
 system doconce grab --from- '={5} Subsection 1' --to 'subroutine@' _testdoc.do.txt > testdoc.tmp
 doconce grab --from 'Compute a Probability' --to- 'drawing uniformly' _testdoc.do.txt >> testdoc.tmp
 doconce grab --from- '\*\s+\$.+normally' _testdoc.do.txt >> testdoc.tmp
 
-# Test html templates
+
+
+## Test html templates
 system doconce format html html_template --html_template=template1.html --pygments_html_style=none --html_raw_github_url=raw.github
 cp html_template.html html_template1.html
 
 system doconce format html html_template --html_template=template_inf1100.html  --pygments_html_style=emacs --html_raw_github_url=raw.github
 
-# Test author special case and generalized references
+
+
+## Test author special case and generalized references
 system doconce format html author1 --html_raw_github_url=raw.github
 system doconce format latex author1
 system doconce format sphinx author1
@@ -271,21 +300,17 @@ system doconce format pdflatex author2 --latex_style=elsevier
 system doconce ptex2tex author2
 cp author2.tex author2_elsevier.tex
 
-# Test notebook conversions
+
+
+## Test notebook conversions
 cp ../doc/src/ipynb/example.do.txt nbdemo.do.txt
 doconce replace 'fig/oscillator_general' '../doc/src/ipynb/fig/oscillator_general' nbdemo.do.txt
 system doconce format ipynb nbdemo
 system doconce ipynb2doconce nbdemo.ipynb
 
-# Test notebook execution
-system doconce format ipynb execute.do.txt --examples_as_exercises
-system doconce format ipynb execute.do.txt --examples_as_exercises --execute 
-system doconce format latex execute.do.txt --examples_as_exercises
-system doconce format latex execute.do.txt --examples_as_exercises --execute 
-system doconce format html execute.do.txt  --examples_as_exercises
-system doconce format html execute.do.txt  --examples_as_exercises --execute 
 
-# Test math
+
+## Test math
 rm -f *.aux
 system doconce format pdflatex math_test --no_abort
 system doconce ptex2tex math_test
@@ -313,8 +338,9 @@ system doconce sphinx_dir short_title="Really short title" conf.py=myconf.py cop
 system python automake_sphinx.py
 cp sphinx-rootdir/conf.py tailored_conf.py
 
-# Test admonitions
 
+
+## Test admonitions
 # LaTeX admon styles
 admon_tps="colors1 mdfbox paragraph-footnotesize graybox2 yellowicon grayicon colors2"
 for admon_tp in $admon_tps; do
@@ -396,7 +422,6 @@ doconce replace '../doc/src/manual/fig/wave1D' '../../doc/src/manual/fig/wave1D'
 rm -rf *~
 cd ..
 
-
 #google-chrome admon_*.html
 #for pdf in admon_*.pdf; do evince $pdf; done
 
@@ -404,17 +429,22 @@ if [ -d latex_figs ]; then
     echo "BUG: latex_figs was made by some non-latex format..."
 fi
 
-# Test Bootstrap HTML styles
+
+
+## Test styles
+# Bootstrap HTML styles
 system doconce format html test_boots --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
 system doconce split_html test_boots.html
 
-# Test GitHub-extended Markdown
+# GitHub-extended Markdown
 system doconce format pandoc github_md.do.txt --github_md
 
-# Test Markdown input
+# Markdown input
 system doconce format html markdown_input.do.txt --markdown --md2do_output=mdinput2do.do.txt --html_raw_github_url=raw.github
 
-# Test movie handling
+
+
+## Test movie handling
 system doconce format html movies --output=movies_3choices --html_raw_github_url=raw.github
 cp movies_3choices.html movie_demo
 system doconce format html movies --no_mp4_webm_ogg_alternatives --html_raw_github_url=raw.github
@@ -444,7 +474,9 @@ cp movies.pdf movie_demo
 
 system doconce format plain movies
 
-# Test locale support for html and pdflatex
+
+
+## Test locale support
 cp ../doc/src/locale/locale.do.txt .
 system doconce format html locale --html_style=bootstrap_FlatUI --language=Norwegian --encoding=utf-8
 system doconce format pdflatex locale --latex_code_style=vrb --language=Norwegian --encoding=utf-8
@@ -463,7 +495,10 @@ doconce subst -m '^.*? (AM|PM) - ' '' automake_sphinx.log
 # Status movies: everything works in html and sphinx, only href works
 # in latex, media9 is unreliable
 
-# Test encoding: guess and change
+
+
+## Test encoding
+# guess and change
 system doconce format html encoding1   --no_header_footer --html_raw_github_url=raw.github
 system doconce guess_encoding encoding1.do.txt > tmp_encodings.txt
 cp encoding1.do.txt tmp1.do.txt
@@ -502,7 +537,9 @@ system doconce format html encoding3 -DMAKO --encoding=utf-8 --pygments_html_sty
 cp encoding3.html encoding3.html-utf8
 cat _doconce_debugging.log >> encoding3.html-utf8
 
-# Test mako problems
+
+
+## Test mako problems
 system doconce format html mako_test1 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # mako variable only, no % lines
 system doconce format html mako_test2 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # % lines inside code, but need for mako
 system doconce format html mako_test3 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # % lines inside code
@@ -516,9 +553,11 @@ system doconce csv2table testtable.csv > testtable.do.txt
 # Cannot find these scripts in repo anymore
 #sh -x genref.sh
 
-# Test error detection (note: the sequence of the error tests is
-# crucial: an error must occur, then corrected before the next
-# one will occur!)
+
+
+## Test error detection
+# (note: the sequence of the error tests is crucial: 
+# an error must occur, then corrected before the next one will occur!)
 cp failures.do.txt tmp2.do.txt
 doconce format plain tmp2.do.txt
 doconce replace '`myfile.py` file' '`myfile.py`' tmp2.do.txt
@@ -554,7 +593,10 @@ doconce format pdflatex tmp2 --device=paper
 # Remedy: drop paper and rewrite, just run electronic
 system doconce format pdflatex tmp2
 #doconce replace '# Comment before math is ok' '' tmp2.do.txt
-# Remove some files
+
+
+
+## Remove some files
 rm -rf 0*md 0*ipynb *~ 
 echo ""
 echo "When we reach this point in the script,"

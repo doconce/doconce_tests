@@ -6,8 +6,9 @@
         });
         </script>
 
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx testdoc.do.txt --examples_as_exercises --html_links_in_new_window --output=testdoc.sphinx
 
 .. |nbsp| unicode:: 0xA0
    :trim:

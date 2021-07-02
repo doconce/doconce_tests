@@ -15,8 +15,9 @@
         
         
 
-.. Automatically generated reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format rst testdoc.do.txt --examples_as_exercises --rst_mathjax
 
 .. |nbsp| unicode:: 0xA0
    :trim:

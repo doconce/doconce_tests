@@ -1,5 +1,6 @@
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx admon.do.txt 
 
 .. Document title:
 
@@ -7,7 +8,7 @@ Testing admons
 %%%%%%%%%%%%%%
 
 :Authors: H. P. Langtangen
-:Date: Jun 22, 2021
+:Date: Jul 2, 2021
 
 .. !split
 

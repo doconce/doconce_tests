@@ -14,8 +14,7 @@ TOC: on
 
 ************** File: testdoc.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
 -->
 <html>
@@ -406,8 +405,7 @@ MathJax.Hub.Config({
 
 ************** File: testdoc.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex testdoc.do.txt --examples_as_exercises --latex_title_layout=std --latex_packages=varioref
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -3097,8 +3095,7 @@ in a separate document: \texttt{admon.do.txt}.
 
 ************** File: testdoc_bigex.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex testdoc.do.txt --device=paper --examples_as_exercises --latex_double_hyphen --latex_index_in_margin --latex_no_program_footnotelink --latex_title_layout=titlepage --latex_papersize=a4 --latex_colored_table_rows=blue --latex_fancy_header --latex_section_headings=blue --latex_labels_in_margin --latex_double_spacing --latex_todonotes --latex_list_of_exercises=loe --latex_font=palatino --latex_packages=varioref --latex_link_color=blue!90 --draft --output=testdoc_bigex
 %%
 
@@ -5901,8 +5898,7 @@ in a separate document: \texttt{admon.do.txt}.
 output in testdoc.tex
 ----------- end of doconce ptex2tex output ----------------
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex testdoc.do.txt --device=paper --examples_as_exercises --latex_double_hyphen --latex_index_in_margin --latex_no_program_footnotelink --latex_title_layout=titlepage --latex_papersize=a4 --latex_colored_table_rows=blue --latex_fancy_header --latex_section_headings=blue --latex_labels_in_margin --latex_double_spacing --latex_todonotes --latex_list_of_exercises=loe --latex_font=palatino --latex_packages=varioref --latex_link_color=blue!90 --draft --output=testdoc_bigex
 %%
 
@@ -8673,8 +8669,7 @@ in a separate document: \texttt{admon.do.txt}.
 
 ************** File: testdoc.tex_direct *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex testdoc.do.txt --examples_as_exercises --latex_code_style=default:lst-blue1[style=myspeciallststyle,numbers=left,numberstyle=\tiny,stepnumber=3,numbersep=15pt,xleftmargin=1mm]@fcod:vrb-gray@sys:vrb[frame=lines,label=\fbox{{\tiny Terminal}},framesep=2.5mm,framerule=0.7pt] --latex_code_lststyles=mylststyles --latex_packages=varioref
 
 % #define PREAMBLE
@@ -11577,8 +11572,9 @@ in a separate document: \texttt{admon.do.txt}.
         
         
 
-.. Automatically generated reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format rst testdoc.do.txt --examples_as_exercises --rst_mathjax
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -13592,8 +13588,9 @@ in a separate document: ``admon.do.txt``.
         });
         </script>
 
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx testdoc.do.txt --examples_as_exercises --html_links_in_new_window --output=testdoc.sphinx
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -27237,8 +27234,8 @@ is at the end with only one newline.
     "editable": true
    },
    "source": [
-    "<!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)\n",
-    "doconce format html testdoc.do.txt --examples_as_exercises -->\n",
+    "<!-- File automatically generated using DocOnce (https://github.com/doconce/doconce/):\n",
+    "doconce format ipynb testdoc.do.txt --examples_as_exercises -->\n",
     "<!-- dom:TITLE: A Document for Testing DocOnce -->"
    ]
   },
@@ -31727,8 +31724,7 @@ Could not find match for from regex "\*\s+\$.+normally"
 
 ************** File: execute.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html execute.do.txt --examples_as_exercises --execute
 -->
 <html>
@@ -32666,8 +32662,7 @@ author and is released under the same conditions as Doconce.
 
 ************** File: execute.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex execute.do.txt --execute
 %%
 
@@ -33241,16 +33236,8 @@ author and is released under the same conditions as Doconce.
     "editable": true
    },
    "source": [
-    "<!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)\n",
-    "doconce format html execute.do.txt --examples_as_exercises --execute -->"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "editable": true
-   },
-   "source": [
+    "<!-- File automatically generated using DocOnce (https://github.com/doconce/doconce/):\n",
+    "doconce format ipynb execute.do.txt --examples_as_exercises --execute -->\n",
     "# Automatic execution of code blocks\n",
     "\n",
     "Convert this document to `ipynb`, `latex` or `html` with e.g.:"
@@ -33294,7 +33281,17 @@ author and is released under the same conditions as Doconce.
     "collapsed": false,
     "editable": true
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
    "source": [
     "for i in [1,2,3]:\n",
     "  print(i)"
@@ -35433,8 +35430,7 @@ MathJax.Hub.Config({
 
 ************** File: author1.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html author1.do.txt --html_raw_github_url=raw.github
 -->
 <html>
@@ -35925,8 +35921,7 @@ dummy2].
 
 ************** File: author1.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex author1.do.txt 
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -36323,8 +36318,9 @@ Inline math, $a=b$, is the only math in this document.
 
 
 ************** File: author1.rst *****************
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx author1.do.txt 
 
 .. Document title:
 
@@ -36656,8 +36652,7 @@ Inline math, a=b, is the only math in this document.
 
 ************** File: author2_siamltex.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex author2.do.txt --latex_style=siamltex
 %%
 
@@ -36787,8 +36782,7 @@ a citation like \cite{Langtangen_1992c,Langtangen_1994a}.
 
 ************** File: author2_elsevier.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex author2.do.txt --latex_style=elsevier
 %%
 
@@ -36941,8 +36935,7 @@ a citation like \cite{Langtangen_1992c,Langtangen_1994a}.
 
 ************** File: ._testdoc000.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
 -->
 <html>
@@ -37333,8 +37326,7 @@ MathJax.Hub.Config({
 
 ************** File: ._testdoc001.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
 -->
 <html>
@@ -39437,8 +39429,7 @@ footnotes.
 
 ************** File: ._testdoc002.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
 -->
 <html>
@@ -40378,8 +40369,7 @@ Filename: <code>selc_composed.pdf</code>.
 
 ************** File: ._testdoc003.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
 -->
 <html>
@@ -40857,7 +40847,7 @@ is at the end with only one newline.</p>
 
 ************** File: testdoc_wordpress.html *****************
 <!--
-HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/) doconce format html testdoc.do.txt --wordpress --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix=https://raw.github.com/hplgit/doconce/master/test/ --movie_prefix=https://raw.github.com/hplgit/doconce/master/test/ --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
+File automatically generated using DocOnce (https://github.com/doconce/doconce/): doconce format html testdoc.do.txt --wordpress --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix=https://raw.github.com/hplgit/doconce/master/test/ --movie_prefix=https://raw.github.com/hplgit/doconce/master/test/ --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
 -->
 <html>
 <head>
@@ -43187,8 +43177,7 @@ $latex  y(x) = e^{-y}. $
 
 ************** File: testdoc_no_solutions.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --without_answers --without_solutions --examples_as_exercises --html_exercise_icon=default --answers_at_end --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github --output=testdoc_no_solutions
 -->
 <html>
@@ -46294,8 +46283,7 @@ is at the end with only one newline.</p>
 
 ************** File: testdoc_no_solutions.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex testdoc.do.txt --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --sections_down --number_all_equations --latex_packages=varioref --cite_doconce --output=testdoc_no_solutions
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -49881,22 +49869,36 @@ EOF
 
 system doconce spellcheck -d .dict4spell.txt _testdoc.do.txt
 
-# jupyterbook
+
+
+## Test jupyterbook
 system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
 system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
 
 system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
 
-# --execute
+
+
+## Test --execute
 system doconce format html execute.do.txt --execute
-
-system doconce format ipynb execute.do.txt --execute
-
+#system doconce format ipynb execute.do.txt --execute
 system doconce format latex execute.do.txt --execute
 doconce ptex2tex execute.p.tex
 
-# html
+
+
+## Test ipynb
+system doconce format ipynb execute.do.txt --examples_as_exercises
+system doconce format ipynb execute.do.txt --examples_as_exercises --execute 
+system doconce format latex execute.do.txt --examples_as_exercises
+system doconce format latex execute.do.txt --examples_as_exercises --execute 
+system doconce format html execute.do.txt  --examples_as_exercises
+system doconce format html execute.do.txt  --examples_as_exercises --execute 
+
+
+
+## Test html
 system doconce format html testdoc --wordpress  --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix="https://raw.github.com/hplgit/doconce/master/test/" --movie_prefix="https://raw.github.com/hplgit/doconce/master/test/" --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
 
 system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --html_exercise_icon=default --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github
@@ -49925,6 +49927,9 @@ system doconce split_html testdoc.html --nav_button=gray2,bottom --font_size=sli
 
 system doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --output=demo_testdoc --html_raw_github_url=raw.github
 
+
+
+## Test latex
 system doconce format latex testdoc.do.txt --examples_as_exercises SOMEVAR=True --skip_inline_comments --latex_packages=varioref
 
 # pdflatex: testdoc.tex_direct
@@ -49972,6 +49977,8 @@ cat testdoc.tex >> testdoc.tex_doconce_ptex2tex
 rm -f *.aux
 system pdflatex -shell-escape -halt-on-error testdoc.tex
 
+
+
 # Test stand-alone exercises
 system doconce format plain testdoc --exercises_in_zip --examples_as_exercises
 rm -rf standalone_exercises
@@ -49996,6 +50003,8 @@ cp sphinx-testdoc/conf.py testdoc_sphinx_conf.py
 cp sphinx-testdoc/index.rst testdoc_sphinx_index.rst
 
 
+
+## Test misc formats
 system doconce format rst testdoc.do.txt --examples_as_exercises --rst_mathjax
 
 system doconce format epytext testdoc.do.txt --examples_as_exercises
@@ -50004,14 +50013,14 @@ system doconce format mwiki testdoc.do.txt --examples_as_exercises
 system doconce format cwiki testdoc.do.txt --examples_as_exercises
 system doconce format ipynb testdoc.do.txt --examples_as_exercises
 system doconce format matlabnb testdoc.do.txt --examples_as_exercises
-
 # Test mako variables too
 system doconce format gwiki testdoc.do.txt --skip_inline_comments MYVAR1=3 MYVAR2='a string' --examples_as_exercises
 
-# Test pandoc: from latex to markdown, from markdown to html
+
+
+## Test pandoc: from latex to markdown, from markdown to html
 system doconce format latex testdoc.do.txt --examples_as_exercises --latex_title_layout=std --latex_packages=varioref
 system doconce ptex2tex testdoc
-
 #doconce subst -s 'And here is a system of equations with labels.+?\\section' '\\section' testdoc.tex
 # pandoc cannot work well with \Verb, needs \verb
 system doconce replace '\Verb!' '\verb!' testdoc.tex
@@ -50027,7 +50036,9 @@ system doconce format pandoc testdoc.do.txt --examples_as_exercises
 #system pandoc -t html -o testdoc_pnd_d2h.html --mathjax -s testdoc.md
 #pandoc -v >> testdoc_pnd_d2h.html
 
-# Test slides
+
+
+## Test slides
 # slides1: rough small test
 # slides2: much of scientific_writing.do.txt
 # slides3: equal to slides/demo.do.txt
@@ -50086,18 +50097,24 @@ system doconce slides_beamer slides3.tex --beamer_slide_theme=red_plain
 system doconce format html slides1 --pygments_html_style=emacs --html_raw_github_url=raw.github
 system doconce slides_html slides1 all
 
-# Test grab
+
+
+## Test grab
 system doconce grab --from- '={5} Subsection 1' --to 'subroutine@' _testdoc.do.txt > testdoc.tmp
 doconce grab --from 'Compute a Probability' --to- 'drawing uniformly' _testdoc.do.txt >> testdoc.tmp
 doconce grab --from- '\*\s+\$.+normally' _testdoc.do.txt >> testdoc.tmp
 
-# Test html templates
+
+
+## Test html templates
 system doconce format html html_template --html_template=template1.html --pygments_html_style=none --html_raw_github_url=raw.github
 cp html_template.html html_template1.html
 
 system doconce format html html_template --html_template=template_inf1100.html  --pygments_html_style=emacs --html_raw_github_url=raw.github
 
-# Test author special case and generalized references
+
+
+## Test author special case and generalized references
 system doconce format html author1 --html_raw_github_url=raw.github
 system doconce format latex author1
 system doconce format sphinx author1
@@ -50111,21 +50128,17 @@ system doconce format pdflatex author2 --latex_style=elsevier
 system doconce ptex2tex author2
 cp author2.tex author2_elsevier.tex
 
-# Test notebook conversions
+
+
+## Test notebook conversions
 cp ../doc/src/ipynb/example.do.txt nbdemo.do.txt
 doconce replace 'fig/oscillator_general' '../doc/src/ipynb/fig/oscillator_general' nbdemo.do.txt
 system doconce format ipynb nbdemo
 system doconce ipynb2doconce nbdemo.ipynb
 
-# Test notebook execution
-system doconce format ipynb execute.do.txt --examples_as_exercises
-system doconce format ipynb execute.do.txt --examples_as_exercises --execute 
-system doconce format latex execute.do.txt --examples_as_exercises
-system doconce format latex execute.do.txt --examples_as_exercises --execute 
-system doconce format html execute.do.txt  --examples_as_exercises
-system doconce format html execute.do.txt  --examples_as_exercises --execute 
 
-# Test math
+
+## Test math
 rm -f *.aux
 system doconce format pdflatex math_test --no_abort
 system doconce ptex2tex math_test
@@ -50153,8 +50166,9 @@ system doconce sphinx_dir short_title="Really short title" conf.py=myconf.py cop
 system python automake_sphinx.py
 cp sphinx-rootdir/conf.py tailored_conf.py
 
-# Test admonitions
 
+
+## Test admonitions
 # LaTeX admon styles
 admon_tps="colors1 mdfbox paragraph-footnotesize graybox2 yellowicon grayicon colors2"
 for admon_tp in $admon_tps; do
@@ -50236,7 +50250,6 @@ doconce replace '../doc/src/manual/fig/wave1D' '../../doc/src/manual/fig/wave1D'
 rm -rf *~
 cd ..
 
-
 #google-chrome admon_*.html
 #for pdf in admon_*.pdf; do evince $pdf; done
 
@@ -50244,17 +50257,22 @@ if [ -d latex_figs ]; then
     echo "BUG: latex_figs was made by some non-latex format..."
 fi
 
-# Test Bootstrap HTML styles
+
+
+## Test styles
+# Bootstrap HTML styles
 system doconce format html test_boots --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
 system doconce split_html test_boots.html
 
-# Test GitHub-extended Markdown
+# GitHub-extended Markdown
 system doconce format pandoc github_md.do.txt --github_md
 
-# Test Markdown input
+# Markdown input
 system doconce format html markdown_input.do.txt --markdown --md2do_output=mdinput2do.do.txt --html_raw_github_url=raw.github
 
-# Test movie handling
+
+
+## Test movie handling
 system doconce format html movies --output=movies_3choices --html_raw_github_url=raw.github
 cp movies_3choices.html movie_demo
 system doconce format html movies --no_mp4_webm_ogg_alternatives --html_raw_github_url=raw.github
@@ -50284,7 +50302,9 @@ cp movies.pdf movie_demo
 
 system doconce format plain movies
 
-# Test locale support for html and pdflatex
+
+
+## Test locale support
 cp ../doc/src/locale/locale.do.txt .
 system doconce format html locale --html_style=bootstrap_FlatUI --language=Norwegian --encoding=utf-8
 system doconce format pdflatex locale --latex_code_style=vrb --language=Norwegian --encoding=utf-8
@@ -50303,7 +50323,10 @@ doconce subst -m '^.*? (AM|PM) - ' '' automake_sphinx.log
 # Status movies: everything works in html and sphinx, only href works
 # in latex, media9 is unreliable
 
-# Test encoding: guess and change
+
+
+## Test encoding
+# guess and change
 system doconce format html encoding1   --no_header_footer --html_raw_github_url=raw.github
 system doconce guess_encoding encoding1.do.txt > tmp_encodings.txt
 cp encoding1.do.txt tmp1.do.txt
@@ -50342,7 +50365,9 @@ system doconce format html encoding3 -DMAKO --encoding=utf-8 --pygments_html_sty
 cp encoding3.html encoding3.html-utf8
 cat _doconce_debugging.log >> encoding3.html-utf8
 
-# Test mako problems
+
+
+## Test mako problems
 system doconce format html mako_test1 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # mako variable only, no % lines
 system doconce format html mako_test2 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # % lines inside code, but need for mako
 system doconce format html mako_test3 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # % lines inside code
@@ -50356,9 +50381,11 @@ system doconce csv2table testtable.csv > testtable.do.txt
 # Cannot find these scripts in repo anymore
 #sh -x genref.sh
 
-# Test error detection (note: the sequence of the error tests is
-# crucial: an error must occur, then corrected before the next
-# one will occur!)
+
+
+## Test error detection
+# (note: the sequence of the error tests is crucial: 
+# an error must occur, then corrected before the next one will occur!)
 cp failures.do.txt tmp2.do.txt
 doconce format plain tmp2.do.txt
 doconce replace '`myfile.py` file' '`myfile.py`' tmp2.do.txt
@@ -50394,7 +50421,10 @@ doconce format pdflatex tmp2 --device=paper
 # Remedy: drop paper and rewrite, just run electronic
 system doconce format pdflatex tmp2
 #doconce replace '# Comment before math is ok' '' tmp2.do.txt
-# Remove some files
+
+
+
+## Remove some files
 rm -rf 0*md 0*ipynb *~ 
 echo ""
 echo "When we reach this point in the script,"
@@ -51738,8 +51768,7 @@ $$
 
 ************** File: math_test_html.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html math_test.do.txt --html_raw_github_url=raw.github --no_abort
 -->
 <html>
@@ -53398,8 +53427,7 @@ v_4
 
 ************** File: math_test.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex math_test.do.txt --no_abort
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -54316,8 +54344,9 @@ v_4
 
 
 ************** File: math_test.rst *****************
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx math_test.do.txt --no_abort
 
 .. Document title:
 
@@ -59297,8 +59326,9 @@ Filename: <code>selc_composed.pdf</code>.
         });
         </script>
 
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx testdoc.do.txt --examples_as_exercises --html_links_in_new_window --output=testdoc.sphinx
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -60387,8 +60417,7 @@ footnotes.
 
 ************** File: admon.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=mdfbox --latex_admon_color=1,1,1 --latex_admon_envir_map=2 --cite_doconce --no_abort
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -61172,8 +61201,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_colors1.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=colors1 --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -61967,8 +61995,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_colors2.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=colors2 --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -62769,8 +62796,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_mdfbox.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=mdfbox --latex_admon_color=warning:darkgreen!40!white;notice:darkgray!20!white;summary:tucorange!20!white;question:red!50!white;block:darkgreen!40!white --no_abort --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -63614,8 +63640,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_graybox2.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=graybox2 --no_abort --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -64375,8 +64400,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_grayicon.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=grayicon --latex_admon_color=gray!20 --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -65182,8 +65206,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_paragraph-footnotesize.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=paragraph-footnotesize --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -65925,8 +65948,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_yellowicon.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=yellowicon --latex_code_style=lst --cite_doconce
 
 % #define PREAMBLE
@@ -66732,8 +66754,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_double_envirs.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex admon.do.txt --latex_admon=mdfbox --latex_admon_color=1,1,1 --latex_admon_envir_map=2 --cite_doconce --no_abort
 %%
 
@@ -67487,8 +67508,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_colors.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_admon=colors --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -68170,8 +68190,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_gray.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_admon=gray --html_style=blueish2 --html_admon_shadow --html_box_shadow --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -68892,8 +68911,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_yellow.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_admon=yellow --html_admon_shadow --html_box_shadow --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -70015,8 +70033,7 @@ exercises (and problems and projects too).</p>
 </html>
 ************** File: admon_lyx.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_admon=lyx --html_style=blueish2 --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -70786,8 +70803,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_paragraph.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_admon=paragraph --html_style=blueish2 --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -71498,8 +71514,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_apricot.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_admon=apricot --html_style=solarized --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -72795,8 +72810,7 @@ exercises (and problems and projects too).
 
 ************** File: admon_bootstrap_alert.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html --html_raw_github_url=raw.github
 -->
 <html>
@@ -72963,8 +72977,7 @@ MathJax.Hub.Config({
 
 ************** File: admon_bootswatch_panel.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce --html_raw_github_url=raw.github
 -->
 <html>
@@ -73664,8 +73677,7 @@ exercises (and problems and projects too).
 
 ************** File: ._admon_bootstrap_alert001.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html --html_raw_github_url=raw.github
 -->
 <html>
@@ -74702,8 +74714,9 @@ exercises (and problems and projects too).
 
 
 ************** File: admon.rst *****************
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx admon.do.txt 
 
 .. Document title:
 
@@ -75604,11 +75617,8 @@ title (Warning) since no title is specified.
 !epop
 
 ************** File: slides1_reveal.html *****************
-<!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
-doconce format html slides1.html slides1 reveal --html_slide_themee=simple
--->
+<!--File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+doconce format html slides1.html slides1 reveal --html_slide_themee=simple-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -76603,8 +76613,7 @@ echo "Here are the slide shows:"
 
 ************** File: slides1_1st.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html slides1.do.txt --pygments_html_style=perldoc --keep_pygments_html_bg --html_raw_github_url=raw.github
 -->
 <html>
@@ -77104,11 +77113,8 @@ title (Warning) since no title is specified.
 
 
 ************** File: slides1_deck.html *****************
-<!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
-doconce format html slides1.html slides1 deck --html_slide_theme=web-2.0
--->
+<!--File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+doconce format html slides1.html slides1 deck --html_slide_theme=web-2.0-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -77795,8 +77801,8 @@ title (Warning) since no title is specified.
 
 ************** File: slides1.tex *****************
 
-% LaTeX Beamer file automatically generated from DocOnce
-% https://github.com/doconce/doconce
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+%% doconce slides_beamerslides1.texslides1.tex --beamer_slide_theme=blue_shadow
 
 %-------------------- begin beamer-specific preamble ----------------------
 
@@ -78235,8 +78241,8 @@ title (Warning) since no title is specified.
 
 ************** File: slides1_handout.tex *****************
 
-% LaTeX Beamer file automatically generated from DocOnce
-% https://github.com/doconce/doconce
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+%% doconce slides_beamerslides1.texslides1.tex --beamer_slide_theme=blue_shadow --handout
 
 %-------------------- begin beamer-specific preamble ----------------------
 
@@ -79196,11 +79202,8 @@ FIGURE: [testfigs/broken_pen_and_paper, width=400]
 # #endif
 
 ************** File: slides2_reveal.html *****************
-<!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
-doconce format html slides2.html slides2 reveal --html_slide_theme=beigesmall
--->
+<!--File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+doconce format html slides2.html slides2 reveal --html_slide_theme=beigesmall-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -80645,8 +80648,7 @@ Reveal.initialize({
 
 ************** File: slides2.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex slides2.do.txt --latex_title_layout=beamer -DBEAMER --no_abort
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -81862,8 +81864,8 @@ FIGURE: [testfigs/broken_pen_and_paper, width=400, frac=0.8]
 
 ************** File: slides2.tex *****************
 
-% LaTeX Beamer file automatically generated from DocOnce
-% https://github.com/doconce/doconce
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+%% doconce slides_beamerslides2.texslides2.tex
 
 %-------------------- begin beamer-specific preamble ----------------------
 
@@ -83036,11 +83038,8 @@ qualitatively correct results.
 !epop
 
 ************** File: slides3_reveal.html *****************
-<!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
-doconce format html slides3.html slides3 reveal --html_slide_type=beigesmall
--->
+<!--File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+doconce format html slides3.html slides3 reveal --html_slide_type=beigesmall-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -83574,8 +83573,7 @@ Reveal.initialize({
 
 ************** File: ._slides3-solarized3001.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html slides3.do.txt --html_style=solarized3 SLIDE_TYPE=doconce SLIDE_THEME=solarized3 --output=slides3-solarized3 --html_raw_github_url=raw.github
 -->
 <html>
@@ -83722,8 +83720,7 @@ utilizes doconce slides with the theme solarized3.
 
 ************** File: slides3.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex slides3.do.txt SLIDE_TYPE=beamer SLIDE_THEME=red_plain --latex_title_layout=beamer
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -84182,8 +84179,8 @@ qualitatively correct results.
 
 ************** File: slides3.tex *****************
 
-% LaTeX Beamer file automatically generated from DocOnce
-% https://github.com/doconce/doconce
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+%% doconce slides_beamerslides3.texslides3.tex --beamer_slide_theme=red_plain
 
 %-------------------- begin beamer-specific preamble ----------------------
 
@@ -84670,8 +84667,7 @@ Finally, let us demonstrate referencing the movie ref{mov:wave}.
 
 ************** File: movies_3choices.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html movies.do.txt --output=movies_3choices --html_raw_github_url=raw.github
 -->
 <html>
@@ -85445,8 +85441,7 @@ if (!!(window.safari)) {
 
 ************** File: movies.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html movies.do.txt --no_mp4_webm_ogg_alternatives --html_raw_github_url=raw.github
 -->
 <html>
@@ -86220,8 +86215,7 @@ if (!!(window.safari)) {
 
 ************** File: movies.p.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex movies.do.txt 
 %%
 % #ifdef PTEX2TEX_EXPLANATION
@@ -86641,8 +86635,7 @@ Finally, let us demonstrate referencing the movie~\ref{mov:wave}.
 
 ************** File: movies.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex movies.do.txt 
 %%
 
@@ -87030,8 +87023,7 @@ Finally, let us demonstrate referencing the movie~\ref{mov:wave}.
 
 ************** File: movies_media9.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex movies.do.txt --latex_movie=media9
 %%
 
@@ -90444,8 +90436,7 @@ BIBFILE: papers.pub
 
 ************** File: Springer_T2/Springer_T2_book.tex *****************
 %%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/doconce/doconce/)
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 %% doconce format latex Springer_T2_book.do.txt CHAPTER=chapter BOOK=book APPENDIX=appendix -DPRIMER_BOOK ALG=code --latex_code_style=lst --encoding=utf-8 --device=paper --exercise_numbering=chapter --latex_admon_color=1,1,1 --latex_admon=mdfbox --latex_style=Springer_T4 --latex_title_layout=titlepage --latex_list_of_exercises=loe --latex_table_format=center --latex_admon_title_no_period --exercises_in_zip --exercises_in_zip_filename=chapter --allow_refs_to_external_docs
 
 % #define PREAMBLE
@@ -92008,8 +91999,7 @@ Terminal> python prog.py
 
 ************** File: test_boots.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
 -->
 <html>
@@ -92185,8 +92175,7 @@ MathJax.Hub.Config({
 
 ************** File: ._test_boots001.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
 -->
 <html>
@@ -92475,8 +92464,7 @@ styles?
 
 ************** File: ._test_boots002.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
 -->
 <html>
@@ -93314,8 +93302,8 @@ and give some perspectives.
     "editable": true
    },
    "source": [
-    "<!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)\n",
-    "doconce format html nbdemo.do.txt  -->\n",
+    "<!-- File automatically generated using DocOnce (https://github.com/doconce/doconce/):\n",
+    "doconce format ipynb nbdemo.do.txt  -->\n",
     "<!-- dom:TITLE: Example on interactive live documents versus traditional static documents -->"
    ]
   },
@@ -93639,8 +93627,8 @@ and give some perspectives.
 }
 
 ************** File: nbdemo.do.txt *****************
-# HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
-# doconce format html nbdemo.do.txt
+# File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+# doconce format ipynb nbdemo.do.txt
 TITLE: Example on interactive live documents versus traditional static documents
 
 ======= Example on interactive live documents versus traditional static documents =======
@@ -94167,8 +94155,7 @@ epub_copyright = u'2XXX, Hans Petter Langtangen, Simula, Kaare Dump'
 
 ************** File: testdoc_code_prefix.html *****************
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html testdoc.do.txt --code_prefix=/X/X/test --output=testdoc_code_prefix --examples_as_exercises
 -->
 <html>

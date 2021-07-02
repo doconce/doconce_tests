@@ -1,11 +1,11 @@
-# HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
-# doconce format html nbdemo.do.txt
+# File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+# doconce format ipynb nbdemo.do.txt
 TITLE: Example on interactive live documents versus traditional static documents
 
 ======= Example on interactive live documents versus traditional static documents =======
 _hpl_
 
-DATE: Jun 22, 2021
+DATE: Jul 2, 2021
 ===== Physics =====
 label{ipynbex:physics}
 
