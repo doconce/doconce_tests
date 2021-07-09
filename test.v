@@ -49871,15 +49871,6 @@ system doconce spellcheck -d .dict4spell.txt _testdoc.do.txt
 
 
 
-## Test jupyterbook
-system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
-
-system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
-
-system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
-
-
-
 ## Test --execute
 system doconce format html execute.do.txt --execute
 #system doconce format ipynb execute.do.txt --execute
@@ -49983,6 +49974,20 @@ system pdflatex -shell-escape -halt-on-error testdoc.tex
 system doconce format plain testdoc --exercises_in_zip --examples_as_exercises
 rm -rf standalone_exercises
 unzip testdoc_exercises.zip
+cd standalone_exercises
+python make.py
+cd ..
+
+
+
+## Test jupyterbook
+system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
+
+system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
+
+system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
+
+
 
 # Test prefix
 system doconce format html testdoc --code_prefix=$PWD --output=testdoc_code_prefix --examples_as_exercises
@@ -97135,8 +97140,8 @@ INFO - edit: search.html
 
 ************** File: standalone_exercises/exercise_1.do.txt *****************
 TITLE: Example 1: Examples can be typeset as exercises
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 
 
@@ -97172,14 +97177,14 @@ maybe over multiple doconce input lines.
 
 ************** File: standalone_exercises/selc_composed.do.txt *****************
 TITLE: Project 11: References to Project ref{demo:ex:2} in a heading works for plain
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: selc_composed
-# This document contains references to a parent document (../testdoc).
+# This document might contain references to a parent document (../testdoc).
 # These references will work for latex (using the xr package and
 # a compiled parent document (with ../testdoc.aux file), but other formats
-# will have missing references.
+# might have missing references.
 # Externaldocuments: ../testdoc
 
 
@@ -97190,8 +97195,8 @@ and this one as Project ref{exer:you}.
 
 ************** File: standalone_exercises/subexer_a.do.txt *****************
 TITLE: Exercise 6: Determine some Distance
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: subexer_a
 
@@ -97279,8 +97284,8 @@ remarks will appear at the end of the typeset exercise.
 
 ************** File: standalone_exercises/exercise_4.do.txt *****************
 TITLE: Project 4: Compute a Probability
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 
 
@@ -97307,14 +97312,14 @@ compute the probability as $M/N$.
 
 ************** File: standalone_exercises/verify_formula.do.txt *****************
 TITLE: Exercise 10: Make references to projects and problems
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: verify_formula
-# This document contains references to a parent document (../testdoc).
+# This document might contain references to a parent document (../testdoc).
 # These references will work for latex (using the xr package and
 # a compiled parent document (with ../testdoc.aux file), but other formats
-# will have missing references.
+# might have missing references.
 # Externaldocuments: ../testdoc
 
 
@@ -97330,9 +97335,9 @@ hint, etc.):
  o item2
 
 ************** File: standalone_exercises/exercise_7.do.txt *****************
-TITLE: Some exercise without the "Exercise:" prefix
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+TITLE: Exercise 7: Some exercise without the "Exercise:" prefix
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 
 # Another minimalistic exercise
@@ -97356,8 +97361,8 @@ lambda x: x+2
 
 ************** File: standalone_exercises/myexer1.do.txt *****************
 TITLE: Exercise 3: Test of plain text exercise
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: myexer1
 
@@ -97368,8 +97373,8 @@ of Norway?
 
 ************** File: standalone_exercises/exercise_8.do.txt *****************
 TITLE: Exercise 8: Solution of differential equation
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 
 
@@ -97418,8 +97423,8 @@ special techniques.
 
 ************** File: standalone_exercises/exercise_9.do.txt *****************
 TITLE: Example 9: Just an example
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 
 # This example needs the --examples_as_exercises option, otherwise
@@ -97436,14 +97441,14 @@ Oslo.
 
 ************** File: standalone_exercises/norm.do.txt *****************
 TITLE: Project 5: Explore Distributions of Random Circles
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: norm
-# This document contains references to a parent document (../testdoc).
+# This document might contain references to a parent document (../testdoc).
 # These references will work for latex (using the xr package and
 # a compiled parent document (with ../testdoc.aux file), but other formats
-# will have missing references.
+# might have missing references.
 # Externaldocuments: ../testdoc
 
 
@@ -97523,101 +97528,642 @@ Let $R$ and $(x_0,y_0)$ be normally distributed.
 At the very end of the exercise it may be appropriate to summarize
 and give some perspectives.
 
-************** File: standalone_exercises/index.do.txt *****************
-TITLE: List of stand-alone files with exercises
-
-# Edit FILE_EXTENSIONS to the type of documents that will
-# be listed in the this index
-<%
-FILE_EXTENSIONS = ['.tex', '.ipynb']
-#FILE_EXTENSIONS = ['.tex', '.ipynb', '.do.txt', '.html']
-%>
-
-% for EXT in FILE_EXTENSIONS:
-`exercise_1${EXT}`": "exercise_1${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`flip_coin${EXT}`": "flip_coin${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`myexer1${EXT}`": "myexer1${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`exercise_4${EXT}`": "exercise_4${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`norm${EXT}`": "norm${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`subexer_a${EXT}`": "subexer_a${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`exercise_7${EXT}`": "exercise_7${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`exercise_8${EXT}`": "exercise_8${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`exercise_9${EXT}`": "exercise_9${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`verify_formula${EXT}`": "verify_formula${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`selc_composed${EXT}`": "selc_composed${EXT}
-% endfor
-<linebreak>
-
-
 ************** File: standalone_exercises/make.py *****************
 #!/usr/bin/env python
 # Compile all stand-alone exercises to latex and ipynb
-# (Must first unzip archive)
 
-import glob, os
+import os, sys
 
-dofiles = glob.glob('*.do.txt')
-dofiles.remove('index.do.txt')   # compile to html only
+def os_system(cmd):
+    '''Run system command cmd using the simple os_system command.'''
+    print(cmd)
+    failure = os.system(cmd)
+    if failure:
+        print('Command failed:\n'
+              '  %s\n' % cmd)
+        sys.exit(1)
+
+dofiles = ["exercise_1.do.txt", "flip_coin.do.txt", "myexer1.do.txt", "exercise_4.do.txt", "norm.do.txt", "subexer_a.do.txt", "exercise_7.do.txt", "exercise_8.do.txt", "exercise_9.do.txt", "verify_formula.do.txt", "selc_composed.do.txt", "solutions.do.txt"]
 
 for dofile in dofiles:
-    cmd = 'doconce format pdflatex %s --latex_code_style=vrb --figure_prefix=../ --movie_prefix=../' % dofile
+    # Compile to pdflatex
+    cmd = 'doconce format pdflatex %s --latex_code_style=vrb --figure_prefix=../ --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises' % dofile
     os.system(cmd)
-    # Edit .tex file and remove doconce-specific things
+    # Edit .tex file and remove doconce-specific comments
     cmd = 'doconce subst "%% #.+" "" %s.tex' % dofile[:-7]  # preprocess
     os.system(cmd)
     cmd = 'doconce subst "%%.*" "" %s.tex' % dofile[:-7]
-
-    cmd = 'doconce format ipynb %s --figure_prefix=../  --movie_prefix=../' % dofile
+    os.system(cmd)
+    # Compile to ipynb
+    cmd = 'doconce format ipynb %s --figure_prefix=../  --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises' % dofile
+    os.system(cmd)
+    # Compile to html
+    cmd = 'doconce format html %s --figure_prefix=../  --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises' % dofile
     os.system(cmd)
 
-# Edit FILE_EXTENSIONS to adjust what kind of files that is listed in index.html
-cmd = 'doconce format html index --html_style=bootstrap'
+# Clean up
+cmd = 'rm *~ *.dlog'
 os.system(cmd)
 
+************** File: standalone_exercises/solutions.do.txt *****************
+
+
+===== Example 1: Examples can be typeset as exercises =====
+# Solution to Exercise ref{Example}
+__a) Solution.__
+The answer to this subproblem can be written here.
+
+__b) Solution.__
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+
+
+
+
+
+
+===== Problem 2: Flip a Coin =====
+# Solution to Exercise ref{demo:ex:1}
+
+__Answer.__
+If the `random.random()` function returns a number $<1/2$, let it be
+head, otherwise tail. Repeat this $N$ number of times.
+
+__a) Solution.__
+!bc pycod
+import sys, random
+N = int(sys.argv[1])
+heads = 0
+for i in range(N):
+    r = random.random()
+    if r <= 0.5:
+        heads += 1
+print('Flipping a coin %d times gave %d heads' % (N, heads))
+!ec
+
+
+
+__Answer.__
+`np.sum(np.where(r <= 0.5, 1, 0))` or `np.sum(r <= 0.5)`.
+
+
+
+
+
+
+
+
+===== Project 5: Explore Distributions of Random Circles =====
+# Solution to Exercise ref{proj:circle1}
+
+__Answer.__
+Here goes the short answer to part a).
+
+__a) Solution.__
+Here goes a full solution to part a).
+
+
+
+
+
+
+
+
+===== Exercise 6: Determine some Distance =====
+# Solution to Exercise ref{exer:dist}
+
+
+__Solution.__
+Here goes a full solution of the whole exercise.
+With some math $a=b$ in this solution:
+!bt
+\[ \hbox{math in solution: } a = b \]
+!et
+And code `a=b` in this solution:
+!bc
+a = b  # code in solution
+!ec
+End of solution is here.
+
+
+__Answer.__
+Short answer to subexercise a).
+With math in answer: $a=b$.
+
+
+__b) Solution.__
+Here goes the solution of this subexercise.
+
+
+
+
+
+
+
+
+===== Example 9: Just an example =====
+
+
+
+
+
+
+************** File: standalone_exercises/solutions.tex *****************
+
+
+
+
+
+
+
+
+
+\documentclass[
+oneside,                 
+final,                   
+10pt]{article}
+
+\listfiles               
+
+\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage[pdftex]{graphicx}
+
+
+\usepackage{fancyvrb,framed,moreverb}
+
+
+\definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+\definecolor{tucorange}{rgb}{1.0,0.64,0}
+\definecolor{darkorange}{rgb}{.71,0.21,0.01}
+\definecolor{darkgreen}{rgb}{.12,.54,.11}
+\definecolor{myteal}{rgb}{.26, .44, .56}
+\definecolor{gray}{gray}{0.45}
+\definecolor{mediumgray}{gray}{.8}
+\definecolor{lightgray}{gray}{.95}
+\definecolor{brown}{rgb}{0.54,0.27,0.07}
+\definecolor{purple}{rgb}{0.5,0.0,0.5}
+\definecolor{darkgray}{gray}{0.25}
+\definecolor{darkblue}{rgb}{0,0.08,0.45}
+\definecolor{darkblue2}{rgb}{0,0,0.8}
+\definecolor{lightred}{rgb}{1.0,0.39,0.28}
+\definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+\definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+\definecolor{lightblue2}{rgb}{0.3,0.3,1.0}
+\definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+\definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+
+\colorlet{comment_green}{green!50!black}
+\colorlet{string_red}{red!60!black}
+\colorlet{keyword_pink}{magenta!70!black}
+\colorlet{indendifier_green}{green!70!white}
+
+
+\definecolor{cbg_gray}{rgb}{.95, .95, .95}
+\definecolor{bar_gray}{rgb}{.92, .92, .92}
+
+\definecolor{cbg_yellowgray}{rgb}{.95, .95, .85}
+\definecolor{bar_yellowgray}{rgb}{.95, .95, .65}
+
+\colorlet{cbg_yellow2}{yellow!10}
+\colorlet{bar_yellow2}{yellow!20}
+
+\definecolor{cbg_yellow1}{rgb}{.98, .98, 0.8}
+\definecolor{bar_yellow1}{rgb}{.98, .98, 0.4}
+
+\definecolor{cbg_red1}{rgb}{1, 0.85, 0.85}
+\definecolor{bar_red1}{rgb}{1, 0.75, 0.85}
+
+\definecolor{cbg_blue1}{rgb}{0.87843, 0.95686, 1.0}
+\definecolor{bar_blue1}{rgb}{0.7,     0.95686, 1}
+
+
+\usepackage[T1]{fontenc}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         
+
+
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   
+    }
+
+
+\setcounter{tocdepth}{2}  
+
+
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+
+
+
+
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   
+\usepackage[nottoc]{tocbibind}  
+
+
+
+\begin{document}
+
+
+
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+
+
+
+\exercisesection{Example \thedoconceexercisecounter: Examples can be typeset as exercises}
+                             
+
+\paragraph{a) Solution.}
+The answer to this subproblem can be written here.
+
+\paragraph{b) Solution.}
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+
+\exercisesection{Problem \thedoconceexercisecounter: Flip a Coin}
+                             
+
+
+\paragraph{Answer.}
+If the \texttt{random.random()} function returns a number $<1/2$, let it be
+head, otherwise tail. Repeat this $N$ number of times.
+
+\paragraph{a) Solution.}
+
+
+
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95,xleftmargin=2mm]
+import sys, random
+N = int(sys.argv[1])
+heads = 0
+for i in range(N):
+    r = random.random()
+    if r <= 0.5:
+        heads += 1
+print('Flipping a coin 
+
+\end{Verbatim}
+
+
+\paragraph{Answer.}
+\texttt{np.sum(np.where(r <= 0.5, 1, 0))} or \texttt{np.sum(r <= 0.5)}.
+
+\exercisesection{Project \thedoconceexercisecounter: Explore Distributions of Random Circles}
+                             
+
+
+\paragraph{Answer.}
+Here goes the short answer to part a).
+
+\paragraph{a) Solution.}
+Here goes a full solution to part a).
+
+\exercisesection{Exercise \thedoconceexercisecounter: Determine some Distance}
+                             
+
+
+\paragraph{Solution.}
+Here goes a full solution of the whole exercise.
+With some math $a=b$ in this solution:
+\[ \hbox{math in solution: } a = b \]
+And code \texttt{a=b} in this solution:
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95,xleftmargin=2mm]
+a = b  # code in solution
+
+\end{Verbatim}
+
+End of solution is here.
+
+\paragraph{Answer.}
+Short answer to subexercise a).
+With math in answer: $a=b$.
+
+\paragraph{b) Solution.}
+Here goes the solution of this subexercise.
+
+\exercisesection{Example \thedoconceexercisecounter: Just an example}
+                             
+
+
+
+
+
+\end{document}
+
+
+
+************** File: standalone_exercises/solutions.html *****************
+<!--
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+doconce format html solutions.do.txt --figure_prefix=../ --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<style type="text/css">
+/* blueish style */
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+/* pre style removed because it will interfer with pygments */
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
+div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
+</style>
+</head>
+
+<!-- tocinfo
+{'highest level': 2,
+ 'sections': [('Example 1: Examples can be typeset as exercises',
+               2,
+               None,
+               'example-1-examples-can-be-typeset-as-exercises'),
+              ('Problem 2: Flip a Coin', 2, None, 'problem-2-flip-a-coin'),
+              ('Project 5: Explore Distributions of Random Circles',
+               2,
+               None,
+               'project-5-explore-distributions-of-random-circles'),
+              ('Exercise 6: Determine some Distance',
+               2,
+               None,
+               'exercise-6-determine-some-distance'),
+              ('Example 9: Just an example',
+               2,
+               None,
+               'example-9-just-an-example')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- ------------------- main content ---------------------- -->
+<h2 id="example-1-examples-can-be-typeset-as-exercises">Example 1: Examples can be typeset as exercises </h2>
+<!-- Solution to ref{Example} -->
+<p>
+<b>a) Solution.</b>
+The answer to this subproblem can be written here.
+</p>
+
+<p>
+<b>b) Solution.</b>
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+</p>
+<h2 id="problem-2-flip-a-coin">Problem 2: Flip a Coin </h2>
+<!-- Solution to ref{demo:ex:1} -->
+
+<p>
+<b>Answer.</b>
+If the <code>random.random()</code> function returns a number \( < 1/2 \), let it be
+head, otherwise tail. Repeat this \( N \) number of times.
+</p>
+
+<p>
+<b>a) Solution.</b>
+</p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span><span style="color: #666666">,</span> <span style="color: #0000FF; font-weight: bold">random</span>
+N <span style="color: #666666">=</span> <span style="color: #008000">int</span>(sys<span style="color: #666666">.</span>argv[<span style="color: #666666">1</span>])
+heads <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(N):
+    r <span style="color: #666666">=</span> random<span style="color: #666666">.</span>random()
+    <span style="color: #008000; font-weight: bold">if</span> r <span style="color: #666666">&lt;=</span> <span style="color: #666666">0.5</span>:
+        heads <span style="color: #666666">+=</span> <span style="color: #666666">1</span>
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Flipping a coin </span><span style="color: #BB6688; font-weight: bold">%d</span><span style="color: #BA2121"> times gave </span><span style="color: #BB6688; font-weight: bold">%d</span><span style="color: #BA2121"> heads&#39;</span> <span style="color: #666666">%</span> (N, heads))
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>
+<b>Answer.</b>
+<code>np.sum(np.where(r &lt;= 0.5, 1, 0))</code> or <code>np.sum(r &lt;= 0.5)</code>.
+</p>
+<h2 id="project-5-explore-distributions-of-random-circles">Project 5: Explore Distributions of Random Circles </h2>
+<!-- Solution to ref{proj:circle1} -->
+
+<p>
+<b>Answer.</b>
+Here goes the short answer to part a).
+</p>
+
+<p>
+<b>a) Solution.</b>
+Here goes a full solution to part a).
+</p>
+<h2 id="exercise-6-determine-some-distance">Exercise 6: Determine some Distance </h2>
+<!-- Solution to ref{exer:dist} -->
+
+<p>
+<b>Solution.</b>
+Here goes a full solution of the whole exercise.
+With some math \( a=b \) in this solution:
+</p>
+$$ \hbox{math in solution: } a = b $$
+
+<p>And code <code>a=b</code> in this solution:</p>
+
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">a = b  # code in solution
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>End of solution is here.</p>
+
+<p>
+<b>Answer.</b>
+Short answer to subexercise a).
+With math in answer: \( a=b \).
+</p>
+
+<p>
+<b>b) Solution.</b>
+Here goes the solution of this subexercise.
+</p>
+<h2 id="example-9-just-an-example">Example 9: Just an example </h2>
+
+<!-- ------------------- end of main content --------------- -->
+</body>
+</html>
+
+
 ************** File: Springer_T2/standalone_exercises/Chapter_2.1.do.txt *****************
-TITLE: Problem 2.1: Add numbers
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+TITLE: Problem 1: Add numbers
+AUTHOR:  Hans Petter Langtangen at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: add
 
@@ -97634,9 +98180,9 @@ Compute
 
 
 ************** File: Springer_T2/standalone_exercises/Chapter_2.2.do.txt *****************
-TITLE: Problem 2.2: Multiply numbers
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+TITLE: Problem 2: Multiply numbers
+AUTHOR:  Hans Petter Langtangen at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: multiply
 
@@ -97665,52 +98211,41 @@ Use a Python shell.
 
 #--- end subexercise ---
 
-************** File: Springer_T2/standalone_exercises/index.do.txt *****************
-TITLE: List of stand-alone files with exercises
-
-# Edit FILE_EXTENSIONS to the type of documents that will
-# be listed in the this index
-<%
-FILE_EXTENSIONS = ['.tex', '.ipynb']
-#FILE_EXTENSIONS = ['.tex', '.ipynb', '.do.txt', '.html']
-%>
-
-========= Chapter: Storing results in data files and adding more words here to get a very long chapter heading =========
-
-% for EXT in FILE_EXTENSIONS:
-`Chapter_2.1${EXT}`": "Chapter_2.1${EXT}
-% endfor
-<linebreak>
-
-% for EXT in FILE_EXTENSIONS:
-`Chapter_2.2${EXT}`": "Chapter_2.2${EXT}
-% endfor
-<linebreak>
-
-
 ************** File: Springer_T2/standalone_exercises/make.py *****************
 #!/usr/bin/env python
 # Compile all stand-alone exercises to latex and ipynb
-# (Must first unzip archive)
 
-import glob, os
+import os, sys
 
-dofiles = glob.glob('*.do.txt')
-dofiles.remove('index.do.txt')   # compile to html only
+def os_system(cmd):
+    '''Run system command cmd using the simple os_system command.'''
+    print(cmd)
+    failure = os.system(cmd)
+    if failure:
+        print('Command failed:\n'
+              '  %s\n' % cmd)
+        sys.exit(1)
+
+dofiles = ["Chapter_2.1.do.txt", "Chapter_2.2.do.txt", "solutions.do.txt"]
 
 for dofile in dofiles:
-    cmd = 'doconce format pdflatex %s --latex_code_style=vrb --figure_prefix=../ --movie_prefix=../' % dofile
+    # Compile to pdflatex
+    cmd = 'doconce format pdflatex %s --latex_code_style=vrb --figure_prefix=../ --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises' % dofile
     os.system(cmd)
-    # Edit .tex file and remove doconce-specific things
+    # Edit .tex file and remove doconce-specific comments
     cmd = 'doconce subst "%% #.+" "" %s.tex' % dofile[:-7]  # preprocess
     os.system(cmd)
     cmd = 'doconce subst "%%.*" "" %s.tex' % dofile[:-7]
-
-    cmd = 'doconce format ipynb %s --figure_prefix=../  --movie_prefix=../' % dofile
+    os.system(cmd)
+    # Compile to ipynb
+    cmd = 'doconce format ipynb %s --figure_prefix=../  --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises' % dofile
+    os.system(cmd)
+    # Compile to html
+    cmd = 'doconce format html %s --figure_prefix=../  --movie_prefix=../ --allow_refs_to_external_docs --examples_as_exercises' % dofile
     os.system(cmd)
 
-# Edit FILE_EXTENSIONS to adjust what kind of files that is listed in index.html
-cmd = 'doconce format html index --html_style=bootstrap'
+# Clean up
+cmd = 'rm *~ *.dlog'
 os.system(cmd)
 
 ************** File: tmp_DocOnce.do.txt *****************

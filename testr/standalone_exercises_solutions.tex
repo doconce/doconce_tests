@@ -1,0 +1,212 @@
+
+
+
+
+
+
+
+
+
+\documentclass[
+oneside,                 
+final,                   
+10pt]{article}
+
+\listfiles               
+
+\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage[pdftex]{graphicx}
+
+
+\usepackage{fancyvrb,framed,moreverb}
+
+
+\definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+\definecolor{tucorange}{rgb}{1.0,0.64,0}
+\definecolor{darkorange}{rgb}{.71,0.21,0.01}
+\definecolor{darkgreen}{rgb}{.12,.54,.11}
+\definecolor{myteal}{rgb}{.26, .44, .56}
+\definecolor{gray}{gray}{0.45}
+\definecolor{mediumgray}{gray}{.8}
+\definecolor{lightgray}{gray}{.95}
+\definecolor{brown}{rgb}{0.54,0.27,0.07}
+\definecolor{purple}{rgb}{0.5,0.0,0.5}
+\definecolor{darkgray}{gray}{0.25}
+\definecolor{darkblue}{rgb}{0,0.08,0.45}
+\definecolor{darkblue2}{rgb}{0,0,0.8}
+\definecolor{lightred}{rgb}{1.0,0.39,0.28}
+\definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+\definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+\definecolor{lightblue2}{rgb}{0.3,0.3,1.0}
+\definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+\definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+
+\colorlet{comment_green}{green!50!black}
+\colorlet{string_red}{red!60!black}
+\colorlet{keyword_pink}{magenta!70!black}
+\colorlet{indendifier_green}{green!70!white}
+
+
+\definecolor{cbg_gray}{rgb}{.95, .95, .95}
+\definecolor{bar_gray}{rgb}{.92, .92, .92}
+
+\definecolor{cbg_yellowgray}{rgb}{.95, .95, .85}
+\definecolor{bar_yellowgray}{rgb}{.95, .95, .65}
+
+\colorlet{cbg_yellow2}{yellow!10}
+\colorlet{bar_yellow2}{yellow!20}
+
+\definecolor{cbg_yellow1}{rgb}{.98, .98, 0.8}
+\definecolor{bar_yellow1}{rgb}{.98, .98, 0.4}
+
+\definecolor{cbg_red1}{rgb}{1, 0.85, 0.85}
+\definecolor{bar_red1}{rgb}{1, 0.75, 0.85}
+
+\definecolor{cbg_blue1}{rgb}{0.87843, 0.95686, 1.0}
+\definecolor{bar_blue1}{rgb}{0.7,     0.95686, 1}
+
+
+\usepackage[T1]{fontenc}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         
+
+
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   
+    }
+
+
+\setcounter{tocdepth}{2}  
+
+
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+
+
+
+
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   
+\usepackage[nottoc]{tocbibind}  
+
+
+
+\begin{document}
+
+
+
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+
+
+
+\exercisesection{Example \thedoconceexercisecounter: Examples can be typeset as exercises}
+                             
+
+\paragraph{a) Solution.}
+The answer to this subproblem can be written here.
+
+\paragraph{b) Solution.}
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+
+\exercisesection{Problem \thedoconceexercisecounter: Flip a Coin}
+                             
+
+
+\paragraph{Answer.}
+If the \texttt{random.random()} function returns a number $<1/2$, let it be
+head, otherwise tail. Repeat this $N$ number of times.
+
+\paragraph{a) Solution.}
+
+
+
+
+
+
+
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95,xleftmargin=2mm]
+import sys, random
+N = int(sys.argv[1])
+heads = 0
+for i in range(N):
+    r = random.random()
+    if r <= 0.5:
+        heads += 1
+print('Flipping a coin 
+
+\end{Verbatim}
+
+
+\paragraph{Answer.}
+\texttt{np.sum(np.where(r <= 0.5, 1, 0))} or \texttt{np.sum(r <= 0.5)}.
+
+\exercisesection{Project \thedoconceexercisecounter: Explore Distributions of Random Circles}
+                             
+
+
+\paragraph{Answer.}
+Here goes the short answer to part a).
+
+\paragraph{a) Solution.}
+Here goes a full solution to part a).
+
+\exercisesection{Exercise \thedoconceexercisecounter: Determine some Distance}
+                             
+
+
+\paragraph{Solution.}
+Here goes a full solution of the whole exercise.
+With some math $a=b$ in this solution:
+\[ \hbox{math in solution: } a = b \]
+And code \texttt{a=b} in this solution:
+
+
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95,xleftmargin=2mm]
+a = b  # code in solution
+
+\end{Verbatim}
+
+End of solution is here.
+
+\paragraph{Answer.}
+Short answer to subexercise a).
+With math in answer: $a=b$.
+
+\paragraph{b) Solution.}
+Here goes the solution of this subexercise.
+
+\exercisesection{Example \thedoconceexercisecounter: Just an example}
+                             
+
+
+
+
+
+\end{document}
+
+

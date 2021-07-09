@@ -1,0 +1,110 @@
+
+
+===== Example 1: Examples can be typeset as exercises =====
+# Solution to Exercise ref{Example}
+__a) Solution.__
+The answer to this subproblem can be written here.
+
+#--- end subexercise ---
+__b) Solution.__
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+
+#--- end subexercise ---
+
+
+
+
+
+===== Problem 2: Flip a Coin =====
+# Solution to Exercise ref{demo:ex:1}
+
+__Answer.__
+If the `random.random()` function returns a number $<1/2$, let it be
+head, otherwise tail. Repeat this $N$ number of times.
+
+__a) Solution.__
+!bc pycod
+import sys, random
+N = int(sys.argv[1])
+heads = 0
+for i in range(N):
+    r = random.random()
+    if r <= 0.5:
+        heads += 1
+print('Flipping a coin %d times gave %d heads' % (N, heads))
+!ec
+
+#--- end subexercise ---
+
+#--- end subexercise ---
+
+__Answer.__
+`np.sum(np.where(r <= 0.5, 1, 0))` or `np.sum(r <= 0.5)`.
+
+#--- end subexercise ---
+
+
+
+
+
+
+
+===== Project 5: Explore Distributions of Random Circles =====
+# Solution to Exercise ref{proj:circle1}
+
+__Answer.__
+Here goes the short answer to part a).
+
+__a) Solution.__
+Here goes a full solution to part a).
+
+#--- end subexercise ---
+
+#--- end subexercise ---
+
+#--- end subexercise ---
+
+
+
+
+
+===== Exercise 6: Determine some Distance =====
+# Solution to Exercise ref{exer:dist}
+
+
+__Solution.__
+Here goes a full solution of the whole exercise.
+With some math $a=b$ in this solution:
+13 <<<!!MATH_BLOCK
+And code `a=b` in this solution:
+!bc
+a = b  # code in solution
+!ec
+End of solution is here.
+
+
+__Answer.__
+Short answer to subexercise a).
+With math in answer: $a=b$.
+
+#--- end subexercise ---
+
+__b) Solution.__
+Here goes the solution of this subexercise.
+
+#--- end subexercise ---
+
+
+
+
+
+
+
+===== Example 9: Just an example =====
+
+#--- end subexercise ---
+
+
+
+

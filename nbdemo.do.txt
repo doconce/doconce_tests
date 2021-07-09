@@ -5,7 +5,7 @@ TITLE: Example on interactive live documents versus traditional static documents
 ======= Example on interactive live documents versus traditional static documents =======
 _hpl_
 
-DATE: Jul 2, 2021
+DATE: Jul 9, 2021
 ===== Physics =====
 label{ipynbex:physics}
 

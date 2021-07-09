@@ -43,15 +43,6 @@ system doconce spellcheck -d .dict4spell.txt _testdoc.do.txt
 
 
 
-## Test jupyterbook
-system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
-
-system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
-
-system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
-
-
-
 ## Test --execute
 system doconce format html execute.do.txt --execute
 #system doconce format ipynb execute.do.txt --execute
@@ -155,6 +146,20 @@ system pdflatex -shell-escape -halt-on-error testdoc.tex
 system doconce format plain testdoc --exercises_in_zip --examples_as_exercises
 rm -rf standalone_exercises
 unzip testdoc_exercises.zip
+cd standalone_exercises
+python make.py
+cd ..
+
+
+
+## Test jupyterbook
+system doconce jupyterbook testdoc --show_titles --sep=section --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
+
+system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --titles=README.md --examples_as_exercises --allow_refs_to_external_docs 
+
+system doconce jupyterbook testdoc --show_titles --sep=section --sep_section=subsection --dest=$PWD --dest_toc=$PWD --examples_as_exercises --allow_refs_to_external_docs
+
+
 
 # Test prefix
 system doconce format html testdoc --code_prefix=$PWD --output=testdoc_code_prefix --examples_as_exercises

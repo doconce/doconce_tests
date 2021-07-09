@@ -1,6 +1,6 @@
-TITLE: Problem 2.2: Multiply numbers
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+TITLE: Problem 2: Multiply numbers
+AUTHOR:  Hans Petter Langtangen at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: multiply
 

@@ -39,7 +39,7 @@ def tdir():
     shutil.rmtree(tmpdir)
 
 def caja(dir='.'):
-    """For troubleshootingpurposes: open a file manager"""
+    """For troubleshooting purposes: open a file manager"""
     os.system('caja '+dir)
 
 def cp_testdoc(dest, files=None):
@@ -78,6 +78,7 @@ def test_get_code_block_args():
     assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('r', '', '-t', 'r')
     LANG, codetype, postfix = get_code_block_args('!bc rbpro')
     assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('rb', 'pro', '', 'ruby')
+
 
 ### functions in misc.py
 def test_find_file_with_extensions(tdir):
@@ -199,7 +200,6 @@ def test_split_file():
     assert chunks == ['before', md]
 
 
-
 ### functions in html.py
 def test_string2href():
     from doconce.html import string2href
@@ -209,7 +209,6 @@ def test_string2href():
     assert string2href('_bold_') == 'bold'
     assert string2href('*emph*') == 'emph'
     assert string2href('`verbatim`') == 'verbatim'
-
 
 
 ### functions in doconce.py
@@ -266,7 +265,6 @@ def test_text_lines():
 def test_typeset_lists():
     from doconce.doconce import typeset_lists
     assert typeset_lists('a line', format='html') == 'a line\n'
-    # TODO fails because of import
     load_modules('the global LIST is needed', modules=['html'])
     assert typeset_lists('    - keyword x: text', format='html').replace(' ','') == \
            '\n<dl>\n<dt>keywordx:<dd>\ntext\n</dl>\n\n'
@@ -274,6 +272,16 @@ def test_typeset_lists():
     assert typeset_lists('    - keyword x: text', format='latex').replace(' ','') == \
            '\\begin{description}\n\\item[keywordx:]\ntext\n\\end{description}\n\n\\noindent\n'
 
+def test_grep_envir(change_test_dir, tdir):
+    from doconce.doconce import grep_envir
+    load_modules('the global FILENAME_EXTENSION is needed', modules=['plain','latex', 'ipynb'])
+    with cd_context(tdir):
+        input = '# --- begin answer of exercise ---\n'
+        input += 'julia \n!bans jlcod\nvar=33\n!eans\n julia\n'
+        input += '# --- end answer of exercise ---\n'
+        out = grep_envir(input, 'ans', 'plain', action='remove', reason='test grep_envir\n')
+        assert 'test grep_envir' in out
+        assert 'begin answer' not in out
 
 
 ### functions in slides.py
@@ -373,6 +381,26 @@ def test_doconce_help():
                          encoding='utf8')
     assert out.returncode == 0
     assert all(item in out.stdout for item in [cmd, expl])
+
+def test_doconce_format_pandoc(change_test_dir, tdir):
+    # cp files
+    cp_testdoc(dest=tdir)
+    # test doconce format html
+    with cd_context(tdir):
+        # check that it fails
+        out = subprocess.run('doconce format pandoc fail --no_abort'.split(' '))
+        assert out.returncode != 0 # here return code is 1
+        # check that it works
+        out = subprocess.run('doconce format pandoc testdoc.do.txt --examples_as_exercises'.split(' '),
+                             cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                             encoding='utf8')
+        assert out.returncode == 0
+        with open('testdoc.md', 'r') as f:
+            md = f.read()
+        assert 'common cases.\n\nAnd' in md
+        assert '### Subsection 2: Testing figures\n<div id="subsec:ex"></div>' in md
 
 def test_doconce_format_html(change_test_dir, tdir):
     # cp files
@@ -528,6 +556,33 @@ def test_doconce_html_slides(change_test_dir, tdir):
         with open('temp.html', 'r') as f:
             html = f.read()
         assert html.find('solarized.css') > -1
+
+def test_doconce_exercises_in_zip(change_test_dir, tdir):
+    from zipfile import ZipFile
+    # cp files
+    cp_testdoc(dest=tdir)
+    # test doconce format html
+    with cd_context(tdir):
+        # check that it works
+        out = subprocess.run('doconce format pandoc testdoc.do.txt --exercises_in_zip --examples_as_exercises'.split(' '),
+                             cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                             encoding='utf8')
+        assert out.returncode == 0
+        fname_zip = 'testdoc_exercises.zip'
+        fname_unzipped = 'standalone_exercises'
+        assert os.path.exists(fname_zip)
+        with ZipFile(fname_zip, 'r') as zip:
+            zip.extractall()
+        assert os.path.exists(fname_unzipped)
+        assert os.path.exists(os.path.join(fname_unzipped, 'solutions.do.txt'))
+        with open(os.path.join(fname_unzipped,'solutions.do.txt'), 'r') as f:
+            do = f.read()
+        assert '__a) Solution.__' in do
+        assert '__a) Solution.__\n!bc pycod' in do
+        assert '#--- ' not in do
+
 
 def test_latex_code():
     from doconce.latex import latex_code

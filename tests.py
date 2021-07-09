@@ -158,13 +158,13 @@ def run():
         'exercise_1.do.txt', 'selc_composed.do.txt',
         'subexer_a.do.txt',  'exercise_4.do.txt', 'verify_formula.do.txt',
         'exercise_7.do.txt', 'myexer1.do.txt', 'exercise_8.do.txt',
-        'exercise_9.do.txt',
-        'norm.do.txt', 'index.do.txt', 'make.py',]
+        'exercise_9.do.txt', 'norm.do.txt', 'make.py',
+        'solutions.do.txt','solutions.tex','solutions.html',]
     standalone_exercises = [os.path.join('standalone_exercises', f) for f
                             in standalone_exercises]
     files += standalone_exercises
     standalone_exercises = ['Chapter_2.1.do.txt', 'Chapter_2.2.do.txt',
-                            'index.do.txt', 'make.py',]
+                            'make.py',]
     standalone_exercises = [os.path.join('Springer_T2','standalone_exercises', f)
                             for f in standalone_exercises]
     files += standalone_exercises

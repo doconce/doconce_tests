@@ -1,6 +1,6 @@
-TITLE: Some exercise without the "Exercise:" prefix
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+TITLE: Exercise 7: Some exercise without the "Exercise:" prefix
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 
 # Another minimalistic exercise

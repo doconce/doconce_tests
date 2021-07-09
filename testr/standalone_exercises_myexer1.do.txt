@@ -1,6 +1,6 @@
 TITLE: Exercise 3: Test of plain text exercise
-AUTHOR: Jane Doe Email:jane.doe@cyberspace.net
-DATE: Due Jan 32, 2100
+AUTHOR:  Hans Petter Langtangen Email: hpl@simula.no at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE:  today
 
 # Logical name of exercise: myexer1
 
