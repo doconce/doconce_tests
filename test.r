@@ -32655,7 +32655,7 @@ You may want to use <code>os.chdir</code> to change the directory.
       <div class="output_area">
         <div class="output_subarea output_stream output_stdout output_text">          
 <pre>
-Copyright (c) 2007-2XXX, Hans Petter Langtangen <hpl@simula.no> and
+Copyright (c) 2007-2XXX, Hans Petter Langtangen &lt;hpl@simula.no&gt; and
 Simula Resarch Laboratory.
 
 All rights reserved.
@@ -32678,7 +32678,7 @@ met:
       permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
