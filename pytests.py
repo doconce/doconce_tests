@@ -471,8 +471,8 @@ def test_doconce_format_ipynb(change_test_dir, tdir):
         pos_subex2 = ipynb.find('State some other problem.')
         assert ipynb[pos_subex1:pos_subex2].find('"source":') > 0
         # Check that the links in the TOC work (no capitalization)
-        #assert r'<a href=\"#Just-bold\">' in ipynb
-        #assert r'"## **Just bold**\n",' in ipynb
+        assert r'<a href=\"#Just-bold\">' in ipynb
+        assert r'"## **Just bold**\n",' in ipynb
 
 def test_doconce_jupyterbook(change_test_dir, tdir):
     cp_testdoc(dest=tdir)
