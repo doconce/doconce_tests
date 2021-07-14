@@ -27236,15 +27236,7 @@ is at the end with only one newline.
    "source": [
     "<!-- File automatically generated using DocOnce (https://github.com/doconce/doconce/):\n",
     "doconce format ipynb testdoc.do.txt --examples_as_exercises -->\n",
-    "<!-- dom:TITLE: A Document for Testing DocOnce -->"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "editable": true
-   },
-   "source": [
+    "\n",
     "# A Document for Testing DocOnce\n",
     "**Hans Petter Langtangen** (email: `hpl@simula.no`), Center for Biomedical Computing, Simula Research Laboratory and Department of Informatics, University of Oslo  \n",
     "**Kaare Dump**, Segfault, Cyberspace  \n",
@@ -33238,6 +33230,7 @@ author and is released under the same conditions as Doconce.
    "source": [
     "<!-- File automatically generated using DocOnce (https://github.com/doconce/doconce/):\n",
     "doconce format ipynb execute.do.txt --examples_as_exercises --execute -->\n",
+    "\n",
     "# Automatic execution of code blocks\n",
     "\n",
     "Convert this document to `ipynb`, `latex` or `html` with e.g.:"
@@ -43170,7 +43163,8 @@ $latex  y(x) = e^{-y}. $
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
 <center style="font-size:80%">
-  Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -49064,10 +49058,10 @@ sphinx_rootdir = 'sphinx-testdoc'
 source_dir = sphinx_rootdir
 
 if not os.path.isdir(sphinx_rootdir):
-    print("""*** error: %(sphinx_rootdir)s does not exist. This means unsuccessful
-    doconce sphinx_dir command. Try to upgrade to latest DocOnce version.
-    (The script tmp_sphinx_gen.sh runs sphinx-quickstart - it may have failed.)
-""" % vars())
+    print("*** error: %(sphinx_rootdir)s does not exist. This means unsuccessful\n"
+          "    doconce sphinx_dir command. Try to upgrade to latest DocOnce version.\n"
+          "    (The script tmp_sphinx_gen.sh runs sphinx-quickstart - it may have failed.)\n" % 
+          vars())
     sys.exit(1)
 
 def system(cmd, capture_output=False, echo=True):
@@ -49249,10 +49243,7 @@ if '--runestone' not in sys.argv:
 else:
     # Add directory for RunestoneInteractive book
     use_runestonebooks_style = True  # False: use user-chosen style
-    print("""
-
-create RunestoneInteractive directory
-""")
+    print(("\n"           "\n"           "create RunestoneInteractive directory\n"))
     sys.path.insert(0, os.curdir)
     import conf as source_dir_conf  # read data from conf.py
 
@@ -49570,10 +49561,10 @@ sphinx_rootdir = 'sphinx-rootdir-math'
 source_dir = sphinx_rootdir
 
 if not os.path.isdir(sphinx_rootdir):
-    print("""*** error: %(sphinx_rootdir)s does not exist. This means unsuccessful
-    doconce sphinx_dir command. Try to upgrade to latest DocOnce version.
-    (The script tmp_sphinx_gen.sh runs sphinx-quickstart - it may have failed.)
-""" % vars())
+    print("*** error: %(sphinx_rootdir)s does not exist. This means unsuccessful\n"
+          "    doconce sphinx_dir command. Try to upgrade to latest DocOnce version.\n"
+          "    (The script tmp_sphinx_gen.sh runs sphinx-quickstart - it may have failed.)\n" % 
+          vars())
     sys.exit(1)
 
 def system(cmd, capture_output=False, echo=True):
@@ -49771,10 +49762,7 @@ if '--runestone' not in sys.argv:
 else:
     # Add directory for RunestoneInteractive book
     use_runestonebooks_style = True  # False: use user-chosen style
-    print("""
-
-create RunestoneInteractive directory
-""")
+    print(("\n"           "\n"           "create RunestoneInteractive directory\n"))
     sys.path.insert(0, os.curdir)
     import conf as source_dir_conf  # read data from conf.py
 
@@ -50138,8 +50126,11 @@ cp author2.tex author2_elsevier.tex
 ## Test notebook conversions
 cp ../doc/src/ipynb/example.do.txt nbdemo.do.txt
 doconce replace 'fig/oscillator_general' '../doc/src/ipynb/fig/oscillator_general' nbdemo.do.txt
-system doconce format ipynb nbdemo
-system doconce ipynb2doconce nbdemo.ipynb
+system doconce format ipynb nbdemo.do.txt
+system doconce ipynb2doconce nbdemo.ipynb --output=nbdemo_ipynb2doconce.do.txt
+#TODO: issues with references to figures, which are formatted as normal links
+#but should be rendered with ref{label}. This causes error with this command:
+#system doconce format ipynb nbdemo_ipynb2doconce.do.txt --output nbdemo_ipynb2doconce.ipynb
 
 
 
@@ -68187,7 +68178,9 @@ exercises (and problems and projects too).
 </p>
 <!-- ------------------- end of main content --------------- -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -68908,7 +68901,9 @@ exercises (and problems and projects too).
 </p>
 <!-- ------------------- end of main content --------------- -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -69626,7 +69621,9 @@ exercises (and problems and projects too).
 </p>
 <!-- ------------------- end of main content --------------- -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -70800,7 +70797,9 @@ exercises (and problems and projects too).
 </p>
 <!-- ------------------- end of main content --------------- -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -71511,7 +71510,9 @@ exercises (and problems and projects too).
 </p>
 <!-- ------------------- end of main content --------------- -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -72164,7 +72165,9 @@ exercises (and problems and projects too).
 </p>
 <!-- ------------------- end of main content --------------- -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -72974,7 +72977,9 @@ MathJax.Hub.Config({
 </footer>
 -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -73674,7 +73679,9 @@ exercises (and problems and projects too).
 </footer>
 -->
 <center style="font-size:80%">
-<!-- copyright --> &copy; 2021, H. P. Langtangen. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -74312,7 +74319,9 @@ exercises (and problems and projects too).
 </footer>
 -->
 <center style="font-size:80%">
-<!-- copyright only on the titlepage -->
+<!-- copyright -->
+<p>&copy; 2021, H. P. Langtangen</p>
+<p>Made with <a href="https://github.com/doconce/doconce">DocOnce</a></p>
 </center>
 </body>
 </html>
@@ -74324,7 +74333,9 @@ exercises (and problems and projects too).
 By '''H. P. Langtangen'''
 ==== Jan 32, 2100 ====
 
-Copyright 2021, H. P. Langtangen. Made with DocOnce
+2021, H. P. Langtangen
+
+Made with DocOnce
 
 
 
@@ -75136,7 +75147,9 @@ H. P. Langtangen
 
 Date: Jan 32, 2100
 
-Copyright 2021, H. P. Langtangen. Made with DocOnce
+2021, H. P. Langtangen
+
+Made with DocOnce
 
 # !split
 Introduction
@@ -92901,7 +92914,7 @@ w <span style="color: #666666">=</span> pi
 
 ************** File: mdinput2do.do.txt *****************
 
-======= Test of Markdown input syntax in DocOnce =======
+TITLE: Test of Markdown input syntax in DocOnce
 
 DocOnce can recognize basic Markdown as input in the `.do.txt` file
 and transform such text to native DocOnce.
@@ -93309,15 +93322,7 @@ and give some perspectives.
    "source": [
     "<!-- File automatically generated using DocOnce (https://github.com/doconce/doconce/):\n",
     "doconce format ipynb nbdemo.do.txt  -->\n",
-    "<!-- dom:TITLE: Example on interactive live documents versus traditional static documents -->"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "editable": true
-   },
-   "source": [
+    "\n",
     "# Example on interactive live documents versus traditional static documents\n",
     "**hpl**\n",
     "\n",
@@ -93631,15 +93636,18 @@ and give some perspectives.
  "nbformat_minor": 4
 }
 
-************** File: nbdemo.do.txt *****************
+************** File: nbdemo_ipynb2doconce.do.txt *****************
+# File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+# doconce format ipynb2doconce nbdemo.ipynb nbdemo.ipynb --output=nbdemo_ipynb2doconce.do.txt
+
 # File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 # doconce format ipynb nbdemo.do.txt
-TITLE: Example on interactive live documents versus traditional static documents
 
-======= Example on interactive live documents versus traditional static documents =======
+TITLE: Example on interactive live documents versus traditional static documents
 _hpl_
 
 DATE: Jan 32, 2100
+
 ===== Physics =====
 label{ipynbex:physics}
 
@@ -93805,52 +93813,52 @@ copyright = '2021, Test'
 copyright = '2021, Test'
 ------------------- File: tmp_copyright1.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump</p>
 ------------------- File: ._tmp_copyright1001.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump</p>
 ------------------- File: ._tmp_copyright1000.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump</p>
 ------------------- File: ._tmp_copyright1002.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump</p>
 ------------------- File: tmp_copyright2.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution 4.0 license. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution 4.0 license</p>
 ------------------- File: ._tmp_copyright2002.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution 4.0 license</p>
 ------------------- File: ._tmp_copyright2001.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution 4.0 license</p>
 ------------------- File: ._tmp_copyright2000.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution 4.0 license. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution 4.0 license</p>
 ------------------- File: tmp_copyright3.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution-NonCommercial 4.0 license. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution-NonCommercial 4.0 license</p>
 ------------------- File: ._tmp_copyright3001.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution-NonCommercial 4.0 license</p>
 ------------------- File: ._tmp_copyright3000.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution-NonCommercial 4.0 license. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution-NonCommercial 4.0 license</p>
 ------------------- File: ._tmp_copyright3002.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under CC Attribution-NonCommercial 4.0 license</p>
 ------------------- File: tmp_copyright4.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under the MIT license.. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under the MIT license.</p>
 ------------------- File: ._tmp_copyright4001.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under the MIT license.</p>
 ------------------- File: ._tmp_copyright4000.html
 
-&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under the MIT license.. Made with <a href="https://github.com/doconce/doconce">DocOnce</a>
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under the MIT license.</p>
 ------------------- File: ._tmp_copyright4002.html
 
-
+&copy; 2XXX, Hans Petter Langtangen, Simula, Kaare Dump. Released under the MIT license.</p>
 ************** File: tailored_conf.py *****************
 # -*- coding: utf-8 -*-
 #

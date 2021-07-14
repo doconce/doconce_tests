@@ -1,5 +1,5 @@
 
-======= Test of Markdown input syntax in DocOnce =======
+TITLE: Test of Markdown input syntax in DocOnce
 
 DocOnce can recognize basic Markdown as input in the `.do.txt` file
 and transform such text to native DocOnce.

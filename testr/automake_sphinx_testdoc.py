@@ -26,10 +26,10 @@ sphinx_rootdir = 'sphinx-testdoc'
 source_dir = sphinx_rootdir
 
 if not os.path.isdir(sphinx_rootdir):
-    print("""*** error: %(sphinx_rootdir)s does not exist. This means unsuccessful
-    doconce sphinx_dir command. Try to upgrade to latest DocOnce version.
-    (The script tmp_sphinx_gen.sh runs sphinx-quickstart - it may have failed.)
-""" % vars())
+    print("*** error: %(sphinx_rootdir)s does not exist. This means unsuccessful\n"
+          "    doconce sphinx_dir command. Try to upgrade to latest DocOnce version.\n"
+          "    (The script tmp_sphinx_gen.sh runs sphinx-quickstart - it may have failed.)\n" % 
+          vars())
     sys.exit(1)
 
 def system(cmd, capture_output=False, echo=True):
@@ -211,10 +211,7 @@ if '--runestone' not in sys.argv:
 else:
     # Add directory for RunestoneInteractive book
     use_runestonebooks_style = True  # False: use user-chosen style
-    print("""
-
-create RunestoneInteractive directory
-""")
+    print(("\n"           "\n"           "create RunestoneInteractive directory\n"))
     sys.path.insert(0, os.curdir)
     import conf as source_dir_conf  # read data from conf.py
 

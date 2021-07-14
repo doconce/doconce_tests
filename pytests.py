@@ -366,13 +366,14 @@ def test_doconce_help():
     assert out.returncode == 0
     assert all(item in out.stdout for item in supported_format_names)
     # test doconce <cmd> --help
-    cmd, expl = _registered_commands[5]
+    cmd, expl = _registered_commands[0]
     out = subprocess.run(['doconce', cmd, '--help'],
                          stdout=subprocess.PIPE,
                          stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                          encoding='utf8')
     assert out.returncode == 0
-    assert all(item in out.stdout for item in [cmd, expl])
+    #assert all(item in out.stdout for item in [cmd, expl]) #not true for all commands anymore
+    assert cmd in out.stdout
     # test doconce format --<option>--help
     cmd, expl = _registered_command_line_options[3]
     out = subprocess.run(['doconce', 'format', cmd, '--help'],
@@ -469,6 +470,9 @@ def test_doconce_format_ipynb(change_test_dir, tdir):
         pos_subex1 = ipynb.find('State some problem.')
         pos_subex2 = ipynb.find('State some other problem.')
         assert ipynb[pos_subex1:pos_subex2].find('"source":') > 0
+        # Check that the links in the TOC work (no capitalization)
+        #assert r'<a href=\"#Just-bold\">' in ipynb
+        #assert r'"## **Just bold**\n",' in ipynb
 
 def test_doconce_jupyterbook(change_test_dir, tdir):
     cp_testdoc(dest=tdir)

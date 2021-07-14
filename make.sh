@@ -310,8 +310,11 @@ cp author2.tex author2_elsevier.tex
 ## Test notebook conversions
 cp ../doc/src/ipynb/example.do.txt nbdemo.do.txt
 doconce replace 'fig/oscillator_general' '../doc/src/ipynb/fig/oscillator_general' nbdemo.do.txt
-system doconce format ipynb nbdemo
-system doconce ipynb2doconce nbdemo.ipynb
+system doconce format ipynb nbdemo.do.txt
+system doconce ipynb2doconce nbdemo.ipynb --output=nbdemo_ipynb2doconce.do.txt
+#TODO: issues with references to figures, which are formatted as normal links
+#but should be rendered with ref{label}. This causes error with this command:
+#system doconce format ipynb nbdemo_ipynb2doconce.do.txt --output nbdemo_ipynb2doconce.ipynb
 
 
 
