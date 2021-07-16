@@ -62,7 +62,7 @@ system doconce format html execute.do.txt  --examples_as_exercises --execute
 
 
 ## Test html
-system doconce format html testdoc --wordpress  --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix="https://raw.github.com/hplgit/doconce/master/test/" --movie_prefix="https://raw.github.com/hplgit/doconce/master/test/" --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
+system doconce format html testdoc --wordpress  --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix="https://raw.githubusercontent.com/doconce/doconce_tests/main/" --movie_prefix="https://raw.githubusercontent.com/doconce/doconce_tests/main/" --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
 
 system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --html_exercise_icon=default --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github
 system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises --html_exercise_icon=default --answers_at_end --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github --output=testdoc_no_solutions

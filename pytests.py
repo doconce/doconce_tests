@@ -423,10 +423,11 @@ def test_doconce_format_html(change_test_dir, tdir):
         # normalize output
         from tests import apply_regex
         apply_regex('testdoc.html', logfilenameout='testdoc2.html')
-        #shutil.copy('testdoc2.html','.')
-        # TODO diff
-        # TODO test from a different directory
-        pass
+        # Figure numbering even without caption
+        with open('testdoc.html', 'r') as f:
+            html = f.read()
+        assert '<p class="caption">Figure 2</p>' in html
+        assert 'Figure 3: A long caption spanning' in html
 
 def test_doconce_format_latex(change_test_dir, tdir):
     # cp files

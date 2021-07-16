@@ -15,7 +15,7 @@ TOC: on
 ************** File: testdoc.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
+doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg
 -->
 <html>
 <head>
@@ -28179,7 +28179,7 @@ is at the end with only one newline.
     "<!-- dom:FIGURE:[testfigs/wave1D.png, width=200] -->\n",
     "<!-- begin figure -->\n",
     "\n",
-    "<img src=\"testfigs/wave1D.png\" width=\"200\"><p style=\"font-size: 0.9em\"><i>Figure 2: </i></p>\n",
+    "<img src=\"testfigs/wave1D.png\" width=\"200\"><p style=\"font-size: 0.9em\"><i>Figure 2</i></p>\n",
     "<!-- end figure -->\n",
     "\n",
     "<!-- Test multi-line caption in figure with sidecap=True -->\n",
@@ -28201,7 +28201,7 @@ is at the end with only one newline.
     "<!-- dom:FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=500, frac=0.8] -->\n",
     "<!-- begin figure -->\n",
     "\n",
-    "<img src=\"https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png\" width=\"500\"><p style=\"font-size: 0.9em\"><i>Figure 3: </i></p>\n",
+    "<img src=\"https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png\" width=\"500\"><p style=\"font-size: 0.9em\"><i>Figure 3</i></p>\n",
     "<!-- end figure -->\n",
     "\n",
     "<!-- Test wikimedia type of files that otherwise reside in subdirs -->\n",
@@ -35480,7 +35480,7 @@ MathJax.Hub.Config({
 ************** File: author1.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html author1.do.txt --html_raw_github_url=raw.github
+doconce format html author1.do.txt
 -->
 <html>
 <head>
@@ -36985,7 +36985,7 @@ a citation like \cite{Langtangen_1992c,Langtangen_1994a}.
 ************** File: ._testdoc000.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
+doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg
 -->
 <html>
 <head>
@@ -37376,7 +37376,7 @@ MathJax.Hub.Config({
 ************** File: ._testdoc001.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
+doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg
 -->
 <html>
 <head>
@@ -38705,22 +38705,24 @@ there is a flow.
 <center> <!-- figure label: --> <div id="fig:impact"></div> <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1:  Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --> </p>
+<p class="caption">Figure 1: Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --></p>
 </center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
 
 <p>Figures without captions are allowed and will be inlined.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test multi-line caption in figure with sidecap=True -->
 
-<p>Here is figure <a href="#myfig">2</a> with a long (illegal) multi-line caption
+<p>Here is figure <a href="#myfig">3</a> with a long (illegal) multi-line caption
 containing inline verbatim text:
 </p>
 
@@ -38729,7 +38731,8 @@ containing inline verbatim text:
 <table>
 <tr>
 <td style="width:100%;"><img src="testfigs/wave1D.png" width="500" align="bottom"></td>
-<td><p class="caption">Figure 2:  A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --> </p></td>
+<td><p class="caption">Figure 3: A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --></p>
+</td>
 </tr>
 </table>
 </center>
@@ -38738,26 +38741,33 @@ containing inline verbatim text:
 
 <p>Test URL as figure name:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 4</p>
+</center>
 <p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>Test SVG figure:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 5</p>
+</center>
 <p><img src="https://openclipart.org/people/jpneok/junebug.svg" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
 <p>HTML output may feature Bokeh plots:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 6</p>
+</center>
 <p>
 <!-- Bokeh plot -->
 <script type="text/javascript">
@@ -38779,7 +38789,6 @@ containing inline verbatim text:
         </script>
 <div class="plotdiv" id="ffba6087-a45a-46eb-9368-11527f1f0a34"></div></p>
 </center>
-<br/><br/>
 
 <p>
 <b>Remark.</b>
@@ -39479,7 +39488,7 @@ footnotes.
 ************** File: ._testdoc002.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
+doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg
 -->
 <html>
 <head>
@@ -40419,7 +40428,7 @@ Filename: <code>selc_composed.pdf</code>.
 ************** File: ._testdoc003.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
+doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg
 -->
 <html>
 <head>
@@ -40896,7 +40905,7 @@ is at the end with only one newline.</p>
 
 ************** File: testdoc_wordpress.html *****************
 <!--
-File automatically generated using DocOnce (https://github.com/doconce/doconce/): doconce format html testdoc.do.txt --wordpress --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix=https://raw.github.com/hplgit/doconce/master/test/ --movie_prefix=https://raw.github.com/hplgit/doconce/master/test/ --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
+File automatically generated using DocOnce (https://github.com/doconce/doconce/): doconce format html testdoc.do.txt --wordpress --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix=https://raw.githubusercontent.com/doconce/doconce_tests/main/ --movie_prefix=https://raw.githubusercontent.com/doconce/doconce_tests/main/ --html_links_in_new_window --cite_doconce --output=testdoc_wordpress
 -->
 <html>
 <head>
@@ -41940,55 +41949,64 @@ is the output format. But here some more running text is added which is not part
 <center>  <div id="fig:impact"></div> 
 <hr class="figure">
 <center>
-<p class="caption">Figure 1:  Visualization <b>of</b> a <em>wave</em>.   </p>
+<p class="caption">Figure 1: Visualization <b>of</b> a <em>wave</em>.  </p>
 </center>
-<p><img src="https://raw.github.com/hplgit/doconce/master/test/testfigs/wave1D.html" width="200" align="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_tests/main/testfigs/wave1D.html" width="200" align="bottom"></p>
 </center>
 
 <p>Figures without captions are allowed and will be inlined.</p>
 
-<br/><br/>
+<center>  
+<hr class="figure">
 <center>
-<p><img src="https://raw.github.com/hplgit/doconce/master/test/testfigs/wave1D.html" width="200" align="bottom"></p>
+<p class="caption">Figure 2</p>
 </center>
-<br/><br/>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_tests/main/testfigs/wave1D.html" width="200" align="bottom"></p>
+</center>
 
-<p>Here is figure <a href="#myfig">2</a> with a long (illegal) multi-line caption containing inline verbatim text:
+<p>Here is figure <a href="#myfig">3</a> with a long (illegal) multi-line caption containing inline verbatim text:
 </p>
 
 <center>  <div id="myfig"></div> 
 <hr class="figure">
 <table>
 <tr>
-<td style="width:100%;"><img src="https://raw.github.com/hplgit/doconce/master/test/testfigs/wave1D.png" width="500" align="bottom"></td>
-<td><p class="caption">Figure 2:  A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in $latex t_{i+1}$.   </p></td>
+<td style="width:100%;"><img src="https://raw.githubusercontent.com/doconce/doconce_tests/main/testfigs/wave1D.png" width="500" align="bottom"></td>
+<td><p class="caption">Figure 3: A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in $latex t_{i+1}$.  </p>
+</td>
 </tr>
 </table>
 </center>
 
 <p>Test URL as figure name:</p>
 
-<br/><br/>
+<center>  
+<hr class="figure">
 <center>
+<p class="caption">Figure 4</p>
+</center>
 <p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>Test SVG figure:</p>
 
-<br/><br/>
+<center>  
+<hr class="figure">
 <center>
+<p class="caption">Figure 5</p>
+</center>
 <p><img src="https://openclipart.org/people/jpneok/junebug.svg" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>HTML output may feature Bokeh plots:</p>
 
-<br/><br/>
+<center>  
+<hr class="figure">
 <center>
-<p><img src="https://raw.github.com/hplgit/doconce/master/test/bokeh_test.html" ></p>
+<p class="caption">Figure 6</p>
 </center>
-<br/><br/>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_tests/main/bokeh_test.html" ></p>
+</center>
 
 <p>
 <b>Remark.</b> Movies are tested in separate file <code>movies.do.txt</code>.
@@ -43228,7 +43246,7 @@ $latex  y(x) = e^{-y}. $
 ************** File: testdoc_no_solutions.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html testdoc.do.txt --without_answers --without_solutions --examples_as_exercises --html_exercise_icon=default --answers_at_end --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github --output=testdoc_no_solutions
+doconce format html testdoc.do.txt --without_answers --without_solutions --examples_as_exercises --html_exercise_icon=default --answers_at_end --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --output=testdoc_no_solutions
 -->
 <html>
 <head>
@@ -44581,22 +44599,24 @@ there is a flow.
 <center> <!-- figure label: --> <div id="fig:impact"></div> <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1:  Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --> </p>
+<p class="caption">Figure 1: Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --></p>
 </center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
 
 <p>Figures without captions are allowed and will be inlined.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test multi-line caption in figure with sidecap=True -->
 
-<p>Here is figure <a href="#myfig">2</a> with a long (illegal) multi-line caption
+<p>Here is figure <a href="#myfig">3</a> with a long (illegal) multi-line caption
 containing inline verbatim text:
 </p>
 
@@ -44605,7 +44625,8 @@ containing inline verbatim text:
 <table>
 <tr>
 <td style="width:100%;"><img src="testfigs/wave1D.png" width="500" align="bottom"></td>
-<td><p class="caption">Figure 2:  A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --> </p></td>
+<td><p class="caption">Figure 3: A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --></p>
+</td>
 </tr>
 </table>
 </center>
@@ -44614,26 +44635,33 @@ containing inline verbatim text:
 
 <p>Test URL as figure name:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 4</p>
+</center>
 <p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>Test SVG figure:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 5</p>
+</center>
 <p><img src="https://openclipart.org/people/jpneok/junebug.svg" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
 <p>HTML output may feature Bokeh plots:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 6</p>
+</center>
 <p>
 <!-- Bokeh plot -->
 <script type="text/javascript">
@@ -44655,7 +44683,6 @@ containing inline verbatim text:
         </script>
 <div class="plotdiv" id="ffba6087-a45a-46eb-9368-11527f1f0a34"></div></p>
 </center>
-<br/><br/>
 
 <p>
 <b>Remark.</b>
@@ -49934,10 +49961,10 @@ system doconce format html execute.do.txt  --examples_as_exercises --execute
 
 
 ## Test html
-system doconce format html testdoc --wordpress  --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix="https://raw.github.com/hplgit/doconce/master/test/" --movie_prefix="https://raw.github.com/hplgit/doconce/master/test/" --html_links_in_new_window --cite_doconce --html_raw_github_url=raw.github --output=testdoc_wordpress
+system doconce format html testdoc --wordpress  --examples_as_exercises --html_exercise_icon=question_blue_on_white1.png --html_exercise_icon_width=80 --figure_prefix="https://raw.githubusercontent.com/doconce/doconce_tests/main/" --movie_prefix="https://raw.githubusercontent.com/doconce/doconce_tests/main/" --html_links_in_new_window --cite_doconce --output=testdoc_wordpress
 
-system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --html_exercise_icon=default --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github
-system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises --html_exercise_icon=default --answers_at_end --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --html_raw_github_url=raw.github --output=testdoc_no_solutions
+system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --html_exercise_icon=default --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin
+system doconce format html testdoc --without_answers --without_solutions --examples_as_exercises --html_exercise_icon=default --answers_at_end --solutions_at_end --html_share=https://cyber.space.com/specials,twitter,print,google+,facebook,linkedin --output=testdoc_no_solutions
 
 system doconce split_html testdoc_no_solutions.html --method=space10
 
@@ -49947,20 +49974,20 @@ system doconce extract_exercises tmp_mako__testdoc.do.txt --exercise_numbering=s
 system doconce format latex testdoc --without_answers --without_solutions --examples_as_exercises -DSOMEVAR --sections_down --number_all_equations --latex_packages=varioref --cite_doconce --output=testdoc_no_solutions
 
 cp ../bundled/html_styles/style_vagrant/template_vagrant.html .
-system doconce format html testdoc.do.txt --examples_as_exercises --html_style=bootstrap --html_template=template_vagrant.html --html_toc_indent=0 --toc_depth=2 --html_raw_github_url=raw.github --output=testdoc_vagrant
+system doconce format html testdoc.do.txt --examples_as_exercises --html_style=bootstrap --html_template=template_vagrant.html --html_toc_indent=0 --toc_depth=2 --output=testdoc_vagrant
 
 # Test that a split of testdoc_vagrant.html becomes correct
 system doconce split_html testdoc_vagrant.html --method=split #creates ._testdoc_vagrant00[0-2].html
 
 system doconce apply_inline_edits testdoc.do.txt
-system doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg --html_raw_github_url=raw.github
+system doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --html_exercise_icon=exercise1.svg
 mv .testdoc_html_file_collection .testdoc1_html_file_collection
 
 system doconce remove_exercise_answers testdoc.html
 system doconce html_colorbullets testdoc.html
 system doconce split_html testdoc.html --nav_button=gray2,bottom --font_size=slides
 
-system doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --output=demo_testdoc --html_raw_github_url=raw.github
+system doconce format html testdoc.do.txt --pygments_html_linenos --html_style=solarized --pygments_html_style=emacs --examples_as_exercises --output=demo_testdoc
 
 
 
@@ -50092,14 +50119,14 @@ system doconce format pandoc testdoc.do.txt --examples_as_exercises
 # slides2: much of scientific_writing.do.txt
 # slides3: equal to slides/demo.do.txt
 
-system doconce format html slides1 --pygments_html_style=perldoc --keep_pygments_html_bg --html_raw_github_url=raw.github
+system doconce format html slides1 --pygments_html_style=perldoc --keep_pygments_html_bg
 cp slides1.html slides1_1st.html
 system doconce slides_html slides1 reveal --html_slide_themee=simple
 
 cp slides1.html slides1_reveal.html
 /bin/ls -R reveal.js >> slides1_reveal.html
 
-system doconce format html slides1 --pygments_html_style=emacs --keep_pygments_html_bg --html_raw_github_url=raw.github
+system doconce format html slides1 --pygments_html_style=emacs --keep_pygments_html_bg
 system doconce slides_html slides1 deck --html_slide_theme=web-2.0
 
 cp slides1.html slides1_deck.html
@@ -50122,7 +50149,7 @@ system doconce format pdflatex slides1 --latex_title_layout=beamer "--latex_code
 system doconce slides_beamer slides1.tex --beamer_slide_theme=blue_shadow
 system pdflatex -shell-escape -halt-on-error slides1.tex
 
-system doconce format html slides2 --pygments_html_style=emacs --html_raw_github_url=raw.github --no_abort
+system doconce format html slides2 --pygments_html_style=emacs --no_abort
 system doconce slides_html slides2 reveal --html_slide_theme=beigesmall
 cp slides2.html slides2_reveal.html
 
@@ -50131,11 +50158,11 @@ system doconce format pdflatex slides2 --latex_title_layout=beamer -DBEAMER --no
 system doconce ptex2tex slides2 envir=minted
 system doconce slides_beamer slides2.tex
 
-system doconce format html slides3 --pygments_html_style=emacs SLIDE_TYPE=reveal SLIDE_THEME=beigesmall --html_raw_github_url=raw.github
+system doconce format html slides3 --pygments_html_style=emacs SLIDE_TYPE=reveal SLIDE_THEME=beigesmall
 system doconce slides_html slides3 reveal --html_slide_type=beigesmall
 cp slides3.html slides3_reveal.html
 
-system doconce format html slides3 --html_style=solarized3 SLIDE_TYPE=doconce SLIDE_THEME=solarized3 --output=slides3-solarized3 --html_raw_github_url=raw.github
+system doconce format html slides3 --html_style=solarized3 SLIDE_TYPE=doconce SLIDE_THEME=solarized3 --output=slides3-solarized3
 system doconce slides_html slides3-solarized3 doconce --nav_button=bigblue,bottom --font_size=slides
 
 rm -f *.aux
@@ -50143,7 +50170,7 @@ system doconce format pdflatex slides3 SLIDE_TYPE=beamer SLIDE_THEME=red_plain -
 system doconce ptex2tex slides3 envir=minted
 system doconce slides_beamer slides3.tex --beamer_slide_theme=red_plain
 
-system doconce format html slides1 --pygments_html_style=emacs --html_raw_github_url=raw.github
+system doconce format html slides1 --pygments_html_style=emacs
 system doconce slides_html slides1 all
 
 
@@ -50156,15 +50183,15 @@ doconce grab --from- '\*\s+\$.+normally' _testdoc.do.txt >> testdoc.tmp
 
 
 ## Test html templates
-system doconce format html html_template --html_template=template1.html --pygments_html_style=none --html_raw_github_url=raw.github
+system doconce format html html_template --html_template=template1.html --pygments_html_style=none
 cp html_template.html html_template1.html
 
-system doconce format html html_template --html_template=template_inf1100.html  --pygments_html_style=emacs --html_raw_github_url=raw.github
+system doconce format html html_template --html_template=template_inf1100.html  --pygments_html_style=emacs
 
 
 
 ## Test author special case and generalized references
-system doconce format html author1 --html_raw_github_url=raw.github
+system doconce format html author1
 system doconce format latex author1
 system doconce format sphinx author1
 system doconce format plain author1
@@ -50195,7 +50222,7 @@ rm -f *.aux
 system doconce format pdflatex math_test --no_abort
 system doconce ptex2tex math_test
 pdflatex math_test
-system doconce format html math_test --html_raw_github_url=raw.github --no_abort
+system doconce format html math_test --no_abort
 cp math_test.html math_test_html.html
 system doconce format sphinx math_test --no_abort
 system doconce sphinx_dir dirname=sphinx-rootdir-math math_test
@@ -50257,32 +50284,32 @@ cp admon.tex admon_double_envirs.tex
 rm -rf latex_figs
 
 # Test HTML admon styles
-system doconce format html admon --html_admon=lyx --html_style=blueish2 --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_admon=lyx --html_style=blueish2 --cite_doconce
 cp admon.html admon_lyx.html
 
-system doconce format html admon --html_admon=paragraph --html_style=blueish2 --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_admon=paragraph --html_style=blueish2 --cite_doconce
 cp admon.html admon_paragraph.html
 
-system doconce format html admon --html_admon=colors --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_admon=colors --cite_doconce
 cp admon.html admon_colors.html
 
-system doconce format html admon --html_admon=gray --html_style=blueish2 --html_admon_shadow --html_box_shadow --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_admon=gray --html_style=blueish2 --html_admon_shadow --html_box_shadow --cite_doconce
 cp admon.html admon_gray.html
 
-system doconce format html admon --html_admon=yellow --html_admon_shadow --html_box_shadow --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_admon=yellow --html_admon_shadow --html_box_shadow --cite_doconce
 cp admon.html admon_yellow.html
 
-system doconce format html admon --html_admon=apricot --html_style=solarized --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_admon=apricot --html_style=solarized --cite_doconce
 cp admon.html admon_apricot.html
 
-system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_template=../bundled/html_styles/style_vagrant/template_vagrant.html --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_template=../bundled/html_styles/style_vagrant/template_vagrant.html --cite_doconce
 cp admon.html admon_vagrant.html
 
-system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce "--html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html" --html_raw_github_url=raw.github
+system doconce format html admon --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce "--html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html"
 cp admon.html admon_bootstrap_alert.html
 system doconce split_html admon_bootstrap_alert.html --pagination --nav_button=top+bottom
 
-system doconce format html admon --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce --html_raw_github_url=raw.github
+system doconce format html admon --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce
 cp admon.html admon_bootswatch_panel.html
 
 system doconce sphinx_dir dirname=tmp_admon admon
@@ -50313,21 +50340,21 @@ fi
 
 ## Test styles
 # Bootstrap HTML styles
-system doconce format html test_boots --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
+system doconce format html test_boots --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit
 system doconce split_html test_boots.html
 
 # GitHub-extended Markdown
 system doconce format pandoc github_md.do.txt --github_md
 
 # Markdown input
-system doconce format html markdown_input.do.txt --markdown --md2do_output=mdinput2do.do.txt --html_raw_github_url=raw.github
+system doconce format html markdown_input.do.txt --markdown --md2do_output=mdinput2do.do.txt
 
 
 
 ## Test movie handling
-system doconce format html movies --output=movies_3choices --html_raw_github_url=raw.github
+system doconce format html movies --output=movies_3choices
 cp movies_3choices.html movie_demo
-system doconce format html movies --no_mp4_webm_ogg_alternatives --html_raw_github_url=raw.github
+system doconce format html movies --no_mp4_webm_ogg_alternatives
 cp movies.html movie_demo
 
 rm -f movies.aux
@@ -50379,7 +50406,7 @@ doconce subst -m '^.*? (AM|PM) - ' '' automake_sphinx.log
 
 ## Test encoding
 # guess and change
-system doconce format html encoding1   --no_header_footer --html_raw_github_url=raw.github
+system doconce format html encoding1   --no_header_footer
 system doconce guess_encoding encoding1.do.txt > tmp_encodings.txt
 cp encoding1.do.txt tmp1.do.txt
 system doconce change_encoding utf-8 latin1 tmp1.do.txt
@@ -50396,16 +50423,16 @@ system doconce guess_encoding tmp2.do.txt >> tmp_encodings.txt
 system doconce format latex encoding3 --debug --no_header_footer
 cp encoding3.p.tex encoding3.p.tex-ascii
 # Plain ASCII text with Norwegian chars coded as &#...;
-system doconce format html encoding3 --pygments_html_style=off --debug --no_header_footer --html_raw_github_url=raw.github
+system doconce format html encoding3 --pygments_html_style=off --debug --no_header_footer
 cp encoding3.html encoding3.html-ascii
 cat _doconce_debugging.log >> encoding3.html-ascii
 
 # Plain ASCII with verbatim blocks with Norwegian chars
 system doconce format latex encoding3 -DPREPROCESS --no_header_footer  # preprocess handles utf-8
 cp encoding3.p.tex encoding3.p.tex-ascii-verb
-system doconce format html encoding3 -DPREPROCESS --no_header_footer  --html_raw_github_url=raw.github # html fails with utf-8 in !bc
+system doconce format html encoding3 -DPREPROCESS --no_header_footer  # html fails with utf-8 in !bc
 # Unicode with Norwegian chars in plain text and verbatim blocks
-system doconce format html encoding3 -DPREPROCESS  --encoding=utf-8  --pygments_html_style=none --debug --no_header_footer --html_raw_github_url=raw.github # Keeps Norwegian chars since output is in utf-8
+system doconce format html encoding3 -DPREPROCESS  --encoding=utf-8  --pygments_html_style=none --debug --no_header_footer # Keeps Norwegian chars since output is in utf-8
 cp encoding3.html encoding3.html-ascii-verb
 cat _doconce_debugging.log >> encoding3.html-ascii-verb
 
@@ -50413,19 +50440,19 @@ system doconce format latex encoding3 -DMAKO --no_header_footer  # mako fails du
 # Unicode with Norwegian chars in plain text and verbatim blocks
 system doconce format latex encoding3 -DMAKO --encoding=utf-8 --no_header_footer  # utf-8 and unicode
 cp encoding3.p.tex encoding3.p.tex-utf8
-system doconce format html encoding3 -DMAKO --encoding=utf-8 --pygments_html_style=off --debug --no_header_footer --html_raw_github_url=raw.github
+system doconce format html encoding3 -DMAKO --encoding=utf-8 --pygments_html_style=off --debug --no_header_footer
 cp encoding3.html encoding3.html-utf8
 cat _doconce_debugging.log >> encoding3.html-utf8
 
 
 
 ## Test mako problems
-system doconce format html mako_test1 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # mako variable only, no % lines
-system doconce format html mako_test2 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # % lines inside code, but need for mako
-system doconce format html mako_test3 --pygments_html_style=off  --no_header_footer --html_raw_github_url=raw.github  # % lines inside code
+system doconce format html mako_test1 --pygments_html_style=off  --no_header_footer  # mako variable only, no % lines
+system doconce format html mako_test2 --pygments_html_style=off  --no_header_footer  # % lines inside code, but need for mako
+system doconce format html mako_test3 --pygments_html_style=off  --no_header_footer  # % lines inside code
 cp mako_test3.html mako_test3b.html
-system doconce format html mako_test3 --pygments_html_style=none  --no_header_footer --html_raw_github_url=raw.github # no problem message
-system doconce format html mako_test4 --pygments_html_style=no  --no_header_footer --html_raw_github_url=raw.github   # works fine, lines start with %%
+system doconce format html mako_test3 --pygments_html_style=none  --no_header_footer # no problem message
+system doconce format html mako_test4 --pygments_html_style=no  --no_header_footer   # works fine, lines start with %%
 
 system doconce csv2table testtable.csv > testtable.do.txt
 
@@ -50460,11 +50487,11 @@ doconce replace 'doc/manual' 'doc/src/manual' tmp2.do.txt
 doconce format sphinx tmp2
 doconce replace '../lib/doconce/doconce.py' '_static/doconce.py' tmp2.do.txt
 doconce replace 'two_media99' 'two_media' tmp2.do.txt
-doconce format html tmp2 --html_raw_github_url=raw.github
+doconce format html tmp2
 doconce replace '|--l---|---l---|' '|--l-------l---|' tmp2.do.txt
-doconce format html tmp2 --html_raw_github_url=raw.github
+doconce format html tmp2
 doconce replace '99x9.ogg' '.ogg' tmp2.do.txt
-doconce format html tmp2 --html_raw_github_url=raw.github
+doconce format html tmp2
 doconce subst -s -m '^!bsol.+?!esol' ''  tmp2.do.txt
 doconce format sphinx tmp2
 doconce subst -s -m '^!bhint.+?!ehint' ''  tmp2.do.txt
@@ -51821,7 +51848,7 @@ $$
 ************** File: math_test_html.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html math_test.do.txt --html_raw_github_url=raw.github --no_abort
+doconce format html math_test.do.txt --no_abort
 -->
 <html>
 <head>
@@ -57241,22 +57268,24 @@ there is a flow.
 <center> <!-- figure label: --> <div id="fig:impact"></div> <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1:  Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --> </p>
+<p class="caption">Figure 1: Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --></p>
 </center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
 
 <p>Figures without captions are allowed and will be inlined.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test multi-line caption in figure with sidecap=True -->
 
-<p>Here is figure <a href="#myfig">2</a> with a long (illegal) multi-line caption
+<p>Here is figure <a href="#myfig">3</a> with a long (illegal) multi-line caption
 containing inline verbatim text:
 </p>
 
@@ -57265,7 +57294,8 @@ containing inline verbatim text:
 <table>
 <tr>
 <td style="width:100%;"><img src="testfigs/wave1D.png" width="500" align="bottom"></td>
-<td><p class="caption">Figure 2:  A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --> </p></td>
+<td><p class="caption">Figure 3: A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --></p>
+</td>
 </tr>
 </table>
 </center>
@@ -57274,26 +57304,33 @@ containing inline verbatim text:
 
 <p>Test URL as figure name:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 4</p>
+</center>
 <p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>Test SVG figure:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 5</p>
+</center>
 <p><img src="https://openclipart.org/people/jpneok/junebug.svg" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
 <p>HTML output may feature Bokeh plots:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 6</p>
+</center>
 <p>
 <!-- Bokeh plot -->
 <script type="text/javascript">
@@ -57315,7 +57352,6 @@ containing inline verbatim text:
         </script>
 <div class="plotdiv" id="ffba6087-a45a-46eb-9368-11527f1f0a34"></div></p>
 </center>
-<br/><br/>
 
 <p>
 <b>Remark.</b>
@@ -67561,7 +67597,7 @@ exercises (and problems and projects too).
 ************** File: admon_colors.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_admon=colors --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_admon=colors --cite_doconce
 -->
 <html>
 <head>
@@ -68205,11 +68241,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end">The end </h2>
@@ -68245,7 +68283,7 @@ exercises (and problems and projects too).
 ************** File: admon_gray.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_admon=gray --html_style=blueish2 --html_admon_shadow --html_box_shadow --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_admon=gray --html_style=blueish2 --html_admon_shadow --html_box_shadow --cite_doconce
 -->
 <html>
 <head>
@@ -68926,11 +68964,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end">The end </h2>
@@ -68968,7 +69008,7 @@ exercises (and problems and projects too).
 ************** File: admon_yellow.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_admon=yellow --html_admon_shadow --html_box_shadow --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_admon=yellow --html_admon_shadow --html_box_shadow --cite_doconce
 -->
 <html>
 <head>
@@ -69646,11 +69686,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end">The end </h2>
@@ -70092,7 +70134,7 @@ exercises (and problems and projects too).</p>
 ************** File: admon_lyx.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_admon=lyx --html_style=blueish2 --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_admon=lyx --html_style=blueish2 --cite_doconce
 -->
 <html>
 <head>
@@ -70815,11 +70857,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
-<p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
+<p class="caption">Figure 1</p>
 </center>
-<br/><br/></div>
+<p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
+</center></div>
 </p></td></tr>
 </table>
 
@@ -70864,7 +70908,7 @@ exercises (and problems and projects too).
 ************** File: admon_paragraph.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_admon=paragraph --html_style=blueish2 --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_admon=paragraph --html_style=blueish2 --cite_doconce
 -->
 <html>
 <head>
@@ -71534,11 +71578,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end">The end </h2>
@@ -71577,7 +71623,7 @@ exercises (and problems and projects too).
 ************** File: admon_apricot.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_admon=apricot --html_style=solarized --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_admon=apricot --html_style=solarized --cite_doconce
 -->
 <html>
 <head>
@@ -72190,11 +72236,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end">The end </h2>
@@ -72831,11 +72879,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end" class="anchor">The end </h2>
@@ -72875,7 +72925,7 @@ exercises (and problems and projects too).
 ************** File: admon_bootstrap_alert.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html
 -->
 <html>
 <head>
@@ -72885,7 +72935,7 @@ doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=de
 <meta name="description" content="Testing admons">
 <title>Testing admons</title>
 <!-- Bootstrap style: bootstrap -->
-<!-- doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html --html_raw_github_url=raw.github -->
+<!-- doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html -->
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -73044,7 +73094,7 @@ MathJax.Hub.Config({
 ************** File: admon_bootswatch_panel.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce
 -->
 <html>
 <head>
@@ -73054,7 +73104,7 @@ doconce format html admon.do.txt --html_style=bootswatch --pygments_html_style=d
 <meta name="description" content="Testing admons">
 <title>Testing admons</title>
 <!-- Bootstrap style: bootswatch -->
-<!-- doconce format html admon.do.txt --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce --html_raw_github_url=raw.github -->
+<!-- doconce format html admon.do.txt --html_style=bootswatch --pygments_html_style=default --html_admon=bootstrap_panel --cite_doconce -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -73690,11 +73740,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 </div>
 
@@ -73746,7 +73798,7 @@ exercises (and problems and projects too).
 ************** File: ._admon_bootstrap_alert001.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html --html_raw_github_url=raw.github
+doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html
 -->
 <html>
 <head>
@@ -73756,7 +73808,7 @@ doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=de
 <meta name="description" content="Testing admons">
 <title>Testing admons</title>
 <!-- Bootstrap style: bootstrap -->
-<!-- doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html --html_raw_github_url=raw.github -->
+<!-- doconce format html admon.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_alert --cite_doconce --html_bootstrap_navbar_links=Google|https://google.com;DocOnce formats|https://hplgit.github.io/teamods/writing_reports/index.html -->
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -74330,11 +74382,13 @@ Longer computer code requires vertical space:
 
 <p>And then we add a figure too.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <h2 id="the-end" class="anchor">The end </h2>
@@ -75908,11 +75962,14 @@ MathJax.Hub.Config({
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
-<br/><br/>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="300" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 </td>
@@ -76050,11 +76107,14 @@ bla-bla
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
-<br/><br/>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="600" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 </section>
 
@@ -76688,7 +76748,7 @@ echo "Here are the slide shows:"
 ************** File: slides1_1st.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html slides1.do.txt --pygments_html_style=perldoc --keep_pygments_html_bg --html_raw_github_url=raw.github
+doconce format html slides1.do.txt --pygments_html_style=perldoc --keep_pygments_html_bg
 -->
 <html>
 <head>
@@ -76918,11 +76978,14 @@ MathJax.Hub.Config({
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
-<br/><br/>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="300" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 <!-- !eslidecell -->
@@ -77057,11 +77120,14 @@ bla-bla
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
-<br/><br/>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="600" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 
@@ -77358,11 +77424,14 @@ MathJax.Hub.Config({
 <div class="alert alert-block alert-block alert-text-normal">
 <b style="font-weight: bold"></b>
 <p>
-<br/><br/>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="300" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 
 </td>
@@ -77496,11 +77565,14 @@ bla-bla
 <div class="alert alert-block alert-block alert-text-normal">
 <b style="font-weight: bold"></b>
 <p>
-<br/><br/>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="600" align="bottom"></p>
 </center>
-<br/><br/>
 </div>
 </section>
 
@@ -79461,11 +79533,13 @@ MathJax.Hub.Config({
 </center> <!-- date -->
 <br>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="testfigs/doconce1b.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 </section>
 
 <section>
@@ -79514,27 +79588,34 @@ MathJax.Hub.Config({
 <table border="0">
 <tr>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/ipad.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 3</p>
+</center>
 <p><img src="testfigs/iphones.jpg" width="100" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- FIGURE: [testfigs/mbair, width=400] -->
 
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 4</p>
+</center>
 <p><img src="testfigs/imac.png" width="350" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 </table>
@@ -79543,11 +79624,13 @@ MathJax.Hub.Config({
 <section>
 <h2 id="the-book-will-probably-survive">The book will probably survive </h2>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 5</p>
+</center>
 <p><img src="testfigs/oldbooks.jpg" width="800" align="bottom"></p>
 </center>
-<br/><br/>
 </section>
 
 <section>
@@ -79557,18 +79640,24 @@ MathJax.Hub.Config({
 <table border="0">
 <tr>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 6</p>
+</center>
 <p><img src="testfigs/latex_thesis.jpg" width="400" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 7</p>
+</center>
 <p><img src="testfigs/latex_paper1.png" width="400" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 </table>
@@ -79598,48 +79687,66 @@ MathJax.Hub.Config({
 <table border="0">
 <tr>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 8</p>
+</center>
 <p><img src="testfigs/LaTeX_logo.jpg" width="120" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 9</p>
+</center>
 <p><img src="testfigs/MS_Word_logo.jpg" width="80" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 10</p>
+</center>
 <p><img src="testfigs/sphinx_logo.png" width="200" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 <tr>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 11</p>
+</center>
 <p><img src="testfigs/markdown_logo.jpg" width="80" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 12</p>
+</center>
 <p><img src="testfigs/MediaWiki_logo.jpg" width="80" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 13</p>
+</center>
 <p><img src="testfigs/IPython_logo.png" width="300" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 </table>
@@ -79673,11 +79780,14 @@ MathJax.Hub.Config({
 <p>
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 14</p>
+</center>
 <p><img src="testfigs/jungle_with_mess.jpg" width="500" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 </table>
@@ -80461,11 +80571,13 @@ And maybe a final comment?
  <p><li> Key point 2</li>
 </ul>
 <p>
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 15</p>
+</center>
 <p><img src="testfigs/teacher1.gif" width="100" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>Key equation:</p>
 
@@ -80563,11 +80675,14 @@ $$ -\nabla^2 u = f \quad\hbox{in }\Omega $$
 
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 16</p>
+</center>
 <p><img src="testfigs/broken_pen_and_paper.jpg" width="400" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 </table>
@@ -83299,11 +83414,13 @@ MathJax.Hub.Config({
 </center> <!-- date -->
 <br>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 1</p>
+</center>
 <p><img src="../doc/src/slides/fig/CN_logo.png" width="300" align="bottom"></p>
 </center>
-<br/><br/>
 </section>
 
 <section>
@@ -83374,11 +83491,14 @@ $$
 <p>
 </td>
 <td class="padding">
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="../doc/src/slides/fig/teacher2.jpg" width="250" align="bottom"></p>
 </center>
-<br/><br/>
+
 </td>
 </tr>
 </table>
@@ -83460,11 +83580,13 @@ $$
 <section>
 <h2 id="the-crank-nicolson-method">The Crank-Nicolson method </h2>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 3</p>
+</center>
 <p><img src="../doc/src/slides/fig/CN.png" width="600" align="bottom"></p>
 </center>
-<br/><br/>
 </section>
 
 <section>
@@ -83648,7 +83770,7 @@ Reveal.initialize({
 ************** File: ._slides3-solarized3001.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html slides3.do.txt --html_style=solarized3 SLIDE_TYPE=doconce SLIDE_THEME=solarized3 --output=slides3-solarized3 --html_raw_github_url=raw.github
+doconce format html slides3.do.txt --html_style=solarized3 SLIDE_TYPE=doconce SLIDE_THEME=solarized3 --output=slides3-solarized3
 -->
 <html>
 <head>
@@ -84742,7 +84864,7 @@ Finally, let us demonstrate referencing the movie ref{mov:wave}.
 ************** File: movies_3choices.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html movies.do.txt --output=movies_3choices --html_raw_github_url=raw.github
+doconce format html movies.do.txt --output=movies_3choices
 -->
 <html>
 <head>
@@ -85516,7 +85638,7 @@ if (!!(window.safari)) {
 ************** File: movies.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html movies.do.txt --no_mp4_webm_ogg_alternatives --html_raw_github_url=raw.github
+doconce format html movies.do.txt --no_mp4_webm_ogg_alternatives
 -->
 <html>
 <head>
@@ -92074,7 +92196,7 @@ Terminal> python prog.py
 ************** File: test_boots.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
+doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit
 -->
 <html>
 <head>
@@ -92084,7 +92206,7 @@ doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments
 <meta name="description" content="Test of the Bootstrap style">
 <title>Test of the Bootstrap style</title>
 <!-- Bootstrap style: bootswatch_journal -->
-<!-- doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github -->
+<!-- doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -92250,7 +92372,7 @@ MathJax.Hub.Config({
 ************** File: ._test_boots001.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
+doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit
 -->
 <html>
 <head>
@@ -92260,7 +92382,7 @@ doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments
 <meta name="description" content="Test of the Bootstrap style">
 <title>Test of the Bootstrap style</title>
 <!-- Bootstrap style: bootswatch_journal -->
-<!-- doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github -->
+<!-- doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -92539,7 +92661,7 @@ styles?
 ************** File: ._test_boots002.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github
+doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit
 -->
 <html>
 <head>
@@ -92549,7 +92671,7 @@ doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments
 <meta name="description" content="Test of the Bootstrap style">
 <title>Test of the Bootstrap style</title>
 <!-- Bootstrap style: bootswatch_journal -->
-<!-- doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit --html_raw_github_url=raw.github -->
+<!-- doconce format html test_boots.do.txt --html_style=bootswatch_journal --pygments_html_style=default --html_admon=bootstrap_panel --html_code_style=inherit -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -95541,22 +95663,24 @@ there is a flow.
 <center> <!-- figure label: --> <div id="fig:impact"></div> <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1:  Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --> </p>
+<p class="caption">Figure 1: Visualization <b>of</b> a <em>wave</em>.  <!-- caption label: fig:impact --></p>
 </center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
 
 <p>Figures without captions are allowed and will be inlined.</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 2</p>
+</center>
 <p><img src="testfigs/wave1D.png" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test multi-line caption in figure with sidecap=True -->
 
-<p>Here is figure <a href="#myfig">2</a> with a long (illegal) multi-line caption
+<p>Here is figure <a href="#myfig">3</a> with a long (illegal) multi-line caption
 containing inline verbatim text:
 </p>
 
@@ -95565,7 +95689,8 @@ containing inline verbatim text:
 <table>
 <tr>
 <td style="width:100%;"><img src="testfigs/wave1D.png" width="500" align="bottom"></td>
-<td><p class="caption">Figure 2:  A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --> </p></td>
+<td><p class="caption">Figure 3: A long caption spanning several lines and containing verbatim words like <code>my_file_v1</code> and <code>my_file_v2</code> as well as math with subscript as in \( t_{i+1} \).  <!-- caption label: myfig --></p>
+</td>
 </tr>
 </table>
 </center>
@@ -95574,26 +95699,33 @@ containing inline verbatim text:
 
 <p>Test URL as figure name:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 4</p>
+</center>
 <p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="500" align="bottom"></p>
 </center>
-<br/><br/>
 
 <p>Test SVG figure:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 5</p>
+</center>
 <p><img src="https://openclipart.org/people/jpneok/junebug.svg" width="200" align="bottom"></p>
 </center>
-<br/><br/>
 
 <!-- Test wikimedia type of files that otherwise reside in subdirs -->
 
 <p>HTML output may feature Bokeh plots:</p>
 
-<br/><br/>
+<center>  <!-- FIGURE -->
+<hr class="figure">
 <center>
+<p class="caption">Figure 6</p>
+</center>
 <p>
 <!-- Bokeh plot -->
 <script type="text/javascript">
@@ -95615,7 +95747,6 @@ containing inline verbatim text:
         </script>
 <div class="plotdiv" id="ffba6087-a45a-46eb-9368-11527f1f0a34"></div></p>
 </center>
-<br/><br/>
 
 <p>
 <b>Remark.</b>
