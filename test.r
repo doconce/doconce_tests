@@ -32128,10 +32128,7 @@ print(var_julia)
   <div class="output_wrapper">
     <div class="output">
       <div class="output_area">
-        <div class="output_subarea output_stream output_stdout output_text">          
-<pre>
-[1] 1 2 3
-</pre><div class="output_png output_subarea"><img src=".doconce_figure_cache/XXX.png"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          <div class="output_png output_subarea"><img src=".doconce_figure_cache/XXX.png"></div>
         </div>
       </div>
     </div>
@@ -32617,7 +32614,7 @@ of the output:
       <div class="output_area">
         <div class="output_subarea output_stream output_stdout output_text">          
 <pre>
-  File "<ipython-input-10-b3f86d48875f>", line XXX
+  File &quot;&lt;ipython-input-10-b3f86d48875f&gt;&quot;, line XXX
     for a in range(10)
                       ^
 SyntaxError: invalid syntax
@@ -32930,9 +32927,6 @@ plot(x)
 
 \end{Verbatim}
 
-\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
-[1] 1 2 3
-\end{Verbatim}
 \begin{center}
    \includegraphics[width=0.8\textwidth]{.doconce_figure_cache/XXX.png}
 \end{center}
