@@ -32128,7 +32128,10 @@ print(var_julia)
   <div class="output_wrapper">
     <div class="output">
       <div class="output_area">
-        <div class="output_subarea output_stream output_stdout output_text">          <div class="output_png output_subarea"><img src=".doconce_figure_cache/XXX.png"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+[1] 1 2 3
+</pre><div class="output_png output_subarea"><img src=".doconce_figure_cache/XXX.png"></div>
         </div>
       </div>
     </div>
@@ -32414,7 +32417,7 @@ The result is 3
   </div>
 </div>
 
-<!-- code=python (!bc pyout) typeset with pygments style "defaultout" -->
+<!-- code=python (!bc py-out) typeset with pygments style "default-out" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="output_wrapper">
     <div class="output">
@@ -32573,7 +32576,7 @@ This will remove all environments ending with <code>out</code>.
       </div>
     </div>
   </div>
-<!-- code=python (!bc pyout) typeset with pygments style "defaultout" -->
+<!-- code=python (!bc py-out) typeset with pygments style "default-out" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="output_wrapper">
     <div class="output">
@@ -32927,6 +32930,9 @@ plot(x)
 
 \end{Verbatim}
 
+\begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
+[1] 1 2 3
+\end{Verbatim}
 \begin{center}
    \includegraphics[width=0.8\textwidth]{.doconce_figure_cache/XXX.png}
 \end{center}
@@ -35474,7 +35480,7 @@ MathJax.Hub.Config({
 ************** File: author1.html *****************
 <!--
 File automatically generated using DocOnce (https://github.com/doconce/doconce/):
-doconce format html author1.do.txt
+doconce format html author1.do.txt 
 -->
 <html>
 <head>
@@ -93875,7 +93881,7 @@ can be implemented as follows in a Python function:
 # But in general one may need special imports for the next
 # code segments to execute properly.
 
-!bc pyhid
+!bc py-hid
 from numpy import zeros
 !ec
 
@@ -93925,7 +93931,7 @@ The function `solve_linear_damping` resides in a file `solver.py`.
 # For this we use a hidden python code (pyhid). It will be hidden
 # in all formats, except in the notebook.
 
-!bc pyhid
+!bc py-hid
 # The solver module is in src/solver.py; tell Python about that
 import sys
 sys.path.insert(0, 'src')

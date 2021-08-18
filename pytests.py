@@ -64,20 +64,22 @@ def create_file_with_text(text='', fname=None):
 def test_get_code_block_args():
     from doconce.common import get_code_block_args
     from doconce.globals import envir2syntax as pr
-    LANG, codetype, postfix = get_code_block_args('')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('', '', '', '')
-    LANG, codetype, postfix = get_code_block_args('!bc py-h')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('py', '', '-h', 'python')
-    LANG, codetype, postfix = get_code_block_args('!bc pycod-h   \n')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('py', 'cod', '-h', 'python')
-    LANG, codetype, postfix = get_code_block_args('!bc mprohid')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('m', 'pro', 'hid', 'matlab')
-    LANG, codetype, postfix = get_code_block_args('!bc pro')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('', 'pro', '', '')
-    LANG, codetype, postfix = get_code_block_args('!bc r-t')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('r', '', '-t', 'r')
-    LANG, codetype, postfix = get_code_block_args('!bc rbpro')
-    assert (LANG, codetype, postfix, pr.get(LANG, '')) == ('rb', 'pro', '', 'ruby')
+    LANG, codetype, postfix, err = get_code_block_args('')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('', '', '', '', '')
+    LANG, codetype, postfix, err = get_code_block_args('!bc py-h')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('py', '', '-h', '', 'python')
+    LANG, codetype, postfix, err = get_code_block_args('!bc pycod-h-err   \n')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('py', 'cod', '-h', '-err', 'python')
+    LANG, codetype, postfix, err = get_code_block_args('!bc mpro-hid')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('m', 'pro', '-hid', '', 'matlab')
+    LANG, codetype, postfix, err = get_code_block_args('!bc mprohid-err')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('m', 'pro', '-hid', '-err', 'matlab')
+    LANG, codetype, postfix, err = get_code_block_args('!bc pro-err')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('', 'pro', '', '-err', '')
+    LANG, codetype, postfix, err = get_code_block_args('!bc r-t')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('r', '', '-t', '', 'r')
+    LANG, codetype, postfix, err = get_code_block_args('!bc rbpro')
+    assert (LANG, codetype, postfix, err, pr.get(LANG, '')) == ('rb', 'pro', '', '', 'ruby')
 
 
 ### functions in misc.py
@@ -315,9 +317,16 @@ def test_doconce_format_execute(tdir):
         pytext = 'python\n!bc pycod\nvar=11\n!ec\n\n!bc pycod\nprint(var+1)\n!ec\n'
         shtext = 'bash  \n!bc shpro\nvar=22\n!ec\n\n!bc shcod\necho $(expr $var + 2)\n!ec\n'
         jltext = 'julia \n!bc jlcod\nvar=33\n!ec\n\n!bc jlpro\nprint(var+3)\n!ec\n'
-        for format in ['html', 'latex']: #TODO 'ipynb'
-            fname = 'a'
-            _ = create_file_with_text(text=pytext + shtext + jltext, fname=fname+'.do.txt')
+        fname = 'a'
+        _ = create_file_with_text(text=pytext + shtext + jltext, fname=fname + '.do.txt')
+        # Code with errors
+        pytext_fail = 'python\n!bc pycod\nprint(var+  \n!ec\n'
+        fname_fail = 'fail'
+        _ = create_file_with_text(text=pytext_fail, fname=fname_fail + '.do.txt')
+        pytext_err = 'python\n!bc pycod-err\nprint(var+  \n!ec\n'
+        fname_err = 'err'
+        _ = create_file_with_text(text=pytext_err, fname=fname_err + '.do.txt')
+        for format in ['html', 'latex', 'ipynb']: #TODO 'ipynb'
             # Execute a python block
             out = subprocess.run(['doconce', 'format', format, fname+'.do.txt', '--execute'],
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
@@ -330,13 +339,30 @@ def test_doconce_format_execute(tdir):
             with open(os.path.join(tdir, fname + '.' + extension), 'r') as f:
                 fout = f.read()
             assert '12' in fout
-            if JupyterKernelClient.find_kernel_name('bash'):
-                assert '24' in fout
-            if JupyterKernelClient.find_kernel_name('julia'):
-                assert '36' in fout
+            if format != 'ipynb':
+                if JupyterKernelClient.find_kernel_name('bash'):
+                    assert '24' in fout
+                if JupyterKernelClient.find_kernel_name('julia'):
+                    assert '36' in fout
             os.remove(os.path.join(tdir, fname + '.' + extension))
-
-
+            # test errors in code --execute=abort
+            extension = format if format != 'latex' else 'p.tex'
+            out = subprocess.run(['doconce', 'format', format, fname_fail + '.do.txt', '--execute=abort'],
+                                 cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                                 encoding='utf8')
+            assert out.returncode != 0
+            out = subprocess.run(['doconce', 'format', format, fname_err + '.do.txt', '--execute=abort'],
+                                 cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                                 encoding='utf8')
+            assert out.returncode == 0
+            assert os.path.exists(os.path.join(tdir, fname_err + '.' + extension))
+            with open(os.path.join(tdir, fname_err + '.' + extension), 'r') as f:
+                fout = f.read()
+            assert 'unexpected EOF' in fout
 
 ### system test
 def test_doconce_help():
