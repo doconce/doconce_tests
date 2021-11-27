@@ -57,7 +57,13 @@ a complete installation with all the DocOnce dependencies.
 #### pytests.py
 The unit tests in pytests.py can be run by:
 
-  pytest -v pytests.py
+  pytest pytests.py
+
+To execute a single test e.g. `test_doconce_format_execute` in `pytests.py`: 
+
+ pytest -v --pdb pytests.py::test_doconce_format_execute
+
+where `-v` is the verbose optionand `--pdb` opens the debugger on the first failure. 
 
 These tests are run in the GitHub Actions workflow on the 
 

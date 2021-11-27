@@ -314,8 +314,8 @@ def test_doconce_format_execute(tdir):
     # NB: some tests require Jupyter kernels to be installed
     from doconce.jupyter_execution import JupyterKernelClient
     with cd_context(tdir):
-        pytext = 'python\n!bc pycod\nvar=11\n!ec\n\n!bc pycod\nprint(var+1)\n!ec\n'
-        shtext = 'bash  \n!bc shpro\nvar=22\n!ec\n\n!bc shcod\necho $(expr $var + 2)\n!ec\n'
+        pytext = 'python\n!bc pycod\nvar=11\n!ec\n\n!bc pycod\nprint(var+1)\n!ec\n\n'
+        shtext = 'bash  \n!bc shpro\nvar=22\n!ec\n\n!bc shcod\necho $(expr $var + 2)\n!ec\n\n'
         jltext = 'julia \n!bc jlcod\nvar=33\n!ec\n\n!bc jlpro\nprint(var+3)\n!ec\n'
         fname = 'a'
         _ = create_file_with_text(text=pytext + shtext + jltext, fname=fname + '.do.txt')
@@ -326,7 +326,7 @@ def test_doconce_format_execute(tdir):
         pytext_err = 'python\n!bc pycod-err\nprint(var+  \n!ec\n'
         fname_err = 'err'
         _ = create_file_with_text(text=pytext_err, fname=fname_err + '.do.txt')
-        for format in ['html', 'latex', 'ipynb']: #TODO 'ipynb'
+        for format in ['html', 'latex', 'ipynb']:
             # Execute a python block
             out = subprocess.run(['doconce', 'format', format, fname+'.do.txt', '--execute'],
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir

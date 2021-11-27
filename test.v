@@ -32209,7 +32209,7 @@ function show_hide_code(){
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">for</span> (<span style="color: #008000; font-weight: bold">var</span> x <span style="color: #008000; font-weight: bold">in</span> [<span style="color: #666666">0</span>,<span style="color: #666666">1</span>,<span style="color: #666666">2</span>]) {console.log(x)}
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">for</span> (<span style="color: #008000; font-weight: bold">var</span> x <span style="color: #AA22FF; font-weight: bold">in</span> [<span style="color: #666666">0</span>,<span style="color: #666666">1</span>,<span style="color: #666666">2</span>]) {console.log(x)}
 </pre>
 </div>
       </div>
@@ -32283,17 +32283,17 @@ end
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span> <span style="color: #408080; font-style: italic">&lt;stdio.h&gt;</span><span style="color: #BC7A00"></span>
+  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span><span style="color: #bbbbbb"> </span><span style="color: #408080; font-style: italic">&lt;stdio.h&gt;</span><span style="color: #BC7A00"></span>
 
-<span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>() {
-  <span style="color: #B00040">int</span> i;
+<span style="color: #B00040">int</span><span style="color: #bbbbbb"> </span><span style="color: #0000FF">main</span>()<span style="color: #bbbbbb"> </span>{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #B00040">int</span><span style="color: #bbbbbb"> </span>i;<span style="color: #bbbbbb"></span>
 
-  <span style="color: #008000; font-weight: bold">for</span> (i <span style="color: #666666">=</span> <span style="color: #666666">1</span>; i <span style="color: #666666">&lt;</span> <span style="color: #666666">11</span>; <span style="color: #666666">++</span>i)
-  {
-    printf(<span style="color: #BA2121">&quot;%d &quot;</span>, i);
-  }
-  <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">0</span>;
-}
+<span style="color: #bbbbbb">  </span><span style="color: #008000; font-weight: bold">for</span><span style="color: #bbbbbb"> </span>(i<span style="color: #bbbbbb"> </span><span style="color: #666666">=</span><span style="color: #bbbbbb"> </span><span style="color: #666666">1</span>;<span style="color: #bbbbbb"> </span>i<span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;</span><span style="color: #bbbbbb"> </span><span style="color: #666666">11</span>;<span style="color: #bbbbbb"> </span><span style="color: #666666">++</span>i)<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">    </span>printf(<span style="color: #BA2121">&quot;%d &quot;</span>,<span style="color: #bbbbbb"> </span>i);<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>}<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #008000; font-weight: bold">return</span><span style="color: #bbbbbb"> </span><span style="color: #666666">0</span>;<span style="color: #bbbbbb"></span>
+}<span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -33789,12 +33789,10 @@ author and is released under the same conditions as Doconce.
       "image/png":"some_image",
 
       "text/plain": [
-       "<Figure size 432x288 with 1 Axes>"
+       "<Figure size 640x480 with 1 Axes>"
       ]
      },
-     "metadata": {
-      "needs_background": "light"
-     },
+     "metadata": {},
      "output_type": "display_data"
     }
    ],
@@ -37768,19 +37766,19 @@ The section <a href="#subsubsec:ex">URLs</a> too.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 8</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 9</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">10</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">11</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">12</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">13</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 8</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 9</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">10</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">11</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">      <span style="color: #8B008B; font-weight: bold">subroutine </span>test()
       <span style="color: #00688B; font-weight: bold">integer </span>i
@@ -37817,14 +37815,14 @@ C     END1
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">8</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">8</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">      <span style="color: #8B008B; font-weight: bold">subroutine </span>test()
       <span style="color: #00688B; font-weight: bold">integer </span>i
@@ -37858,21 +37856,21 @@ C     END1
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 8</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 9</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">10</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">11</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">12</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">13</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">14</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">15</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 8</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 9</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">10</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">11</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">C     a comment
 
@@ -37912,10 +37910,10 @@ C     END1
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">!bc pycod
 def f(x):
@@ -37944,8 +37942,8 @@ def f(x):
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f</span>(x):
     <span style="color: #8B008B; font-weight: bold">return</span> x+<span style="color: #B452CD">1</span>
@@ -37970,8 +37968,8 @@ before code.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
 sys.path.insert(<span style="color: #B452CD">0</span>, os.pardir)
@@ -37989,8 +37987,8 @@ sys.path.insert(<span style="color: #B452CD">0</span>, os.pardir)
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">h</span>(z):
     <span style="color: #8B008B; font-weight: bold">return</span> z+<span style="color: #B452CD">1</span>
@@ -38078,8 +38076,8 @@ function show_hide_code(){
 </script>
 <button type="button" onclick="show_hide_code()">Show/Hide code</button>
 <div id="codeXXX">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">cpdef</span> <span style="color: #008b45">f</span>(double x):
     <span style="color: #8B008B; font-weight: bold">return</span> x + <span style="color: #B452CD">1</span>
@@ -38108,14 +38106,14 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">8</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">8</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">&gt;&gt;&gt; <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">import</span> linspace, sin
 &gt;&gt;&gt; <span style="color: #228B22"># Some comment</span>
@@ -38148,21 +38146,21 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 8</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 9</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">10</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">11</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">12</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">13</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">14</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">15</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 8</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 9</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">10</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">11</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #555555">In [1]: </span><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">import</span> linspace, sin
 <span style="color: #555555">In [2]: </span><span style="color: #228B22"># Some comment</span>
@@ -38202,14 +38200,14 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">8</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">8</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">&gt;&gt;&gt; <span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">import</span> linspace, sin
 &gt;&gt;&gt; <span style="color: #228B22"># Some comment</span>
@@ -38234,21 +38232,21 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
-  <pre style="line-height: 125%;"><span style="color: #1e889b">#include</span> <span style="color: #228B22">&lt;iostream&gt;</span><span style="color: #1e889b"></span>
+  <pre style="line-height: 125%;"><span style="color: #1e889b">#include</span><span style="color: #bbbbbb"> </span><span style="color: #228B22">&lt;iostream&gt;</span><span style="color: #1e889b"></span>
 
-<span style="color: #00688B; font-weight: bold">int</span> <span style="color: #008b45">main</span>()
-{
-   std::cout &lt;&lt; <span style="color: #CD5555">&quot;Sample output&quot;</span> &lt;&lt; std::endl;
-   <span style="color: #8B008B; font-weight: bold">return</span> <span style="color: #B452CD">0</span>
-}
+<span style="color: #00688B; font-weight: bold">int</span><span style="color: #bbbbbb"> </span><span style="color: #008b45">main</span>()<span style="color: #bbbbbb"></span>
+{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span>std::cout<span style="color: #bbbbbb"> </span>&lt;&lt;<span style="color: #bbbbbb"> </span><span style="color: #CD5555">&quot;Sample output&quot;</span><span style="color: #bbbbbb"> </span>&lt;&lt;<span style="color: #bbbbbb"> </span>std::endl;<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span><span style="color: #8B008B; font-weight: bold">return</span><span style="color: #bbbbbb"> </span><span style="color: #B452CD">0</span><span style="color: #bbbbbb"></span>
+}<span style="color: #bbbbbb"></span>
 </pre>
 </div>
 </td></tr></table>      </div>
@@ -38265,14 +38263,14 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">8</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">8</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">!bc cod
       subroutine midpt(x, length, a, b)
@@ -38305,12 +38303,12 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">      subroutine midpt(x, length, a, b)
       real*8 a, b, x
@@ -38333,11 +38331,11 @@ function show_hide_code(){
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">&lt;<span style="color: #8B008B; font-weight: bold">table</span>&gt;
 &lt;<span style="color: #8B008B; font-weight: bold">tr</span>&gt;&lt;<span style="color: #8B008B; font-weight: bold">td</span>&gt;Column 1&lt;/<span style="color: #8B008B; font-weight: bold">td</span>&gt;&lt;<span style="color: #8B008B; font-weight: bold">td</span>&gt;Column 2&lt;/<span style="color: #8B008B; font-weight: bold">td</span>&gt;&lt;/<span style="color: #8B008B; font-weight: bold">tr</span>&gt;
@@ -38372,17 +38370,17 @@ quoted).
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
-  <pre style="line-height: 125%;"><span style="color: #228B22">% Comment on the beginning of the line can be escaped by %%</span>
-<span style="color: #8B008B; font-weight: bold">if</span> a &gt; b
-  <span style="color: #228B22">% Indented comment needs this trick</span>
-  c = a + b
-<span style="color: #8B008B; font-weight: bold">end</span>
+  <pre style="line-height: 125%;"><span style="color: #228B22">% Comment on the beginning of the line can be escaped by %%</span><span style="color: #bbbbbb"></span>
+<span style="color: #8B008B; font-weight: bold">if</span><span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span>&gt;<span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #228B22">% Indented comment needs this trick</span><span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>c<span style="color: #bbbbbb"> </span>=<span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span>+<span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #8B008B; font-weight: bold">end</span><span style="color: #bbbbbb"></span>
 </pre>
 </div>
 </td></tr></table>      </div>
@@ -38406,11 +38404,11 @@ quoted).
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">Terminal&gt; mkdir test
 Terminal&gt; cd test
@@ -38432,13 +38430,13 @@ output2
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">!bc restructuredtext
 =======
@@ -38470,11 +38468,11 @@ Some text.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #000080; font-weight: bold">=======</span>
 <span style="color: #000080; font-weight: bold">Heading</span>
@@ -38508,41 +38506,41 @@ Some text.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 8</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;"> 9</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">10</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">11</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">12</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">13</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">14</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">15</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">16</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">17</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">18</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">19</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">20</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">21</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">22</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">23</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">24</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">25</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">26</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">27</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">28</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">29</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">30</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">31</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">32</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">33</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">34</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">35</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 8</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 9</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">10</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">11</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">16</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">17</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">18</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">19</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">20</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">21</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">22</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">23</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">24</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">25</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">26</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">27</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">28</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">29</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">30</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">31</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">32</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">33</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">34</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">35</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #000080; font-weight: bold">======= DocOnce test file =======</span>
 
@@ -38618,11 +38616,11 @@ the previous blocks with line breaks.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">Terminal&gt; python -c &#39;print(&quot;Testing\noutput\nfrom\nPython.&quot;)&#39;
 Testing
@@ -38807,8 +38805,8 @@ involving \( \theta \):
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">def f(theta):
     return theta**2
@@ -39016,13 +39014,13 @@ achievement.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">  |--------------------------------|
   |time  | velocity | acceleration |
@@ -39234,8 +39232,8 @@ A sole <code>&</code> must also work.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"># Just to check that ampersand works in code blocks:
 c = a &amp; b
@@ -39365,14 +39363,14 @@ implementation of a Python function for addition.
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">8</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">8</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">add</span>(a, b):
     <span style="color: #8B008B; font-weight: bold">return</span> a + b
@@ -39985,15 +39983,15 @@ The formula can be used to generate <code>n</code> points on a circle:
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">4</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">5</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">6</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">7</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">8</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">9</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">8</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">9</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
 
@@ -40112,8 +40110,8 @@ $$ a=b. $$
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">def func(x):
     return x + 1  # with code in hint
@@ -40225,7 +40223,7 @@ $$ \exp{(0)} = 1 $$
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;">lambda x: x+2
 </pre>
@@ -40272,9 +40270,9 @@ $$ \frac{dy}{dx} = -y(x),\quad y(0)=1 $$
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">1</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">2</span>
-<span style="color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px;">3</span></pre>
+        <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">3</span></pre>
 </div></td><td class="code"><div class="highlight" style="background: #eeeedd">
   <pre style="line-height: 125%;"><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">math</span> <span style="color: #8B008B; font-weight: bold">import</span> exp
 <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">f</span>(x):
@@ -41612,13 +41610,13 @@ function show_hide_code(){
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span> <span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
+  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span><span style="color: #bbbbbb"> </span><span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
 
-<span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>()
-{
-   std<span style="color: #666666">::</span>cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #BA2121">&quot;Sample output&quot;</span> <span style="color: #666666">&lt;&lt;</span> std<span style="color: #666666">::</span>endl;
-   <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">0</span>
-}
+<span style="color: #B00040">int</span><span style="color: #bbbbbb"> </span><span style="color: #0000FF">main</span>()<span style="color: #bbbbbb"></span>
+{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span>std<span style="color: #666666">::</span>cout<span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;Sample output&quot;</span><span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span>std<span style="color: #666666">::</span>endl;<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span><span style="color: #008000; font-weight: bold">return</span><span style="color: #bbbbbb"> </span><span style="color: #666666">0</span><span style="color: #bbbbbb"></span>
+}<span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -41721,11 +41719,11 @@ function show_hide_code(){
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span>
-<span style="color: #008000; font-weight: bold">if</span> a <span style="color: #666666">&gt;</span> b
-  <span style="color: #408080; font-style: italic">% Indented comment needs this trick</span>
-  c = a <span style="color: #666666">+</span> b
-<span style="color: #008000; font-weight: bold">end</span>
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span><span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">if</span><span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">&gt;</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #408080; font-style: italic">% Indented comment needs this trick</span><span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>c<span style="color: #bbbbbb"> </span>=<span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">+</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">end</span><span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -44219,13 +44217,13 @@ function show_hide_code(){
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span> <span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
+  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span><span style="color: #bbbbbb"> </span><span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
 
-<span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>()
-{
-   std<span style="color: #666666">::</span>cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #BA2121">&quot;Sample output&quot;</span> <span style="color: #666666">&lt;&lt;</span> std<span style="color: #666666">::</span>endl;
-   <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">0</span>
-}
+<span style="color: #B00040">int</span><span style="color: #bbbbbb"> </span><span style="color: #0000FF">main</span>()<span style="color: #bbbbbb"></span>
+{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span>std<span style="color: #666666">::</span>cout<span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;Sample output&quot;</span><span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span>std<span style="color: #666666">::</span>endl;<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span><span style="color: #008000; font-weight: bold">return</span><span style="color: #bbbbbb"> </span><span style="color: #666666">0</span><span style="color: #bbbbbb"></span>
+}<span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -44331,11 +44329,11 @@ quoted).
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span>
-<span style="color: #008000; font-weight: bold">if</span> a <span style="color: #666666">&gt;</span> b
-  <span style="color: #408080; font-style: italic">% Indented comment needs this trick</span>
-  c = a <span style="color: #666666">+</span> b
-<span style="color: #008000; font-weight: bold">end</span>
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span><span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">if</span><span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">&gt;</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #408080; font-style: italic">% Indented comment needs this trick</span><span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>c<span style="color: #bbbbbb"> </span>=<span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">+</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">end</span><span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -56890,13 +56888,13 @@ function show_hide_code(){
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span> <span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
+  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span><span style="color: #bbbbbb"> </span><span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
 
-<span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>()
-{
-   std<span style="color: #666666">::</span>cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #BA2121">&quot;Sample output&quot;</span> <span style="color: #666666">&lt;&lt;</span> std<span style="color: #666666">::</span>endl;
-   <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">0</span>
-}
+<span style="color: #B00040">int</span><span style="color: #bbbbbb"> </span><span style="color: #0000FF">main</span>()<span style="color: #bbbbbb"></span>
+{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span>std<span style="color: #666666">::</span>cout<span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;Sample output&quot;</span><span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span>std<span style="color: #666666">::</span>endl;<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span><span style="color: #008000; font-weight: bold">return</span><span style="color: #bbbbbb"> </span><span style="color: #666666">0</span><span style="color: #bbbbbb"></span>
+}<span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -57002,11 +57000,11 @@ quoted).
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span>
-<span style="color: #008000; font-weight: bold">if</span> a <span style="color: #666666">&gt;</span> b
-  <span style="color: #408080; font-style: italic">% Indented comment needs this trick</span>
-  c = a <span style="color: #666666">+</span> b
-<span style="color: #008000; font-weight: bold">end</span>
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span><span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">if</span><span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">&gt;</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #408080; font-style: italic">% Indented comment needs this trick</span><span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>c<span style="color: #bbbbbb"> </span>=<span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">+</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">end</span><span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -95283,13 +95281,13 @@ function show_hide_code(){
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span> <span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
+  <pre style="line-height: 125%;"><span style="color: #BC7A00">#include</span><span style="color: #bbbbbb"> </span><span style="color: #408080; font-style: italic">&lt;iostream&gt;</span><span style="color: #BC7A00"></span>
 
-<span style="color: #B00040">int</span> <span style="color: #0000FF">main</span>()
-{
-   std<span style="color: #666666">::</span>cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #BA2121">&quot;Sample output&quot;</span> <span style="color: #666666">&lt;&lt;</span> std<span style="color: #666666">::</span>endl;
-   <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">0</span>
-}
+<span style="color: #B00040">int</span><span style="color: #bbbbbb"> </span><span style="color: #0000FF">main</span>()<span style="color: #bbbbbb"></span>
+{<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span>std<span style="color: #666666">::</span>cout<span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;Sample output&quot;</span><span style="color: #bbbbbb"> </span><span style="color: #666666">&lt;&lt;</span><span style="color: #bbbbbb"> </span>std<span style="color: #666666">::</span>endl;<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">   </span><span style="color: #008000; font-weight: bold">return</span><span style="color: #bbbbbb"> </span><span style="color: #666666">0</span><span style="color: #bbbbbb"></span>
+}<span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
@@ -95395,11 +95393,11 @@ quoted).
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span>
-<span style="color: #008000; font-weight: bold">if</span> a <span style="color: #666666">&gt;</span> b
-  <span style="color: #408080; font-style: italic">% Indented comment needs this trick</span>
-  c = a <span style="color: #666666">+</span> b
-<span style="color: #008000; font-weight: bold">end</span>
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic">% Comment on the beginning of the line can be escaped by %%</span><span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">if</span><span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">&gt;</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span><span style="color: #408080; font-style: italic">% Indented comment needs this trick</span><span style="color: #bbbbbb"></span>
+<span style="color: #bbbbbb">  </span>c<span style="color: #bbbbbb"> </span>=<span style="color: #bbbbbb"> </span>a<span style="color: #bbbbbb"> </span><span style="color: #666666">+</span><span style="color: #bbbbbb"> </span>b<span style="color: #bbbbbb"></span>
+<span style="color: #008000; font-weight: bold">end</span><span style="color: #bbbbbb"></span>
 </pre>
 </div>
       </div>
