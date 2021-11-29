@@ -114,6 +114,7 @@ def apply_regex(logfilename, logfilenameout=None):
     text = re.sub(r'show_hide_code.*\(\)', r'show_hide_code()', text)   #hash
     text = re.sub(r'<div id="code.*\"', r'<div id="codeXXX"', text)     #hash
     text = re.sub(r'doconce_figure_cache/.*\.(png|pdf)', r'doconce_figure_cache/XXX.\1', text)     #hash
+    text = re.sub(r'\"id\": \"[^,\"]{0,36}\",', r'"id": "XXX",', text)  # hash
     
     text = re.sub(r'\"#code.*\"', r'"#codeXXX"', text)     #hash
     text = re.sub(r'\(\d+ pages', r'(XXX pages', text)
@@ -121,7 +122,7 @@ def apply_regex(logfilename, logfilenameout=None):
     text = re.sub(r'^[\s]*\d+[\.]*$', r'', text, flags=re.M)      #stray numbers: 5.
     text = re.sub(r'^[\s]*(?:\[\d+\]\s*)+$', r'', text, flags=re.M)  #stray numbers: [5] [6]
     text = re.sub(r'^[\s]*[\[\]]{2,}\s*$', r'', text, flags=re.M)       #parentheses [][][]
-    text = re.sub(r'"image/png": ".*",', '"image/png":"some_image",\n' , text) #raw image in ipynb    
+    text = re.sub(r'"image/png": ".*",', '"image/png":"some_image",\n' , text) #raw image in ipynb
     with open(logfilenameout, 'w') as fout:
         fout.write(text)
 
