@@ -55,9 +55,15 @@ a complete installation with all the DocOnce dependencies.
 
 
 #### pytests.py
-The unit tests in pytests.py can be run by:
+The unit tests in pytests.py can be run with:
 
+  pip install pytest
   pytest pytests.py
+
+These tests are run in the [GitHub Actions workflow](https://github.com/doconce/doconce/blob/main/.github/workflows/python-package.yml) in the DocOnce GitHub repository.
+
+
+##### Troubleshooting pytests
 
 To execute a single test e.g. `test_doconce_format_execute` in `pytests.py`: 
 
@@ -65,7 +71,14 @@ To execute a single test e.g. `test_doconce_format_execute` in `pytests.py`:
 
 where `-v` is the verbose optionand `--pdb` opens the debugger on the first failure. 
 
-These tests are run in the GitHub Actions workflow on the 
+The following plugin allowing pytest to terminate executionwhen tests take too long:
+
+  pip install pytest-timeout
+  pytest --timeout=12 --timeout_method=thread --pdb pytests.py::test_doconce_format_execute  
+
+The `-s` flag is equivalent to `--capure=no` and it allows to see in the terminal any print statements present in the code
+  
+  pytest -s pytests.py::test_doconce_format_execute
 
 
 #### test_mintest.py

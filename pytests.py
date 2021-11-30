@@ -309,51 +309,38 @@ def test_get_deck_footer():
 
 
 ### test --execute
-def test_doconce_format_execute(tdir):
-    # test doconce format html with --execute
-    # NB: some tests require Jupyter kernels to be installed
+def test_execute_abort(tdir):
+    # Test errors in code using the option --execute=abort
     from doconce.jupyter_execution import JupyterKernelClient
     with cd_context(tdir):
-        pytext = 'python\n!bc pycod\nvar=11\n!ec\n\n!bc pycod\nprint(var+1)\n!ec\n\n'
-        shtext = 'bash  \n!bc shpro\nvar=22\n!ec\n\n!bc shcod\necho $(expr $var + 2)\n!ec\n\n'
-        jltext = 'julia \n!bc jlcod\nvar=33\n!ec\n\n!bc jlpro\nprint(var+3)\n!ec\n'
-        fname = 'a'
-        _ = create_file_with_text(text=pytext + shtext + jltext, fname=fname + '.do.txt')
         # Code with errors
-        pytext_fail = 'python\n!bc pycod\nprint(var+  \n!ec\n'
         fname_fail = 'fail'
+        pytext_fail = 'python\n!bc pycod\nprint(var+  \n!ec\n'
         _ = create_file_with_text(text=pytext_fail, fname=fname_fail + '.do.txt')
-        pytext_err = 'python\n!bc pycod-err\nprint(var+  \n!ec\n'
-        fname_err = 'err'
-        _ = create_file_with_text(text=pytext_err, fname=fname_err + '.do.txt')
         for format in ['html', 'latex', 'ipynb']:
-            # Execute a python block
-            out = subprocess.run(['doconce', 'format', format, fname+'.do.txt', '--execute'],
-                                 cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
-                                 stdout=subprocess.PIPE,
-                                 stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
-                                 encoding='utf8')
-            assert out.returncode == 0
-            extension = format if format != 'latex' else 'p.tex'
-            assert os.path.exists(os.path.join(tdir, fname + '.' + extension))
-            with open(os.path.join(tdir, fname + '.' + extension), 'r') as f:
-                fout = f.read()
-            assert '12' in fout
-            if format != 'ipynb':
-                if JupyterKernelClient.find_kernel_name('bash'):
-                    assert '24' in fout
-                if JupyterKernelClient.find_kernel_name('julia'):
-                    assert '36' in fout
-            os.remove(os.path.join(tdir, fname + '.' + extension))
-            # test errors in code --execute=abort
-            extension = format if format != 'latex' else 'p.tex'
-            out = subprocess.run(['doconce', 'format', format, fname_fail + '.do.txt', '--execute=abort'],
+            # Test errors in code
+            command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_fail)
+            out = subprocess.run(command.split(),
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
                                  stdout=subprocess.PIPE,
                                  stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                                  encoding='utf8')
             assert out.returncode != 0
-            out = subprocess.run(['doconce', 'format', format, fname_err + '.do.txt', '--execute=abort'],
+
+def test_execute_err_abort(tdir):
+    # Test errors in code blocks with the -err postfix and the doconce option --execute=abort
+    from doconce.jupyter_execution import JupyterKernelClient
+    with cd_context(tdir):
+        fname_err = 'err'
+        pytext_err = 'python\n!bc pycod-err\nprint(var+  \n!ec\n'
+        _ = create_file_with_text(text=pytext_err, fname=fname_err + '.do.txt')
+        for format in ['html', 'latex', 'ipynb']:
+            extension = format
+            if format == 'latex':
+                extension = 'p.tex'
+            # Test errors in code block with the -err postfix
+            command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_err)
+            out = subprocess.run(command.split(),
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
                                  stdout=subprocess.PIPE,
                                  stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
@@ -363,6 +350,41 @@ def test_doconce_format_execute(tdir):
             with open(os.path.join(tdir, fname_err + '.' + extension), 'r') as f:
                 fout = f.read()
             assert 'unexpected EOF' in fout
+            os.remove(os.path.join(tdir, fname_err + '.' + extension))
+
+def test_doconce_format_execute(tdir):
+    # test doconce format html with --execute
+    # NB: some tests require Jupyter kernels to be installed
+    from doconce.jupyter_execution import JupyterKernelClient
+    with cd_context(tdir):
+        pytext = 'python\n!bc pycod\nvar=11\n!ec\n\n!bc pycod\nprint(var+1)\n!ec\n\n'           #result is 12
+        shtext = 'bash  \n!bc shpro\nvar=22\n!ec\n\n!bc shcod\necho $(expr $var + 2)\n!ec\n\n'  #result is 24
+        jltext = 'julia \n!bc jlcod\nvar=33\n!ec\n\n!bc jlpro\nprint(var+3)\n!ec\n'             #result is 36
+        fname = 'a'
+        _ = create_file_with_text(text=pytext + shtext + jltext, fname=fname + '.do.txt')
+        for format in ['html', 'latex', 'ipynb']:
+            extension = format
+            if format == 'latex':
+                extension = 'p.tex'
+            # Execute code blocks
+            command = 'doconce format {} {}.do.txt --execute'.format(format, fname)
+            out = subprocess.run(command.split(),
+                                 cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                                 encoding='utf8')
+            assert out.returncode == 0
+            assert os.path.exists(os.path.join(tdir, fname + '.' + extension))
+            # Check results of calculations in code. python shows 12, bash 24, julia 36
+            with open(os.path.join(tdir, fname + '.' + extension), 'r') as f:
+                fout = f.read()
+            assert '12' in fout
+            if format != 'ipynb':
+                if JupyterKernelClient.find_kernel_name('bash'):
+                    assert '24' in fout
+                if JupyterKernelClient.find_kernel_name('julia'):
+                    assert '36' in fout
+            os.remove(os.path.join(tdir, fname + '.' + extension))
 
 ### system test
 def test_doconce_help():
