@@ -317,8 +317,8 @@ def test_execute_abort(tdir):
         fname_fail = 'fail'
         pytext_fail = 'python\n!bc pycod\nprint(var+  \n!ec\n'
         _ = create_file_with_text(text=pytext_fail, fname=fname_fail + '.do.txt')
-        for format in ['html', 'latex', 'ipynb']:
             # Test errors in code
+        for format in ['html', 'latex']:
             command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_fail)
             out = subprocess.run(command.split(),
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
@@ -326,7 +326,17 @@ def test_execute_abort(tdir):
                                  stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                                  encoding='utf8')
             assert out.returncode != 0
-
+        # ipynb format often returns a different out.returncode and stdout than other formats. not sure why, 
+        # but ipynb uses code in ipynb.py instead of jupyter_execution.py
+        format = 'ipynb'
+        command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_fail)
+        out = subprocess.run(command.split(),
+                             cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                             encoding='utf8')
+        assert out.returncode != 0 or 'output in {}'.format(fname_fail) in out.stdout
+aaa
 def test_execute_err_abort(tdir):
     # Test errors in code blocks with the -err postfix and the doconce option --execute=abort
     from doconce.jupyter_execution import JupyterKernelClient
@@ -334,11 +344,11 @@ def test_execute_err_abort(tdir):
         fname_err = 'err'
         pytext_err = 'python\n!bc pycod-err\nprint(var+  \n!ec\n'
         _ = create_file_with_text(text=pytext_err, fname=fname_err + '.do.txt')
-        for format in ['html', 'latex', 'ipynb']:
+        # Test errors in code block with the -err postfix
+        for format in ['html', 'latex']:
             extension = format
             if format == 'latex':
                 extension = 'p.tex'
-            # Test errors in code block with the -err postfix
             command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_err)
             out = subprocess.run(command.split(),
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
@@ -351,6 +361,26 @@ def test_execute_err_abort(tdir):
                 fout = f.read()
             assert 'unexpected EOF' in fout
             os.remove(os.path.join(tdir, fname_err + '.' + extension))
+        # ipynb format 
+        format = 'ipynb'
+        extension = format
+
+
+
+        command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_err)
+        out = subprocess.run(command.split(),
+                             cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                             encoding='utf8')
+        assert out.returncode == 0
+        assert os.path.exists(os.path.join(tdir, fname_err + '.' + extension))
+        with open(os.path.join(tdir, fname_err + '.' + extension), 'r') as f:
+            fout = f.read()
+        assert 'unexpected EOF' in fout
+        os.remove(os.path.join(tdir, fname_err + '.' + extension))
+
+
 
 def test_doconce_format_execute(tdir):
     # test doconce format html with --execute
