@@ -336,7 +336,7 @@ def test_execute_abort(tdir):
                              stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                              encoding='utf8')
         assert out.returncode != 0 or 'output in {}'.format(fname_fail) in out.stdout
-aaa
+
 def test_execute_err_abort(tdir):
     # Test errors in code blocks with the -err postfix and the doconce option --execute=abort
     from doconce.jupyter_execution import JupyterKernelClient
