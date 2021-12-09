@@ -76182,7 +76182,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1</p>
 </center>
 <p><img src="testfigs/wave1D.png" width="300" align="bottom"></p>
 </center>
@@ -76327,7 +76326,6 @@ bla-bla
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 2</p>
 </center>
 <p><img src="testfigs/wave1D.png" width="600" align="bottom"></p>
 </center>
@@ -77644,7 +77642,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1</p>
 </center>
 <p><img src="testfigs/wave1D.png" width="300" align="bottom"></p>
 </center>
@@ -77785,7 +77782,6 @@ bla-bla
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 2</p>
 </center>
 <p><img src="testfigs/wave1D.png" width="600" align="bottom"></p>
 </center>
@@ -79752,7 +79748,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1</p>
 </center>
 <p><img src="testfigs/doconce1b.png" width="400" align="bottom"></p>
 </center>
@@ -79807,7 +79802,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 2</p>
 </center>
 <p><img src="testfigs/ipad.png" width="400" align="bottom"></p>
 </center>
@@ -79815,7 +79809,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 3</p>
 </center>
 <p><img src="testfigs/iphones.jpg" width="100" align="bottom"></p>
 </center>
@@ -79827,7 +79820,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 4</p>
 </center>
 <p><img src="testfigs/imac.png" width="350" align="bottom"></p>
 </center>
@@ -79843,7 +79835,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 5</p>
 </center>
 <p><img src="testfigs/oldbooks.jpg" width="800" align="bottom"></p>
 </center>
@@ -79859,7 +79850,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 6</p>
 </center>
 <p><img src="testfigs/latex_thesis.jpg" width="400" align="bottom"></p>
 </center>
@@ -79869,7 +79859,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 7</p>
 </center>
 <p><img src="testfigs/latex_paper1.png" width="400" align="bottom"></p>
 </center>
@@ -79906,7 +79895,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 8</p>
 </center>
 <p><img src="testfigs/LaTeX_logo.jpg" width="120" align="bottom"></p>
 </center>
@@ -79916,7 +79904,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 9</p>
 </center>
 <p><img src="testfigs/MS_Word_logo.jpg" width="80" align="bottom"></p>
 </center>
@@ -79926,7 +79913,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 10</p>
 </center>
 <p><img src="testfigs/sphinx_logo.png" width="200" align="bottom"></p>
 </center>
@@ -79938,7 +79924,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 11</p>
 </center>
 <p><img src="testfigs/markdown_logo.jpg" width="80" align="bottom"></p>
 </center>
@@ -79948,7 +79933,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 12</p>
 </center>
 <p><img src="testfigs/MediaWiki_logo.jpg" width="80" align="bottom"></p>
 </center>
@@ -79958,7 +79942,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 13</p>
 </center>
 <p><img src="testfigs/IPython_logo.png" width="300" align="bottom"></p>
 </center>
@@ -79999,7 +79982,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 14</p>
 </center>
 <p><img src="testfigs/jungle_with_mess.jpg" width="500" align="bottom"></p>
 </center>
@@ -80790,7 +80772,6 @@ And maybe a final comment?
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 15</p>
 </center>
 <p><img src="testfigs/teacher1.gif" width="100" align="bottom"></p>
 </center>
@@ -80894,7 +80875,6 @@ $$ -\nabla^2 u = f \quad\hbox{in }\Omega $$
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 16</p>
 </center>
 <p><img src="testfigs/broken_pen_and_paper.jpg" width="400" align="bottom"></p>
 </center>
@@ -83633,7 +83613,6 @@ MathJax.Hub.Config({
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 1</p>
 </center>
 <p><img src="../doc/src/slides/fig/CN_logo.png" width="300" align="bottom"></p>
 </center>
@@ -83710,7 +83689,6 @@ $$
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 2</p>
 </center>
 <p><img src="../doc/src/slides/fig/teacher2.jpg" width="250" align="bottom"></p>
 </center>
@@ -83799,7 +83777,6 @@ $$
 <center>  <!-- FIGURE -->
 <hr class="figure">
 <center>
-<p class="caption">Figure 3</p>
 </center>
 <p><img src="../doc/src/slides/fig/CN.png" width="600" align="bottom"></p>
 </center>

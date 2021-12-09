@@ -627,6 +627,8 @@ def test_doconce_html_slides(change_test_dir, tdir):
             html = f.read()
         assert html.find('themes/style/swiss.css') > -1
         assert html.find('<link rel="stylesheet" media="screen" href="">') > 10
+        assert '<p class="caption">Figure 2</p>' not in html #captions with only figure number are removed in slides
+
         # reveal.js slides
         os.system('cp testdoc.html temp.html')
         out = subprocess.run('doconce slides_html temp.html reveal '
