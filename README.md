@@ -57,8 +57,10 @@ a complete installation with all the DocOnce dependencies.
 #### pytests.py
 The unit tests in pytests.py can be run with:
 
+```
   pip install pytest
   pytest pytests.py
+```
 
 These tests are run in the [GitHub Actions workflow](https://github.com/doconce/doconce/blob/main/.github/workflows/python-package.yml) in the DocOnce GitHub repository.
 
