@@ -561,6 +561,7 @@ def test_ipynb_cell_ids(tdir):
         pytext = '!bc pycod\nvar=11\nprint(var+1)\n!ec\n\n'           #result is 12
         mdtext1 = 'Here is some text\n\n'
         mdtext2 = 'We are done.\n'
+        mdheader = '===== Some header =====\n\n'
         fname = 'a'
         texts = [] # doconce texts
         ids = [] # expected cell IDs
@@ -574,6 +575,11 @@ def test_ipynb_cell_ids(tdir):
         # repeat the code block once more, this should not change IDs of markdown blocks
         texts.append(pytext + pytext + mdtext1 + pytext + mdtext2)
         ids.append(['5171b527', '5171b527_1', '5ca77eb9', '5171b527_2', '365a2169'])
+
+        # no codecells
+        # regression test for https://github.com/doconce/doconce/pull/225
+        texts.append(mdheader + mdtext1 + mdtext2 + mdheader + mdtext1 + mdtext2)
+        ids.append(['9a4347c8', 'e11d5ad2'])
 
         for i in range(len(texts)):
             _ = create_file_with_text(text = texts[i], fname=fname + '.do.txt')
