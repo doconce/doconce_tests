@@ -581,8 +581,8 @@ def test_ipynb_cell_ids(tdir):
         texts.append(mdheader + mdtext1 + mdtext2 + mdheader + mdtext1 + mdtext2)
         ids.append(['9a4347c8', 'e11d5ad2'])
 
-        for i in range(len(texts)):
-            _ = create_file_with_text(text = texts[i], fname=fname + '.do.txt')
+        for text, id_expected in zip(texts, ids):
+            _ = create_file_with_text(text=text, fname=fname + '.do.txt')
             format = 'ipynb'
             extension = format
             # Create notebook
@@ -597,7 +597,9 @@ def test_ipynb_cell_ids(tdir):
             # Check ids of resulting notebook, these should always be the same
             fout = json.load(open(os.path.join(tdir, fname + '.' + extension)))
             cell_ids = [cell['id'] for cell in fout['cells']]
-            assert cell_ids == ids[i]
+            assert cell_ids == id_expected
+
+            # cleanup
             os.remove(os.path.join(tdir, fname + '.' + extension))
 
 
