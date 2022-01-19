@@ -326,7 +326,7 @@ def test_execute_abort(tdir):
                                  stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                                  encoding='utf8')
             assert out.returncode != 0
-        # ipynb format often returns a different out.returncode and stdout than other formats. not sure why, 
+        # ipynb format often returns a different out.returncode and stdout than other formats. not sure why,
         # but ipynb uses code in ipynb.py instead of jupyter_execution.py
         format = 'ipynb'
         command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_fail)
@@ -361,7 +361,7 @@ def test_execute_err_abort(tdir):
             #    fout = f.read()
             #assert 'unexpected EOF' in fout  #this can fail in GitHub actions
             os.remove(os.path.join(tdir, fname_err + '.' + extension))
-        # ipynb format 
+        # ipynb format
         format = 'ipynb'
         extension = format
 
@@ -415,6 +415,37 @@ def test_doconce_format_execute(tdir):
                 if JupyterKernelClient.find_kernel_name('julia'):
                     assert '36' in fout
             os.remove(os.path.join(tdir, fname + '.' + extension))
+
+def test_doconce_format_execute_output_ipynb(tdir):
+    # test doconce format html with --execute
+    # should consistently give output from executed code blocks
+    from doconce.jupyter_execution import JupyterKernelClient
+    with cd_context(tdir):
+        pytext = 'python\n!bc pycod\ntotal = 0\nfor number in range(10):\n\ttotal = total + (number + 1)\nprint(total)\n!ec\n\n'           #result is 55
+        fname = 'a'
+        _ = create_file_with_text(text=pytext, fname=fname + '.do.txt')
+        tries = 10
+        success = 0
+        for t in range(tries):
+            format = 'ipynb'
+            extension = format
+            # Execute code blocks
+            command = 'doconce format {} {}.do.txt --execute'.format(format, fname)
+            out = subprocess.run(command.split(),
+                                 cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                                 encoding='utf8')
+            assert out.returncode == 0
+            assert os.path.exists(os.path.join(tdir, fname + '.' + extension))
+            # Check results of calculations in code. python shows 55
+            with open(os.path.join(tdir, fname + '.' + extension), 'r') as f:
+                fout = f.read()
+            if '55' in fout:
+                success += 1
+            os.remove(os.path.join(tdir, fname + '.' + extension))
+        # all tries should be successful
+        assert success == tries, "Only %s out of %s tries were successful" %(success, tries)
 
 ### system test
 def test_doconce_help():
