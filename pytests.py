@@ -417,7 +417,7 @@ def test_doconce_format_execute(tdir):
             os.remove(os.path.join(tdir, fname + '.' + extension))
 
 def test_doconce_format_execute_output_ipynb(tdir):
-    # test doconce format html with --execute
+    # test doconce format ipynb with --execute
     # should consistently give output from executed code blocks
     from doconce.jupyter_execution import JupyterKernelClient
     with cd_context(tdir):
