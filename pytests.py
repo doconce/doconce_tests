@@ -664,8 +664,8 @@ def test_doconce_exercises_in_zip(change_test_dir, tdir):
         assert os.path.exists(os.path.join(fname_unzipped, 'solutions.do.txt'))
         with open(os.path.join(fname_unzipped,'solutions.do.txt'), 'r') as f:
             do = f.read()
-        assert '__a) Solution.__' in do
-        assert '__a) Solution.__\n!bc pycod' in do
+        assert '__Solution.__' in do
+        assert '__Solution.__\n!bc pycod' in do
         assert '#--- ' not in do
 
 
