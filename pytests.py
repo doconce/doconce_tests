@@ -429,21 +429,22 @@ def test_doconce_format_execute_output_ipynb(tdir):
         for t in range(tries):
             format = 'ipynb'
             extension = format
+            fname_out = str(t) + '.' + extension
             # Execute code blocks
-            command = 'doconce format {} {}.do.txt --execute'.format(format, fname)
+            command = 'doconce format {} {}.do.txt --execute --output={}'.format(format, fname, fname_out)
             out = subprocess.run(command.split(),
                                  cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
                                  stdout=subprocess.PIPE,
                                  stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                                  encoding='utf8')
             assert out.returncode == 0
-            assert os.path.exists(os.path.join(tdir, fname + '.' + extension))
-            # Check results of calculations in code. python shows 55
-            with open(os.path.join(tdir, fname + '.' + extension), 'r') as f:
+            assert os.path.exists(os.path.join(tdir, fname_out))
+            # Check results of calculations in code. Python shows 55
+            with open(os.path.join(tdir, fname_out), 'r') as f:
                 fout = f.read()
             if '55' in fout:
                 success += 1
-            os.remove(os.path.join(tdir, fname + '.' + extension))
+            os.remove(os.path.join(tdir, fname_out))
         # all tries should be successful
         assert success == tries, "Only %s out of %s tries were successful" %(success, tries)
 
