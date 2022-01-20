@@ -417,15 +417,18 @@ def test_doconce_format_execute(tdir):
             os.remove(os.path.join(tdir, fname + '.' + extension))
 
 def test_doconce_format_execute_output_ipynb(tdir):
+    import json
     # test doconce format ipynb with --execute
     # should consistently give output from executed code blocks
     from doconce.jupyter_execution import JupyterKernelClient
     with cd_context(tdir):
         pytext = 'python\n!bc pycod\ntotal = 0\nfor number in range(10):\n\ttotal = total + (number + 1)\nprint(total)\n!ec\n\n'           #result is 55
+        pytext = 'python\n!bc pycod\nvar=11\nprint(var)\n!ec\n\n!bc pycod\nprint(var+1)\n!ec\n\n'           #result is 12
         fname = 'a'
         _ = create_file_with_text(text=pytext, fname=fname + '.do.txt')
         tries = 10
-        success = 0
+        success_first = 0
+        success_second = 0
         for t in range(tries):
             format = 'ipynb'
             extension = format
@@ -439,14 +442,18 @@ def test_doconce_format_execute_output_ipynb(tdir):
                                  encoding='utf8')
             assert out.returncode == 0
             assert os.path.exists(os.path.join(tdir, fname_out))
-            # Check results of calculations in code. Python shows 55
-            with open(os.path.join(tdir, fname_out), 'r') as f:
-                fout = f.read()
-            if '55' in fout:
-                success += 1
+            # Check results of calculations in code
+            fout = json.load(open(os.path.join(tdir, fname_out)))
+            # first codeblock: test 'output' is not an empty list and contains the right output
+            if fout['cells'][1]['outputs'] and fout['cells'][1]['outputs'][0]['text'] == ['11\n']:
+                success_first += 1
+            # second codeblock: test 'output' is not an empty list and contains the right output
+            if fout['cells'][2]['outputs'] and fout['cells'][2]['outputs'][0]['text'] == ['12\n']:
+                success_second += 1
             os.remove(os.path.join(tdir, fname_out))
         # all tries should be successful
-        assert success == tries, "Only %s out of %s tries were successful" %(success, tries)
+        assert success_first == tries and success_second == tries, \
+            "Of %s tries, first codeblock: %s OK, second codeblock: %s OK" %(tries, success_first, success_second)
 
 ### system test
 def test_doconce_help():
