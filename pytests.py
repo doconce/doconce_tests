@@ -13,6 +13,7 @@ import sys
 import regex as re
 import subprocess
 import shutil
+import json
 from doconce.doconce import load_modules
 
 @pytest.fixture(scope="function")
@@ -326,7 +327,7 @@ def test_execute_abort(tdir):
                                  stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
                                  encoding='utf8')
             assert out.returncode != 0
-        # ipynb format often returns a different out.returncode and stdout than other formats. not sure why, 
+        # ipynb format often returns a different out.returncode and stdout than other formats. not sure why,
         # but ipynb uses code in ipynb.py instead of jupyter_execution.py
         format = 'ipynb'
         command = 'doconce format {} {}.do.txt --execute=abort'.format(format, fname_fail)
@@ -361,7 +362,7 @@ def test_execute_err_abort(tdir):
             #    fout = f.read()
             #assert 'unexpected EOF' in fout  #this can fail in GitHub actions
             os.remove(os.path.join(tdir, fname_err + '.' + extension))
-        # ipynb format 
+        # ipynb format
         format = 'ipynb'
         extension = format
 
@@ -552,6 +553,55 @@ def test_doconce_format_ipynb(change_test_dir, tdir):
         # Check that the links in the TOC work (no capitalization)
         assert r'<a href=\"#Just-bold\">' in ipynb
         assert r'"## **Just bold**\n",' in ipynb
+
+def test_ipynb_cell_ids(tdir):
+    # test stable cell IDs
+    from doconce.jupyter_execution import JupyterKernelClient
+    with cd_context(tdir):
+        pytext = '!bc pycod\nvar=11\nprint(var+1)\n!ec\n\n'           #result is 12
+        mdtext1 = 'Here is some text\n\n'
+        mdtext2 = 'We are done.\n'
+        mdheader = '===== Some header =====\n\n'
+        fname = 'a'
+        texts = [] # doconce texts
+        ids = [] # expected cell IDs
+
+        # set up doconce files to test with corresponding  expected cell ids
+
+        # repeated code block with two markdown blocks
+        texts.append(pytext + mdtext1 + pytext + mdtext2)
+        ids.append(['5171b527', '5ca77eb9', '5171b527_1', '365a2169'])
+
+        # repeat the code block once more, this should not change IDs of markdown blocks
+        texts.append(pytext + pytext + mdtext1 + pytext + mdtext2)
+        ids.append(['5171b527', '5171b527_1', '5ca77eb9', '5171b527_2', '365a2169'])
+
+        # no codecells
+        # regression test for https://github.com/doconce/doconce/pull/225
+        texts.append(mdheader + mdtext1 + mdtext2 + mdheader + mdtext1 + mdtext2)
+        ids.append(['9a4347c8', 'e11d5ad2'])
+
+        for text, id_expected in zip(texts, ids):
+            _ = create_file_with_text(text=text, fname=fname + '.do.txt')
+            format = 'ipynb'
+            extension = format
+            # Create notebook
+            command = 'doconce format {} {}.do.txt'.format(format, fname)
+            out = subprocess.run(command.split(),
+                                 cwd=tdir,  # NB: main process stays in curr dir, subprocesses in tdir
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT,  # can do this in debugger mode: print(out.stdout)
+                                 encoding='utf8')
+            assert out.returncode == 0
+            assert os.path.exists(os.path.join(tdir, fname + '.' + extension))
+            # Check ids of resulting notebook, these should always be the same
+            fout = json.load(open(os.path.join(tdir, fname + '.' + extension)))
+            cell_ids = [cell['id'] for cell in fout['cells']]
+            assert cell_ids == id_expected
+
+            # cleanup
+            os.remove(os.path.join(tdir, fname + '.' + extension))
+
 
 def test_doconce_jupyterbook(change_test_dir, tdir):
     cp_testdoc(dest=tdir)
